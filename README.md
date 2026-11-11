@@ -26,6 +26,9 @@ eMMC image.
   of the **NB680GD (U2, `VCC3V3_SYS`)**; no 3.3 V there means U2 has failed.
   Board is powered off until then.
 
+> Mood for this bring-up: *Awnaw (All Hooks Up Version)*, Nappy Roots
+> featuring Jazze Pha.
+
 ### J43 debug UART: wire it like this
 
 ![YY3588 with the serial adapter on J43](docs/img/yy3588-j43-serial-2026-11-10.jpg)
