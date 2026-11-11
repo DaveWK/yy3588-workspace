@@ -1,0 +1,14 @@
+lo               UNKNOWN        00:00:00:00:00:00 <LOOPBACK,UP,LOWER_UP> 
+end1             DOWN           a2:eb:a5:f7:6b:66 <BROADCAST,MULTICAST> 
+[   22.683464] rk_gmac-dwmac fe1c0000.ethernet end1: PHY [stmmac-1:00] driver [RTL8211F Gigabit Ethernet] (irq=POLL)
+[   23.685278] rk_gmac-dwmac fe1c0000.ethernet: Failed to reset the dma
+[   23.686683] rk_gmac-dwmac fe1c0000.ethernet end1: __stmmac_open: Hw setup failed
+[   23.807326] rk_gmac-dwmac fe1c0000.ethernet end1: PHY [stmmac-1:00] driver [RTL8211F Gigabit Ethernet] (irq=POLL)
+[   24.808438] rk_gmac-dwmac fe1c0000.ethernet: Failed to reset the dma
+[   24.809883] rk_gmac-dwmac fe1c0000.ethernet end1: __stmmac_open: Hw setup failed
+[   24.923298] rk_gmac-dwmac fe1c0000.ethernet end1: PHY [stmmac-1:00] driver [RTL8211F Gigabit Ethernet] (irq=POLL)
+[   25.925036] rk_gmac-dwmac fe1c0000.ethernet: Failed to reset the dma
+[   25.926427] rk_gmac-dwmac fe1c0000.ethernet end1: __stmmac_open: Hw setup failed
+[   26.035360] rk_gmac-dwmac fe1c0000.ethernet end1: PHY [stmmac-1:00] driver [RTL8211F Gigabit Ethernet] (irq=POLL)
+[   27.036800] rk_gmac-dwmac fe1c0000.ethernet: Failed to reset the dma
+[   27.038164] rk_gmac-dwmac fe1c0000.ethernet end1: __stmmac_open: Hw setup failed

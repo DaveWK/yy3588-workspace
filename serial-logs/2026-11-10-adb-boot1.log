@@ -1,0 +1,1489 @@
+## id
+uid=0(root) gid=0(root) 组=0(root)
+Linux linaro-alip 6.1.172 #5 SMP Mon Nov  9 03:21:39 UTC 2026 aarch64 GNU/Linux
+## ip
+lo               UNKNOWN        00:00:00:00:00:00 <LOOPBACK,UP,LOWER_UP> 
+end1             DOWN           76:68:84:22:78:41 <BROADCAST,MULTICAST> 
+## lsusb
+Bus 006 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 003 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
+Bus 004 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 002 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
+Bus 005 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+/:  Bus 06.Port 1: Dev 1, Class=root_hub, Driver=xhci-hcd/1p, 5000M
+/:  Bus 05.Port 1: Dev 1, Class=root_hub, Driver=ehci-platform/1p, 480M
+/:  Bus 04.Port 1: Dev 1, Class=root_hub, Driver=ehci-platform/1p, 480M
+/:  Bus 03.Port 1: Dev 1, Class=root_hub, Driver=ohci-platform/1p, 12M
+/:  Bus 02.Port 1: Dev 1, Class=root_hub, Driver=ohci-platform/1p, 12M
+/:  Bus 01.Port 1: Dev 1, Class=root_hub, Driver=xhci-hcd/1p, 480M
+## i2c6
+     0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
+00:                         -- -- -- -- -- -- -- -- 
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+20: -- -- UU -- -- -- -- -- -- -- -- -- -- -- -- -- 
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+50: -- UU -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+70: -- -- -- -- -- -- -- --                         
+## dmesg
+[32m[   13.336851] [0mBooting Linux on physical CPU 0x0000000000 [0x412fd050]
+[32m[   13.336869] [0mLinux version 6.1.172 (build@7278084b10b2) (aarch64-none-linux-gnu-gcc (GNU Toolchain for the A-profile Architecture 10.3-2021.07 (arm-10.29)) 10.3.1 20210621, GNU ld (GNU Toolchain for the A-profile Architecture 10.3-2021.07 (arm-10.29)) 2.36.1.20210621) #5 SMP Mon Nov  9 03:21:39 UTC 2026
+[32m[   13.341358] [0m[33mMachine model: [0mRockchip RK3588 EVB7 V11 Board
+[32m[   13.349109] [0m[33mearlycon: [0muart8250 at MMIO32 0x00000000feb50000 (options '')
+[32m[   13.353166] [0m[33mprintk: [0mbootconsole [uart8250] enabled
+[32m[   13.355057] [0m[33mefi: [0mEFI v2.70 by EDK II
+[32m[   13.355382] [0m[33mefi: [0mSMBIOS=0xeffd0000 SMBIOS 3.0=0xeffb0000 MEMATTR=0xe7726018 RNG=0xef2d0b18 MEMRESERVE=0xe7727e18 
+[32m[   13.356332] [0m[33mrandom: [0mcrng init done
+[32m[   13.358112] [0m[33mOF: [0m[31mfdt: Reserved memory: failed to reserve memory for node 'drm-logo@0': base 0x0000000000000000, size 0 MiB[0m
+[32m[   13.359103] [0m[33mOF: [0m[31mfdt: Reserved memory: failed to reserve memory for node 'drm-cubic-lut@0': base 0x0000000000000000, size 0 MiB[0m
+[32m[   13.360162] [0m[33mReserved memory: [0mcreated CMA memory pool at 0x0000000010000000, size 256 MiB
+[32m[   13.360891] [0m[33mOF: [0mreserved mem: initialized node cma, compatible id shared-dma-pool
+[32m[   13.609286] [0mZone ranges:
+[32m[   13.609526] [0m  DMA      [mem 0x0000000000200000-0x00000000ffffffff]
+[32m[   13.610086] [0m  DMA32    empty
+[32m[   13.610347] [0m  Normal   [mem 0x0000000100000000-0x00000007ffffffff]
+[32m[   13.610905] [0mMovable zone start for each node
+[32m[   13.611289] [0mEarly memory node ranges
+[32m[   13.611611] [0m[33m  node   0: [0m[mem 0x0000000000200000-0x00000000006fffff]
+[32m[   13.612175] [0m[33m  node   0: [0m[mem 0x00000000007c0000-0x00000000007effff]
+[32m[   13.612739] [0m[33m  node   0: [0m[mem 0x00000000007f0000-0x00000000083fffff]
+[32m[   13.613303] [0m[33m  node   0: [0m[mem 0x0000000008400000-0x00000000093fffff]
+[32m[   13.613866] [0m[33m  node   0: [0m[mem 0x0000000009400000-0x00000000e76bffff]
+[32m[   13.614431] [0m[33m  node   0: [0m[mem 0x00000000e76c0000-0x00000000e76dffff]
+[32m[   13.614997] [0m[33m  node   0: [0m[mem 0x00000000e76e0000-0x00000000e76fffff]
+[32m[   13.615560] [0m[33m  node   0: [0m[mem 0x00000000e7700000-0x00000000e771ffff]
+[32m[   13.616123] [0m[33m  node   0: [0m[mem 0x00000000e7720000-0x00000000e7dfffff]
+[32m[   13.616687] [0m[33m  node   0: [0m[mem 0x00000000e7e00000-0x00000000e7f2ffff]
+[32m[   13.617252] [0m[33m  node   0: [0m[mem 0x00000000e7f30000-0x00000000e809ffff]
+[32m[   13.617816] [0m[33m  node   0: [0m[mem 0x00000000e80a0000-0x00000000e812ffff]
+[32m[   13.618380] [0m[33m  node   0: [0m[mem 0x00000000e8130000-0x00000000e854ffff]
+[32m[   13.618944] [0m[33m  node   0: [0m[mem 0x00000000e8550000-0x00000000e85cffff]
+[32m[   13.619509] [0m[33m  node   0: [0m[mem 0x00000000e85d0000-0x00000000e864ffff]
+[32m[   13.620073] [0m[33m  node   0: [0m[mem 0x00000000e8650000-0x00000000e872ffff]
+[32m[   13.620636] [0m[33m  node   0: [0m[mem 0x00000000e8730000-0x00000000eee5ffff]
+[32m[   13.621200] [0m[33m  node   0: [0m[mem 0x00000000eee60000-0x00000000eef3ffff]
+[32m[   13.621764] [0m[33m  node   0: [0m[mem 0x00000000eef40000-0x00000000eef8ffff]
+[32m[   13.622329] [0m[33m  node   0: [0m[mem 0x00000000eef90000-0x00000000eefdffff]
+[32m[   13.622893] [0m[33m  node   0: [0m[mem 0x00000000eefe0000-0x00000000ef01ffff]
+[32m[   13.623457] [0m[33m  node   0: [0m[mem 0x00000000ef020000-0x00000000ef0bffff]
+[32m[   13.624021] [0m[33m  node   0: [0m[mem 0x00000000ef0c0000-0x00000000ef10ffff]
+[32m[   13.624585] [0m[33m  node   0: [0m[mem 0x00000000ef110000-0x00000000ef28ffff]
+[32m[   13.625149] [0m[33m  node   0: [0m[mem 0x00000000ef290000-0x00000000eff8ffff]
+[32m[   13.625713] [0m[33m  node   0: [0m[mem 0x00000000eff90000-0x00000000effeffff]
+[32m[   13.626276] [0m[33m  node   0: [0m[mem 0x00000000efff0000-0x00000000efffffff]
+[32m[   13.626840] [0m[33m  node   0: [0m[mem 0x0000000100000000-0x00000003fbffffff]
+[32m[   13.627406] [0m[33m  node   0: [0m[mem 0x00000003fc000000-0x00000003fc4fffff]
+[32m[   13.627970] [0m[33m  node   0: [0m[mem 0x00000003fc500000-0x00000003ffefffff]
+[32m[   13.628534] [0m[33m  node   0: [0m[mem 0x00000003fff00000-0x00000003ffffffff]
+[32m[   13.629098] [0m[33m  node   0: [0m[mem 0x0000000400000000-0x00000007ffffffff]
+[32m[   13.629665] [0mInitmem setup node 0 [mem 0x0000000000200000-0x00000007ffffffff]
+[32m[   13.630335] [0m[33mOn node 0, zone DMA: [0m512 pages in unavailable ranges
+[32m[   13.630344] [0m[33mOn node 0, zone DMA: [0m192 pages in unavailable ranges
+[32m[   13.732753] [0m[33mcma: [0mReserved 32 MiB at 0x0000000100000000
+[32m[   13.733882] [0m[33mpsci: [0mprobing for conduit method from DT.
+[32m[   13.734343] [0m[33mpsci: [0mPSCIv1.1 detected in firmware.
+[32m[   13.734761] [0m[33mpsci: [0mUsing standard PSCI v0.2 function IDs
+[32m[   13.735232] [0m[33mpsci: [0mMIGRATE_INFO_TYPE not supported.
+[32m[   13.735670] [0m[33mpsci: [0mSMC Calling Convention v1.2
+[32m[   13.736252] [0m[33mpercpu: [0mEmbedded 26 pages/cpu s69224 r8192 d29080 u106496
+[32m[   13.736859] [0m[33mpcpu-alloc: [0ms69224 r8192 d29080 u106496 alloc=26*4096
+[32m[   13.736866] [0m[33mpcpu-alloc: [0m[0] 0 [0] 1 [0] 2 [0] 3 [0] 4 [0] 5 [0] 6 [0] 7 
+[32m[   13.736947] [0mDetected VIPT I-cache on CPU0
+[32m[   13.737334] [0m[33mCPU features: [0mdetected: GIC system register CPU interface
+[32m[   13.737915] [0m[33mCPU features: [0mdetected: Virtualization Host Extensions
+[32m[   13.738473] [0m[33mCPU features: [0mdetected: ARM errata 1165522, 1319367, or 1530923
+[32m[   13.739100] [0m[33malternatives: [0mapplying boot alternatives
+[32m[   13.741014] [0m[33mBuilt 1 zonelists, mobility grouping on.  Total pages: [0m8192331
+[32m[   13.741639] [0m[33mKernel command line: [0mroot=PARTUUID=614e0000-0000-4b53-8000-1d28000054a9 rootfstype=ext4 rw rootwait console=tty1 console=ttyS2,1500000n8 earlycon=uart8250,mmio32,0xfeb50000 irqchip.gicv3_pseudo_nmi=0 rcupdate.rcu_expedited=1 rcu_nocbs=all
+[32m[   13.745557] [0m[33mDentry cache hash table entries: [0m4194304 (order: 13, 33554432 bytes, linear)
+[32m[   13.747193] [0m[33mInode-cache hash table entries: [0m2097152 (order: 12, 16777216 bytes, linear)
+[32m[   13.747916] [0m[33mmem auto-init: [0mstack:off, heap alloc:off, heap free:off
+[32m[   13.748481] [0m[33msoftware IO TLB: [0marea num 8.
+[32m[   13.756122] [0m[33msoftware IO TLB: [0mmapped [mem 0x00000000eae60000-0x00000000eee60000] (64MB)
+[32m[   13.915661] [0m[33mMemory: [0m32212992K/33289472K available (21824K kernel code, 4176K rwdata, 7996K rodata, 8000K init, 683K bss, 781568K reserved, 294912K cma-reserved)
+[32m[   13.917040] [0m[33mSLUB: [0mHWalign=64, Order=0-3, MinObjects=0, CPUs=8, Nodes=1
+[32m[   13.917651] [0m[33mftrace: [0mallocating 66171 entries in 259 pages
+[32m[   13.971838] [0m[33mftrace: [0mallocated 259 pages with 3 groups
+[32m[   13.972360] [0mtrace event string verifier disabled
+[32m[   13.972905] [0m[33mrcu: [0mHierarchical RCU implementation.
+[32m[   13.973330] [0m[33mrcu: [0m	RCU event tracing is enabled.
+[32m[   13.973738] [0m	All grace periods are expedited (rcu_expedited).
+[32m[   13.974254] [0m	Rude variant of Tasks RCU enabled.
+[32m[   13.974661] [0m[33mrcu: [0mRCU calculated value of scheduler-enlistment delay is 25 jiffies.
+[32m[   13.985542] [0m[33mNR_IRQS: [0m64, nr_irqs: 64, preallocated irqs: 0
+[32m[   13.987764] [0m[33mGICv3: [0mGIC: Using split EOI/Deactivate mode
+[32m[   13.988238] [0m[33mGICv3: [0m480 SPIs implemented
+[32m[   13.988583] [0m[33mGICv3: [0m0 Extended SPIs implemented
+[32m[   13.989004] [0m[33mRoot IRQ handler: [0mgic_handle_irq
+[32m[   13.989397] [0m[33mGICv3: [0mGICv3 features: 16 PPIs
+[32m[   13.990059] [0m[33mGICv3: [0mCPU0: found redistributor 0 region 0:0x00000000fe680000
+[32m[   13.990857] [0mITS [mem 0xfe640000-0xfe65ffff]
+[32m[   13.991264] [0m[33mITS@0x00000000fe640000: [0mallocated 8192 Devices @102220000 (indirect, esz 8, psz 64K, shr 0)
+[32m[   13.992121] [0m[33mITS@0x00000000fe640000: [0mallocated 32768 Interrupt Collections @102230000 (flat, esz 2, psz 64K, shr 0)
+[32m[   13.993056] [0m[33mITS: [0musing cache flushing for cmd queue
+[32m[   13.993509] [0mITS [mem 0xfe660000-0xfe67ffff]
+[32m[   13.993908] [0m[33mITS@0x00000000fe660000: [0mallocated 8192 Devices @102250000 (indirect, esz 8, psz 64K, shr 0)
+[32m[   13.994766] [0m[33mITS@0x00000000fe660000: [0mallocated 32768 Interrupt Collections @102260000 (flat, esz 2, psz 64K, shr 0)
+[32m[   13.995700] [0m[33mITS: [0musing cache flushing for cmd queue
+[32m[   13.996260] [0m[33mGICv3: [0musing LPI property table @0x0000000102270000
+[32m[   13.996860] [0m[33mGIC: [0musing cache flushing for LPI property table
+[32m[   13.997372] [0m[33mGICv3: [0mCPU0: using allocated LPI pending table @0x0000000102280000
+[32m[   13.998055] [0m[33mrcu: [0m	Offload RCU callbacks from CPUs: 0-7.
+[32m[   13.998534] [0m[33mrcu: [0msrcu_init: Setting srcu_struct sizes based on contention.
+[32m[   14.087910] [0m[33march_timer: [0mcp15 timer(s) running at 24.00MHz (phys).
+[32m[   14.088465] [0m[33mclocksource: [0march_sys_counter: mask: 0xffffffffffffff max_cycles: 0x588fe9dc0, max_idle_ns: 440795202592 ns
+[32m[   14.089441] [0m[33msched_clock: [0m56 bits at 24MHz, resolution 41ns, wraps every 4398046511097ns
+[32m[   14.090908] [0m[33mConsole: [0mcolour dummy device 80x25
+[32m[   14.091677] [0m[33mprintk: [0mconsole [tty1] enabled
+[32m[   14.092094] [0mCalibrating delay loop (skipped), value calculated using timer frequency.. 48.00 BogoMIPS (lpj=96000)
+[32m[   14.093028] [0m[33mpid_max: [0mdefault: 32768 minimum: 301
+[32m[   14.093542] [0m[33mMount-cache hash table entries: [0m65536 (order: 7, 524288 bytes, linear)
+[32m[   14.094263] [0m[33mMountpoint-cache hash table entries: [0m65536 (order: 7, 524288 bytes, linear)
+[32m[   14.095523] [0m[31mEarly cacheinfo failed, ret = -22[0m
+[32m[   14.096213] [0m[33mcblist_init_generic: [0mSetting adjustable number of callback queues.
+[32m[   14.096872] [0m[33mcblist_init_generic: [0mSetting shift to 3 and lim to 1.
+[32m[   14.097504] [0m[33mrcu: [0mHierarchical SRCU implementation.
+[32m[   14.097942] [0m[33mrcu: [0m	Max phase no-delay instances is 1000.
+[32m[   14.098970] [0m[33mPlatform MSI: [0mmsi-controller@fe640000 domain created
+[32m[   14.099524] [0m[33mPlatform MSI: [0mmsi-controller@fe660000 domain created
+[32m[   14.100291] [0m[33mPCI/MSI: [0m/interrupt-controller@fe600000/msi-controller@fe640000 domain created
+[32m[   14.101051] [0m[33mPCI/MSI: [0m/interrupt-controller@fe600000/msi-controller@fe660000 domain created
+[32m[   14.101908] [0mRemapping and enabling EFI services.
+[32m[   14.102606] [0m[33msmp: [0mBringing up secondary CPUs ...
+[32m[   14.103288] [0mDetected VIPT I-cache on CPU1
+[32m[   14.103337] [0m[33mGICv3: [0mCPU1: found redistributor 100 region 0:0x00000000fe6a0000
+[32m[   14.103349] [0m[33mGICv3: [0mCPU1: using allocated LPI pending table @0x0000000102290000
+[32m[   14.103377] [0m[33mCPU1: [0mBooted secondary processor 0x0000000100 [0x412fd050]
+[32m[   14.103704] [0mDetected VIPT I-cache on CPU2
+[32m[   14.103741] [0m[33mGICv3: [0mCPU2: found redistributor 200 region 0:0x00000000fe6c0000
+[32m[   14.103751] [0m[33mGICv3: [0mCPU2: using allocated LPI pending table @0x00000001022a0000
+[32m[   14.103773] [0m[33mCPU2: [0mBooted secondary processor 0x0000000200 [0x412fd050]
+[32m[   14.104058] [0mDetected VIPT I-cache on CPU3
+[32m[   14.104097] [0m[33mGICv3: [0mCPU3: found redistributor 300 region 0:0x00000000fe6e0000
+[32m[   14.104107] [0m[33mGICv3: [0mCPU3: using allocated LPI pending table @0x00000001022b0000
+[32m[   14.104128] [0m[33mCPU3: [0mBooted secondary processor 0x0000000300 [0x412fd050]
+[32m[   14.104457] [0m[33mCPU features: [0mdetected: Spectre-v4
+[32m[   14.104459] [0m[33mCPU features: [0mdetected: Spectre-BHB
+[32m[   14.104461] [0m[33mCPU features: [0mdetected: Broken broadcast TLBI completion
+[32m[   14.104462] [0m[33mCPU features: [0mdetected: SSBS not fully self-synchronizing
+[32m[   14.104463] [0mDetected PIPT I-cache on CPU4
+[32m[   14.104484] [0m[33mGICv3: [0mCPU4: found redistributor 400 region 0:0x00000000fe700000
+[32m[   14.104489] [0m[33mGICv3: [0mCPU4: using allocated LPI pending table @0x00000001022c0000
+[32m[   14.104503] [0m[33mCPU4: [0mBooted secondary processor 0x0000000400 [0x414fd0b0]
+[32m[   14.104753] [0mDetected PIPT I-cache on CPU5
+[32m[   14.104775] [0m[33mGICv3: [0mCPU5: found redistributor 500 region 0:0x00000000fe720000
+[32m[   14.104781] [0m[33mGICv3: [0mCPU5: using allocated LPI pending table @0x00000001022d0000
+[32m[   14.104795] [0m[33mCPU5: [0mBooted secondary processor 0x0000000500 [0x414fd0b0]
+[32m[   14.105054] [0mDetected PIPT I-cache on CPU6
+[32m[   14.105076] [0m[33mGICv3: [0mCPU6: found redistributor 600 region 0:0x00000000fe740000
+[32m[   14.105082] [0m[33mGICv3: [0mCPU6: using allocated LPI pending table @0x00000001022e0000
+[32m[   14.105096] [0m[33mCPU6: [0mBooted secondary processor 0x0000000600 [0x414fd0b0]
+[32m[   14.105344] [0mDetected PIPT I-cache on CPU7
+[32m[   14.105367] [0m[33mGICv3: [0mCPU7: found redistributor 700 region 0:0x00000000fe760000
+[32m[   14.105373] [0m[33mGICv3: [0mCPU7: using allocated LPI pending table @0x00000001022f0000
+[32m[   14.105387] [0m[33mCPU7: [0mBooted secondary processor 0x0000000700 [0x414fd0b0]
+[32m[   14.105418] [0m[33msmp: [0mBrought up 1 node, 8 CPUs
+[32m[   14.123467] [0m[33mSMP: [0mTotal of 8 processors activated.
+[32m[   14.123895] [0m[33mCPU features: [0mdetected: 32-bit EL0 Support
+[32m[   14.124361] [0m[33mCPU features: [0mdetected: Data cache clean to the PoU not required for I/D coherence
+[32m[   14.125141] [0m[33mCPU features: [0mdetected: Common not Private translations
+[32m[   14.125709] [0m[33mCPU features: [0mdetected: CRC32 instructions
+[32m[   14.126179] [0m[33mCPU features: [0mdetected: RCpc load-acquire (LDAPR)
+[32m[   14.126699] [0m[33mCPU features: [0mdetected: LSE atomic instructions
+[32m[   14.127204] [0m[33mCPU features: [0mdetected: Privileged Access Never
+[32m[   14.127709] [0m[33mCPU features: [0mdetected: RAS Extension Support
+[32m[   14.128199] [0m[33mCPU features: [0mdetected: Speculative Store Bypassing Safe (SSBS)
+[32m[   14.128917] [0m[33mCPU: [0mAll CPU(s) started at EL2
+[32m[   14.129292] [0m[33malternatives: [0mapplying system-wide alternatives
+[32m[   14.137977] [0m[33mdevtmpfs: [0minitialized
+[32m[   14.144071] [0mRegistered cp15_barrier emulation handler
+[32m[   14.144531] [0mRegistered setend emulation handler
+[32m[   14.144975] [0m[33mclocksource: [0mjiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+[32m[   14.145857] [0m[33mfutex hash table entries: [0m2048 (order: 5, 131072 bytes, linear)
+[32m[   14.147467] [0m[33mpinctrl core: [0minitialized pinctrl subsystem
+[32m[   14.148075] [0mSMBIOS 3.8.0 present.
+[32m[   14.148377] [0m[33mDMI: [0mYouyeetoo YY3588/YY3588, BIOS 4d9a551 11/10/2026
+[32m[   14.149013] [0m[33mNET: [0mRegistered PF_NETLINK/PF_ROUTE protocol family
+[32m[   14.149856] [0m[33mDMA: [0mpreallocated 4096 KiB GFP_KERNEL pool for atomic allocations
+[32m[   14.150662] [0m[33mDMA: [0mpreallocated 4096 KiB GFP_KERNEL|GFP_DMA pool for atomic allocations
+[32m[   14.151487] [0m[33mDMA: [0mpreallocated 4096 KiB GFP_KERNEL|GFP_DMA32 pool for atomic allocations
+[32m[   14.152492] [0mRegistered FIQ tty driver
+[32m[   14.152882] [0m[33mthermal_sys: [0mRegistered thermal governor 'fair_share'
+[32m[   14.152884] [0m[33mthermal_sys: [0mRegistered thermal governor 'step_wise'
+[32m[   14.153432] [0m[33mthermal_sys: [0mRegistered thermal governor 'user_space'
+[32m[   14.153976] [0m[33mthermal_sys: [0mRegistered thermal governor 'power_allocator'
+[32m[   14.154530] [0m[33mcpuidle: [0musing governor menu
+[32m[   14.155537] [0m[33mhw-breakpoint: [0mfound 6 breakpoint and 4 watchpoint registers.
+[32m[   14.156196] [0mASID allocator initialised with 65536 entries
+[32m[   14.157825] [0m[33mramoops: [0mdmesg-0	0x18000@0x0000000000110000
+[32m[   14.158300] [0m[33mramoops: [0mdmesg-1	0x18000@0x0000000000128000
+[32m[   14.158776] [0m[33mramoops: [0mconsole	0x80000@0x0000000000140000
+[32m[   14.159250] [0m[33mramoops: [0mpmsg	0x30000@0x00000000001c0000
+[32m[   14.159857] [0m[33mprintk: [0mconsole [ramoops-1] enabled
+[32m[   14.160265] [0m[33mpstore: [0mRegistered ramoops as persistent store backend
+[32m[   14.160822] [0m[33mramoops: [0musing 0xe0000@0x110000, ecc: 0
+[32m[   14.171351] [0m[33m/csi2-dcphy0: [0mFixed dependency cycle(s) with /mipi0-csi2
+[32m[   14.171936] [0m[33m/mipi0-csi2: [0mFixed dependency cycle(s) with /csi2-dcphy0
+[32m[   14.172541] [0m[33m/csi2-dcphy1: [0mFixed dependency cycle(s) with /mipi1-csi2
+[32m[   14.173122] [0m[33m/mipi1-csi2: [0mFixed dependency cycle(s) with /csi2-dcphy1
+[32m[   14.173743] [0m[33m/mipi0-csi2: [0mFixed dependency cycle(s) with /rkcif-mipi-lvds
+[32m[   14.174357] [0m[33m/rkcif-mipi-lvds: [0mFixed dependency cycle(s) with /mipi0-csi2
+[32m[   14.175008] [0m[33m/mipi1-csi2: [0mFixed dependency cycle(s) with /rkcif-mipi-lvds1
+[32m[   14.175627] [0m[33m/rkcif-mipi-lvds1: [0mFixed dependency cycle(s) with /mipi1-csi2
+[32m[   14.176285] [0m[33m/rkcif-mipi-lvds-sditf: [0mFixed dependency cycle(s) with /rkisp0-vir0
+[32m[   14.176951] [0m[33m/rkisp0-vir0: [0mFixed dependency cycle(s) with /rkcif-mipi-lvds-sditf
+[32m[   14.177633] [0m[33m/rkcif-mipi-lvds1-sditf: [0mFixed dependency cycle(s) with /rkisp1-vir0
+[32m[   14.178306] [0m[33m/rkisp1-vir0: [0mFixed dependency cycle(s) with /rkcif-mipi-lvds1-sditf
+[32m[   14.183693] [0m[33m/vop@fdd90000: [0mFixed dependency cycle(s) with /dp@fde50000
+[32m[   14.184292] [0m[33m/dp@fde50000: [0mFixed dependency cycle(s) with /vop@fdd90000
+[32m[   14.185002] [0m[33m/vop@fdd90000: [0mFixed dependency cycle(s) with /hdmi@fde80000
+[32m[   14.185615] [0m[33m/hdmi@fde80000: [0mFixed dependency cycle(s) with /vop@fdd90000
+[32m[   14.188230] [0m[33mrockchip_hwspinlock fe5a0000.hwspinlock: [0mhwlock user id 1, locks 64, maximum user 15
+[32m[   14.189268] [0m[33m/i2c@feaa0000/gc8034@37: [0mFixed dependency cycle(s) with /csi2-dcphy0
+[32m[   14.190092] [0m[33m/i2c@feac0000/gc8034@37: [0mFixed dependency cycle(s) with /csi2-dcphy1
+[32m[   14.191575] [0m[33m/i2c@fec80000/fusb302@22: [0mFixed dependency cycle(s) with /usbdrd3_0/usb@fc000000
+[32m[   14.192570] [0m[33m/i2c@fec80000/fusb302@22/connector: [0mFixed dependency cycle(s) with /phy@fed80000
+[32m[   14.193340] [0m[33m/phy@fed80000: [0mFixed dependency cycle(s) with /i2c@fec80000/fusb302@22/connector
+[32m[   14.196411] [0m[33mrockchip-gpio fd8a0000.gpio: [0mprobed /pinctrl/gpio@fd8a0000
+[32m[   14.197118] [0m[33mrockchip-gpio fec20000.gpio: [0mprobed /pinctrl/gpio@fec20000
+[32m[   14.197795] [0m[33mrockchip-gpio fec30000.gpio: [0mprobed /pinctrl/gpio@fec30000
+[32m[   14.198475] [0m[33mrockchip-gpio fec40000.gpio: [0mprobed /pinctrl/gpio@fec40000
+[32m[   14.199169] [0m[33mrockchip-gpio fec50000.gpio: [0mprobed /pinctrl/gpio@fec50000
+[32m[   14.199774] [0m[33mrockchip-pinctrl pinctrl: [0mprobed pinctrl
+[32m[   14.200836] [0m[33m/vop@fdd90000: [0mFixed dependency cycle(s) with /edp@fded0000
+[32m[   14.201444] [0m[33m/edp@fded0000: [0mFixed dependency cycle(s) with /vop@fdd90000
+[32m[   14.202963] [0m[33m/edp@fded0000: [0mFixed dependency cycle(s) with /panel-edp1
+[32m[   14.203559] [0m[33m/panel-edp1: [0mFixed dependency cycle(s) with /edp@fded0000
+[32m[   14.206775] [0m[33mHugeTLB: [0mregistered 1.00 GiB page size, pre-allocated 0 pages
+[32m[   14.207389] [0m[33mHugeTLB: [0m0 KiB vmemmap can be freed for a 1.00 GiB page
+[32m[   14.207957] [0m[33mHugeTLB: [0mregistered 32.0 MiB page size, pre-allocated 0 pages
+[32m[   14.208569] [0m[33mHugeTLB: [0m0 KiB vmemmap can be freed for a 32.0 MiB page
+[32m[   14.209133] [0m[33mHugeTLB: [0mregistered 2.00 MiB page size, pre-allocated 0 pages
+[32m[   14.209745] [0m[33mHugeTLB: [0m0 KiB vmemmap can be freed for a 2.00 MiB page
+[32m[   14.210309] [0m[33mHugeTLB: [0mregistered 64.0 KiB page size, pre-allocated 0 pages
+[32m[   14.210920] [0m[33mHugeTLB: [0m0 KiB vmemmap can be freed for a 64.0 KiB page
+[32m[   14.220309] [0m[33miommu: [0mDefault domain type: Translated 
+[32m[   14.220751] [0m[33miommu: [0mDMA domain TLB invalidation policy: strict mode 
+[32m[   14.221396] [0mSCSI subsystem initialized
+[32m[   14.221740] [0mlibata version 3.00 loaded.
+[32m[   14.221769] [0m[33musbcore: [0mregistered new interface driver usbfs
+[32m[   14.222268] [0m[33musbcore: [0mregistered new interface driver hub
+[32m[   14.222751] [0m[33musbcore: [0mregistered new device driver usb
+[32m[   14.223228] [0m[33mmc: [0mLinux media interface: v0.10
+[32m[   14.223618] [0m[33mvideodev: [0mLinux video capture interface: v2.00
+[32m[   14.224125] [0m[33mpps_core: [0mLinuxPPS API ver. 1 registered
+[32m[   14.224573] [0m[33mpps_core: [0mSoftware ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[32m[   14.225397] [0mPTP clock support registered
+[32m[   14.225757] [0m[33mEDAC MC: [0mVer: 3.0.0
+[32m[   14.226199] [0m[33marm-scmi firmware:scmi: [0mEnabled polling mode TX channel - prot_id:16
+[32m[   14.226884] [0m[33marm-scmi firmware:scmi: [0mSCMI Notifications - Core Enabled.
+[32m[   14.227488] [0m[33marm-scmi firmware:scmi: [0mSCMI Protocol v2.0 'rockchip:' Firmware version 0x0
+[32m[   14.228397] [0mRegistered efivars operations
+[32m[   14.229273] [0mAdvanced Linux Sound Architecture Driver Initialized.
+[32m[   14.229910] [0m[33mBluetooth: [0mCore ver 2.22
+[32m[   14.230238] [0m[33mNET: [0mRegistered PF_BLUETOOTH protocol family
+[32m[   14.230717] [0m[33mBluetooth: [0mHCI device and connection manager initialized
+[32m[   14.231290] [0m[33mBluetooth: [0mHCI socket layer initialized
+[32m[   14.231730] [0m[33mBluetooth: [0mL2CAP socket layer initialized
+[32m[   14.232188] [0m[33mBluetooth: [0mSCO socket layer initialized
+[32m[   14.233821] [0m[33mrockchip-cpuinfo cpuinfo: [0mSoC		: 35881000
+[32m[   14.234278] [0m[33mrockchip-cpuinfo cpuinfo: [0mSerial		: 306b6f3f7610835b
+[32m[   14.235087] [0m[33mclocksource: [0mSwitched to clocksource arch_sys_counter
+[32m[   14.237330] [0m[33mNET: [0mRegistered PF_INET protocol family
+[32m[   14.237873] [0m[33mIP idents hash table entries: [0m262144 (order: 9, 2097152 bytes, linear)
+[32m[   14.241428] [0m[33mtcp_listen_portaddr_hash hash table entries: [0m16384 (order: 6, 262144 bytes, linear)
+[32m[   14.242298] [0m[33mTable-perturb hash table entries: [0m65536 (order: 6, 262144 bytes, linear)
+[32m[   14.243007] [0m[33mTCP established hash table entries: [0m262144 (order: 9, 2097152 bytes, linear)
+[32m[   14.244398] [0m[33mTCP bind hash table entries: [0m65536 (order: 9, 2097152 bytes, linear)
+[32m[   14.245729] [0m[33mTCP: [0mHash tables configured (established 262144 bind 65536)
+[32m[   14.246350] [0m[33mUDP hash table entries: [0m16384 (order: 7, 524288 bytes, linear)
+[32m[   14.247211] [0m[33mUDP-Lite hash table entries: [0m16384 (order: 7, 524288 bytes, linear)
+[32m[   14.248138] [0m[33mNET: [0mRegistered PF_UNIX/PF_LOCAL protocol family
+[32m[   14.248743] [0m[33mRPC: [0mRegistered named UNIX socket transport module.
+[32m[   14.249277] [0m[33mRPC: [0mRegistered udp transport module.
+[32m[   14.249702] [0m[33mRPC: [0mRegistered tcp transport module.
+[32m[   14.250126] [0m[33mRPC: [0mRegistered tcp NFSv4.1 backchannel transport module.
+[32m[   14.250862] [0m[33mPCI: [0mCLS 0 bytes, default 64
+[32m[   14.251594] [0m[33mrockchip-thermal fec00000.tsadc: [0m[1mMissing rockchip,grf property[0m
+[32m[   14.252315] [0m[33mthermal thermal_zone1: [0m[1mpower_allocator: sustainable_power will be estimated[0m
+[32m[   14.253062] [0m[33mthermal thermal_zone2: [0m[1mpower_allocator: sustainable_power will be estimated[0m
+[32m[   14.253809] [0m[33mthermal thermal_zone3: [0m[1mpower_allocator: sustainable_power will be estimated[0m
+[32m[   14.254557] [0m[33mthermal thermal_zone4: [0m[1mpower_allocator: sustainable_power will be estimated[0m
+[32m[   14.255307] [0m[33mthermal thermal_zone5: [0m[1mpower_allocator: sustainable_power will be estimated[0m
+[32m[   14.256054] [0m[33mthermal thermal_zone6: [0m[1mpower_allocator: sustainable_power will be estimated[0m
+[32m[   14.256880] [0m[33mrockchip-thermal fec00000.tsadc: [0mtsadc is probed successfully!
+[32m[   14.257921] [0m[33mhw perfevents: [0menabled with armv8_pmuv3 PMU driver, 7 counters available
+[32m[   14.388207] [0mInitialise system trusted keyrings
+[32m[   14.388679] [0m[33mworkingset: [0mtimestamp_bits=46 max_order=23 bucket_order=0
+[32m[   14.390163] [0m[33msquashfs: [0mversion 4.0 (2009/01/31) Phillip Lougher
+[32m[   14.390808] [0m[33mNFS: [0mRegistering the id_resolver key type
+[32m[   14.391273] [0mKey type id_resolver registered
+[32m[   14.391650] [0mKey type id_legacy registered
+[32m[   14.392019] [0m[33mntfs: [0mdriver 2.1.32 [Flags: R/O].
+[32m[   14.392431] [0m[33mjffs2: [0mversion 2.2. (NAND) © 2001-2006 Red Hat, Inc.
+[32m[   14.393020] [0m[33mfuse: [0minit (API version 7.38)
+[32m[   14.393462] [0mSGI XFS with security attributes, no debug enabled
+[32m[   14.404521] [0m[33mNET: [0mRegistered PF_ALG protocol family
+[32m[   14.404956] [0mKey type asymmetric registered
+[32m[   14.405326] [0mAsymmetric key parser 'x509' registered
+[32m[   14.405776] [0mBlock layer SCSI generic (bsg) driver version 0.4 loaded (major 241)
+[32m[   14.406443] [0mio scheduler mq-deadline registered
+[32m[   14.406852] [0mio scheduler kyber registered
+[32m[   14.407876] [0m[33mrockchip-csi2-dphy-hw fedc0000.csi2-dphy0-hw: [0mcsi2 dphy hw probe successfully!
+[32m[   14.408660] [0m[33mrockchip-csi2-dphy-hw fedc8000.csi2-dphy1-hw: [0mcsi2 dphy hw probe successfully!
+[32m[   14.413463] [0m[33mrockchip-hdptx-phy fed60000.phy: [0m[1mPLL locked by unknown consumer![0m
+[32m[   14.416009] [0m[33mrk-pcie fe180000.pcie: [0minvalid prsnt-gpios property in node
+[32m[   14.416154] [0m[33mrk-pcie fe150000.pcie: [0minvalid prsnt-gpios property in node
+[32m[   14.416228] [0m[33mrk-pcie fe170000.pcie: [0minvalid prsnt-gpios property in node
+[32m[   14.416260] [0m[33mpwm-backlight backlightdsi0: [0m[1msupply power not found, using dummy regulator[0m
+[32m[   14.416356] [0m[33mpwm-backlight backlightdsi1: [0m[1msupply power not found, using dummy regulator[0m
+[32m[   14.416371] [0m[33mof_pwm_get(): [0m[31mcan't parse "pwms" property[0m
+[32m[   14.416372] [0m[33mpwm-backlight backlightdsi1: [0m[31munable to request PWM[0m
+[32m[   14.416373] [0m[33mpwm-backlight: [0m[1mprobe of backlightdsi1 failed with error -2[0m
+[32m[   14.416453] [0m[33mpwm-backlight backlightedp: [0m[1msupply power not found, using dummy regulator[0m
+[32m[   14.416599] [0m[33mrk-pcie fe170000.pcie: [0m[1mcan't get current limit.[0m
+[32m[   14.416647] [0m[33miep: [0mModule initialized.
+[32m[   14.416723] [0m[33mrk-pcie fe180000.pcie: [0m[1mcan't get current limit.[0m
+[32m[   14.416731] [0m[33mrk-pcie fe170000.pcie: [0mhost bridge /pcie@fe170000 ranges:
+[32m[   14.416743] [0m[33mrk-pcie fe170000.pcie: [0m      IO 0x00f2100000..0x00f21fffff -> 0x00f2100000
+[32m[   14.416753] [0m[33mrk-pcie fe170000.pcie: [0m     MEM 0x00f2200000..0x00f2ffffff -> 0x00f2200000
+[32m[   14.416759] [0m[33mrk-pcie fe170000.pcie: [0m     MEM 0x0980000000..0x09bfffffff -> 0x0980000000
+[32m[   14.416789] [0m[33mrk-pcie fe170000.pcie: [0miATU unroll: enabled
+[32m[   14.416792] [0m[33mrk-pcie fe170000.pcie: [0miATU regions: 8 ob, 8 ib, align 64K, limit 8G
+[32m[   14.416794] [0m[33mrk-pcie fe180000.pcie: [0mhost bridge /pcie@fe180000 ranges:
+[32m[   14.416798] [0m[33mrk-pcie fe180000.pcie: [0m      IO 0x00f3100000..0x00f31fffff -> 0x00f3100000
+[32m[   14.416801] [0m[33mrk-pcie fe180000.pcie: [0m     MEM 0x00f3200000..0x00f3ffffff -> 0x00f3200000
+[32m[   14.416804] [0m[33mrk-pcie fe180000.pcie: [0m     MEM 0x09c0000000..0x09ffffffff -> 0x09c0000000
+[32m[   14.416827] [0m[33mrk-pcie fe180000.pcie: [0miATU unroll: enabled
+[32m[   14.416828] [0m[33mrk-pcie fe180000.pcie: [0miATU regions: 8 ob, 8 ib, align 64K, limit 8G
+[32m[   14.430580] [0m[33mmpp_service mpp-srv: [0m90eefde08d author: Chandler Chen 2026-06-01 video: rockchip: mpp: fix vepu510 spurious wdg timeout after page fault
+[32m[   14.431782] [0m[33mmpp_service mpp-srv: [0mprobe start
+[32m[   14.432879] [0m[33mmpp_vepu2 jpege-ccu: [0mprobing start
+[32m[   14.433283] [0m[33mmpp_vepu2 jpege-ccu: [0mprobing finish
+[32m[   14.434177] [0m[33mmpp_rkvdec2 fdc30000.rkvdec-ccu: [0mrkvdec-ccu, probing start
+[32m[   14.434793] [0m[33mmpp_rkvdec2 fdc30000.rkvdec-ccu: [0mccu-mode: 1
+[32m[   14.435277] [0m[33mmpp_rkvdec2 fdc30000.rkvdec-ccu: [0mprobing finish
+[32m[   14.435975] [0m[33mmpp_rkvenc2 rkvenc-ccu: [0mprobing start
+[32m[   14.436402] [0m[33mmpp_rkvenc2 rkvenc-ccu: [0mprobing finish
+[32m[   14.437105] [0m[33mmpp_service mpp-srv: [0mprobe success
+[32m[   14.440490] [0m[33mrockchip_p3phy_rk3588_calibrate: [0m[31mlock failed p0=0x7 p1=0x7, check input refclk and power supply[0m
+[32m[   14.441402] [0m[33mrk-pcie fe150000.pcie: [0m[31mphy lock failed[0m
+[32m[   14.441863] [0m[33mrk-pcie fe150000.pcie: [0m[31merror -ETIMEDOUT: setting hardware io failed[0m
+[32m[   14.443272] [0m[33mdma-pl330 fea10000.dma-controller: [0mLoaded driver for PL330 DMAC-241330
+[32m[   14.443972] [0m[33mdma-pl330 fea10000.dma-controller: [0m	DBUFF-128x8bytes Num_Chans-8 Num_Peri-32 Num_Events-16
+[32m[   14.445270] [0m[33mdma-pl330 fea30000.dma-controller: [0mLoaded driver for PL330 DMAC-241330
+[32m[   14.445968] [0m[33mdma-pl330 fea30000.dma-controller: [0m	DBUFF-128x8bytes Num_Chans-8 Num_Peri-32 Num_Events-16
+[32m[   14.447264] [0m[33mdma-pl330 fed10000.dma-controller: [0mLoaded driver for PL330 DMAC-241330
+[32m[   14.447963] [0m[33mdma-pl330 fed10000.dma-controller: [0m	DBUFF-128x8bytes Num_Chans-8 Num_Peri-32 Num_Events-16
+[32m[   14.449670] [0m[33mrockchip-system-monitor rockchip-system-monitor: [0msystem monitor probe
+[32m[   14.450906] [0m[33mSerial: [0m8250/16550 driver, 15 ports, IRQ sharing disabled
+[32m[   14.451826] [0m[33mfeb40000.serial: [0mttyS1 at MMIO 0xfeb40000 (irq = 43, base_baud = 1500000) is a 16550A
+[32m[   14.452900] [0m[33mfeb50000.serial: [0mttyS2 at MMIO 0xfeb50000 (irq = 44, base_baud = 1500000) is a 16550A
+[32m[   14.453774] [0m[33mprintk: [0mconsole [ttyS2] enabled
+[32m[   14.454525] [0m[33mprintk: [0mbootconsole [uart8250] disabled
+[32m[   14.455629] [0m[33mfeb90000.serial: [0mttyS6 at MMIO 0xfeb90000 (irq = 45, base_baud = 1500000) is a 16550A
+[32m[   14.456581] [0m[33mfeba0000.serial: [0mttyS7 at MMIO 0xfeba0000 (irq = 46, base_baud = 1500000) is a 16550A
+[32m[   14.457521] [0m[33mfebc0000.serial: [0mttyS9 at MMIO 0xfebc0000 (irq = 47, base_baud = 1500000) is a 16550A
+[32m[   14.462379] [0m[33mrk_iommu fdca0000.iommu: [0mav1d iommu enabled
+[32m[   14.474825] [0m[33mbrd: [0mmodule loaded
+[32m[   14.476480] [0m[33mloop: [0mmodule loaded
+[32m[   14.476858] [0m[33mzram: [0mAdded device: zram0
+[32m[   14.477278] [0m[33mlkdtm: [0mNo crash points registered, enable through debugfs
+[32m[   14.478636] [0m[33mahci-dwc fe210000.sata: [0m[1msupply ahci not found, using dummy regulator[0m
+[32m[   14.479326] [0m[33mahci-dwc fe210000.sata: [0m[1msupply phy not found, using dummy regulator[0m
+[32m[   14.479992] [0m[33mahci-dwc fe210000.sata: [0m[1msupply target not found, using dummy regulator[0m
+[32m[   14.480687] [0m[33mahci-dwc fe210000.sata: [0m[1mPMPn is limited up to 5 ports[0m
+[32m[   14.481246] [0m[33mahci-dwc fe210000.sata: [0mAHCI 0001.0300 32 slots 1 ports 6 Gbps 0x1 impl platform mode
+[32m[   14.482022] [0m[33mahci-dwc fe210000.sata: [0mflags: ncq sntf pm led clo only pmp fbs pio slum part ccc apst 
+[32m[   14.483136] [0m[33mscsi host0: [0mahci-dwc
+[32m[   14.483493] [0m[33mata1: [0mSATA max UDMA/133 mmio [mem 0xfe210000-0xfe210fff] port 0x100 irq 73
+[32m[   14.484867] [0m[33mrockchip-spi feb20000.spi: [0m[1mno high_speed pinctrl state[0m
+[32m[   14.485603] [0m[33m/spi@feb20000/rk806single@0: [0mFixed dependency cycle(s) with /spi@feb20000/rk806single@0/regulators/DCDC_REG7
+[32m[   14.486916] [0m[33mrk806 spi2.0: [0mchip id: RK806,ver:0x2, 0x1
+[32m[   14.487467] [0m[33mrk806 spi2.0: [0mON: 0x40 OFF:0x0
+[32m[   14.487922] [0m[33mrk806 spi2.0: [0mshutown_by_pwrctrln missing!
+[32m[   14.488373] [0m[33mrk806 spi2.0: [0mshutdown-sequence missing!
+[32m[   14.488807] [0m[33mrk806 spi2.0: [0mvb-shutdown-sequence missing!
+[32m[   14.489265] [0m[33mrk806 spi2.0: [0mdvs-suspend-control-by missing!
+[32m[   14.493921] [0m[33mvdd_2v0_pldo_s3: [0mBringing 2025000uV into 2000000-2000000uV
+[32m[   14.494947] [0m[33mvcc_3v3_s3: [0mBringing 3325000uV into 3300000-3300000uV
+[32m[   14.496331] [0m[33mvcc_1v8_s3: [0mBringing 1825000uV into 1800000-1800000uV
+[32m[   14.498120] [0m[33mavdd_0v75_s0: [0mBringing 750000uV into 837500-837500uV
+[32m[   14.501826] [0m[33mrk806 spi2.0: [0m[31mno power-off pinctrl state[0m
+[32m[   14.502262] [0m[33mrk806 spi2.0: [0m[31mno sleep-setting state[0m
+[32m[   14.502667] [0m[33mrk806 spi2.0: [0m[31mno reset-setting pinctrl state[0m
+[32m[   14.503137] [0m[33mrk806 spi2.0: [0m[31mno dvs-setting pinctrl state[0m
+[32m[   14.504093] [0m[33mrockchip-spi feb20000.spi: [0mprobed, poll=0, rsd=0, cs-inactive=0, ready=0
+[32m[   14.505572] [0mCAN device driver interface
+[32m[   14.506771] [0m[33mrk_gmac-dwmac fe1c0000.ethernet: [0m[1msupply phy not found, using dummy regulator[0m
+[32m[   14.507517] [0m[33mrk_gmac-dwmac fe1c0000.ethernet: [0mclock input or output? (input).
+[32m[   14.508134] [0m[33mrk_gmac-dwmac fe1c0000.ethernet: [0mTX delay(0x43).
+[32m[   14.508629] [0m[33mrk_gmac-dwmac fe1c0000.ethernet: [0m[31mCan not read property: rx_delay.[0m
+[32m[   14.509251] [0m[33mrk_gmac-dwmac fe1c0000.ethernet: [0m[31mset rx_delay to 0xffffffff[0m
+[32m[   14.509839] [0m[33mrk_gmac-dwmac fe1c0000.ethernet: [0mintegrated PHY? (no).
+[32m[   14.510381] [0m[33mrk_gmac-dwmac fe1c0000.ethernet: [0m[31mcannot get clock mac_clk_rx[0m
+[32m[   14.510966] [0m[33mrk_gmac-dwmac fe1c0000.ethernet: [0m[31mcannot get clock mac_clk_tx[0m
+[32m[   14.511560] [0m[33mrk_gmac-dwmac fe1c0000.ethernet: [0m[31mcannot get clock clk_mac_speed[0m
+[32m[   14.512168] [0m[33mrk_gmac-dwmac fe1c0000.ethernet: [0mclock input from PHY
+[32m[   14.512908] [0m[33mrk_gmac-dwmac fe1c0000.ethernet: [0minit for RGMII_RXID
+[32m[   14.513512] [0m[33mrk_gmac-dwmac fe1c0000.ethernet: [0mUser ID: 0x30, Synopsys ID: 0x51
+[32m[   14.514138] [0m[33mrk_gmac-dwmac fe1c0000.ethernet: [0m	DWMAC4/5
+[32m[   14.514589] [0m[33mrk_gmac-dwmac fe1c0000.ethernet: [0mDMA HW capability register supported
+[32m[   14.515246] [0m[33mrk_gmac-dwmac fe1c0000.ethernet: [0mRX Checksum Offload Engine supported
+[32m[   14.515899] [0m[33mrk_gmac-dwmac fe1c0000.ethernet: [0mTX Checksum insertion supported
+[32m[   14.516514] [0m[33mrk_gmac-dwmac fe1c0000.ethernet: [0mWake-Up On Lan supported
+[32m[   14.517090] [0m[33mrk_gmac-dwmac fe1c0000.ethernet: [0mTSO supported
+[32m[   14.517569] [0m[33mrk_gmac-dwmac fe1c0000.ethernet: [0mEnable RX Mitigation via HW Watchdog Timer
+[32m[   14.518268] [0m[33mrk_gmac-dwmac fe1c0000.ethernet: [0m[31mrk_get_eth_addr: rk_vendor_read eth mac address failed (-1)[0m
+[32m[   14.519098] [0m[33mrk_gmac-dwmac fe1c0000.ethernet: [0m[31mrk_get_eth_addr: generate random eth mac address: 76:68:84:22:78:41[0m
+[32m[   14.519985] [0m[33mrk_gmac-dwmac fe1c0000.ethernet: [0m[31mrk_get_eth_addr: rk_vendor_write eth mac address failed (-1)[0m
+[32m[   14.520818] [0m[33mrk_gmac-dwmac fe1c0000.ethernet: [0m[31mrk_get_eth_addr: id: 1 rk_vendor_read eth mac address failed (-1)[0m
+[32m[   14.521690] [0m[33mrk_gmac-dwmac fe1c0000.ethernet: [0m[31mrk_get_eth_addr: mac address: 76:68:84:22:78:41[0m
+[32m[   14.522425] [0m[33mrk_gmac-dwmac fe1c0000.ethernet: [0mdevice MAC address 76:68:84:22:78:41
+[32m[   14.523079] [0m[33mrk_gmac-dwmac fe1c0000.ethernet: [0mEnabled L3L4 Flow TC (entries=2)
+[32m[   14.523706] [0m[33mrk_gmac-dwmac fe1c0000.ethernet: [0mEnabled RFS Flow TC (entries=10)
+[32m[   14.524328] [0m[33mrk_gmac-dwmac fe1c0000.ethernet: [0mTSO feature enabled
+[32m[   14.524854] [0m[33mrk_gmac-dwmac fe1c0000.ethernet: [0mUsing 32/32 bits DMA host/device width
+[32m[   14.618947] [0m[33mrk-pcie fe170000.pcie: [0mPCIe Linking... LTSSM is 0x3
+[32m[   14.618961] [0m[33mrk-pcie fe180000.pcie: [0mPCIe Linking... LTSSM is 0x3
+[32m[   14.640489] [0m[33mrk-pcie fe170000.pcie: [0mPCIe Linking... LTSSM is 0x3
+[32m[   14.641000] [0m[33mrk-pcie fe180000.pcie: [0mPCIe Linking... LTSSM is 0x3
+[32m[   14.659093] [0m[33mmdio_bus stmmac-1: [0m[31mphy@1 has invalid PHY address[0m
+[32m[   14.659592] [0m[33mmdio_bus stmmac-1: [0mscan phy phy at address 0
+[32m[   14.662016] [0m[33mrk-pcie fe170000.pcie: [0mPCIe Linking... LTSSM is 0x3
+[32m[   14.662531] [0m[33mrk-pcie fe180000.pcie: [0mPCIe Linking... LTSSM is 0x3
+[32m[   14.662652] [0m[33musbcore: [0mregistered new interface driver rtl8150
+[32m[   14.663561] [0m[33musbcore: [0mregistered new device driver r8152-cfgselector
+[32m[   14.664121] [0m[33musbcore: [0mregistered new interface driver r8152
+[32m[   14.664607] [0m[33musbcore: [0mregistered new interface driver asix
+[32m[   14.665087] [0m[33musbcore: [0mregistered new interface driver ax88179_178a
+[32m[   14.665625] [0m[33musbcore: [0mregistered new interface driver cdc_ether
+[32m[   14.666140] [0m[33musbcore: [0mregistered new interface driver net1080
+[32m[   14.666640] [0m[33musbcore: [0mregistered new interface driver cdc_subset
+[32m[   14.667167] [0m[33musbcore: [0mregistered new interface driver zaurus
+[32m[   14.667662] [0m[33musbcore: [0mregistered new interface driver cdc_ncm
+[32m[   14.668163] [0m[33musbcore: [0mregistered new interface driver qmi_wwan
+[32m[   14.668671] [0m[33musbcore: [0mregistered new interface driver r8153_ecm
+[32m[   14.669407] [0m[33m/i2c@fec80000/fusb302@22: [0mFixed dependency cycle(s) with /usbdrd3_0/usb@fc000000
+[32m[   14.670189] [0m[33m/usbdrd3_0/usb@fc000000: [0mFixed dependency cycle(s) with /i2c@fec80000/fusb302@22
+[32m[   14.683543] [0m[33mrk-pcie fe170000.pcie: [0mPCIe Linking... LTSSM is 0x3
+[32m[   14.684052] [0m[33mrk-pcie fe180000.pcie: [0mPCIe Linking... LTSSM is 0x3
+[32m[   14.684196] [0m[33mphy phy-fd5d4000.syscon:usb2-phy@4000.3: [0millegal mode
+[32m[   14.685115] [0m[33mxhci-hcd xhci-hcd.3.auto: [0mxHCI Host Controller
+[32m[   14.685649] [0m[33mxhci-hcd xhci-hcd.3.auto: [0mnew USB bus registered, assigned bus number 1
+[32m[   14.685847] [0m[33mehci-platform fc800000.usb: [0mEHCI Host Controller
+[32m[   14.685852] [0m[33mohci-platform fc840000.usb: [0mGeneric Platform OHCI controller
+[32m[   14.685912] [0m[33mohci-platform fc840000.usb: [0mnew USB bus registered, assigned bus number 2
+[32m[   14.685945] [0m[33mohci-platform fc840000.usb: [0mirq 84, io mem 0xfc840000
+[32m[   14.686001] [0m[33mehci-platform fc880000.usb: [0mEHCI Host Controller
+[32m[   14.686003] [0m[33mohci-platform fc8c0000.usb: [0mGeneric Platform OHCI controller
+[32m[   14.686062] [0m[33mohci-platform fc8c0000.usb: [0mnew USB bus registered, assigned bus number 3
+[32m[   14.686084] [0m[33mohci-platform fc8c0000.usb: [0mirq 85, io mem 0xfc8c0000
+[32m[   14.686096] [0m[33mehci-platform fc880000.usb: [0mnew USB bus registered, assigned bus number 4
+[32m[   14.686175] [0m[33mehci-platform fc880000.usb: [0mirq 83, io mem 0xfc880000
+[32m[   14.686377] [0m[33mxhci-hcd xhci-hcd.3.auto: [0mhcc params 0x0220fe64 hci version 0x110 quirks 0x0004008002010010
+[32m[   14.686850] [0m[33mehci-platform fc800000.usb: [0mnew USB bus registered, assigned bus number 5
+[32m[   14.687402] [0m[33mxhci-hcd xhci-hcd.3.auto: [0mirq 81, io mem 0xfc400000
+[32m[   14.688105] [0m[33mehci-platform fc800000.usb: [0mirq 82, io mem 0xfc800000
+[32m[   14.688647] [0m[33mxhci-hcd xhci-hcd.3.auto: [0mxHCI Host Controller
+[32m[   14.695188] [0m[33mxhci-hcd xhci-hcd.3.auto: [0mnew USB bus registered, assigned bus number 6
+[32m[   14.695858] [0m[33mxhci-hcd xhci-hcd.3.auto: [0mHost supports USB 3.0 SuperSpeed
+[32m[   14.696465] [0m[33musb usb1: [0mNew USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 6.01
+[32m[   14.697189] [0m[33musb usb1: [0mNew USB device strings: Mfr=3, Product=2, SerialNumber=1
+[32m[   14.697819] [0m[33musb usb1: [0mProduct: xHCI Host Controller
+[32m[   14.698247] [0m[33musb usb1: [0mManufacturer: Linux 6.1.172 xhci-hcd
+[32m[   14.698726] [0m[33musb usb1: [0mSerialNumber: xhci-hcd.3.auto
+[32m[   14.699107] [0m[33mehci-platform fc880000.usb: [0mUSB 2.0 started, EHCI 1.00
+[32m[   14.699298] [0m[33mhub 1-0:1.0: [0mUSB hub found
+[32m[   14.700029] [0m[33mhub 1-0:1.0: [0m1 port detected
+[32m[   14.700458] [0m[33musb usb6: [0mWe don't know the algorithms for LPM for this host, disabling LPM.
+[32m[   14.701183] [0m[33musb usb6: [0mNew USB device found, idVendor=1d6b, idProduct=0003, bcdDevice= 6.01
+[32m[   14.701905] [0m[33musb usb6: [0mNew USB device strings: Mfr=3, Product=2, SerialNumber=1
+[32m[   14.702536] [0m[33musb usb6: [0mProduct: xHCI Host Controller
+[32m[   14.702964] [0m[33musb usb6: [0mManufacturer: Linux 6.1.172 xhci-hcd
+[32m[   14.703449] [0m[33musb usb6: [0mSerialNumber: xhci-hcd.3.auto
+[32m[   14.703988] [0m[33mhub 6-0:1.0: [0mUSB hub found
+[32m[   14.704323] [0m[33mhub 6-0:1.0: [0m1 port detected
+[32m[   14.704761] [0m[33musbcore: [0mregistered new interface driver cdc_acm
+[32m[   14.704887] [0m[33musb usb4: [0mNew USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 6.01
+[32m[   14.705072] [0m[33mrk-pcie fe170000.pcie: [0mPCIe Linking... LTSSM is 0x3
+[32m[   14.705252] [0m[33mcdc_acm: [0mUSB Abstract Control Model driver for USB modems and ISDN adapters
+[32m[   14.705261] [0m[33musbcore: [0mregistered new interface driver cdc_wdm
+[32m[   14.705577] [0m[33mrk-pcie fe180000.pcie: [0mPCIe Linking... LTSSM is 0x3
+[32m[   14.705971] [0m[33musb usb4: [0mNew USB device strings: Mfr=3, Product=2, SerialNumber=1
+[32m[   14.706551] [0m[33musbcore: [0mregistered new interface driver uas
+[32m[   14.707190] [0m[33musb usb4: [0mProduct: EHCI Host Controller
+[32m[   14.707687] [0m[33musbcore: [0mregistered new interface driver usb-storage
+[32m[   14.708186] [0m[33musb usb4: [0mManufacturer: Linux 6.1.172 ehci_hcd
+[32m[   14.708830] [0m[33musbcore: [0mregistered new interface driver usbserial_generic
+[32m[   14.709274] [0m[33musb usb4: [0mSerialNumber: fc880000.usb
+[32m[   14.709700] [0m[33musbserial: [0mUSB Serial support registered for generic
+[32m[   14.710481] [0m[33mhub 4-0:1.0: [0mUSB hub found
+[32m[   14.710702] [0m[33musbcore: [0mregistered new interface driver cp210x
+[32m[   14.711288] [0m[33mhub 4-0:1.0: [0m1 port detected
+[32m[   14.711669] [0m[33musbserial: [0mUSB Serial support registered for cp210x
+[32m[   14.713916] [0m[33musbcore: [0mregistered new interface driver ftdi_sio
+[32m[   14.714421] [0m[33musbserial: [0mUSB Serial support registered for FTDI USB Serial Device
+[32m[   14.715083] [0m[33musbcore: [0mregistered new interface driver keyspan
+[32m[   14.715093] [0m[33mehci-platform fc800000.usb: [0mUSB 2.0 started, EHCI 1.00
+[32m[   14.715579] [0m[33musbserial: [0mUSB Serial support registered for Keyspan - (without firmware)
+[32m[   14.716150] [0m[33musb usb5: [0mNew USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 6.01
+[32m[   14.716793] [0m[33musbserial: [0mUSB Serial support registered for Keyspan 1 port adapter
+[32m[   14.717508] [0m[33musb usb5: [0mNew USB device strings: Mfr=3, Product=2, SerialNumber=1
+[32m[   14.718145] [0m[33musbserial: [0mUSB Serial support registered for Keyspan 2 port adapter
+[32m[   14.718768] [0m[33musb usb5: [0mProduct: EHCI Host Controller
+[32m[   14.719407] [0m[33musbserial: [0mUSB Serial support registered for Keyspan 4 port adapter
+[32m[   14.719827] [0m[33musb usb5: [0mManufacturer: Linux 6.1.172 ehci_hcd
+[32m[   14.720467] [0m[33musbcore: [0mregistered new interface driver option
+[32m[   14.720935] [0m[33musb usb5: [0mSerialNumber: fc800000.usb
+[32m[   14.721420] [0m[33musbserial: [0mUSB Serial support registered for GSM modem (1-port)
+[32m[   14.721946] [0m[33mhub 5-0:1.0: [0mUSB hub found
+[32m[   14.722468] [0m[33musbcore: [0mregistered new interface driver oti6858
+[32m[   14.722750] [0m[33mhub 5-0:1.0: [0m1 port detected
+[32m[   14.723244] [0m[33musbserial: [0mUSB Serial support registered for oti6858
+[32m[   14.724164] [0m[33musbcore: [0mregistered new interface driver pl2303
+[32m[   14.724654] [0m[33musbserial: [0mUSB Serial support registered for pl2303
+[32m[   14.725179] [0m[33musbcore: [0mregistered new interface driver qcserial
+[32m[   14.725684] [0m[33musbserial: [0mUSB Serial support registered for Qualcomm USB modem
+[32m[   14.726301] [0m[33musbcore: [0mregistered new interface driver sierra
+[32m[   14.726790] [0m[33musbserial: [0mUSB Serial support registered for Sierra USB modem
+[32m[   14.727704] [0m[33musbcore: [0mregistered new interface driver usbtouchscreen
+[32m[   14.728384] [0m[31m.. rk pwm remotectl v2.0 init[0m
+[32m[   14.728812] [0m[33minput: [0mfebe0030.pwm as /devices/platform/febe0030.pwm/input/input0
+[32m[   14.729554] [0m[33mremotectl-pwm febe0030.pwm: [0mController support pwrkey capture
+[32m[   14.730241] [0m[33mrk805-pwrkey rk805-pwrkey.1.auto: [0mProbing rk805-pwrkey -> rk805 pwrkey
+[32m[   14.731476] [0m[33minput: [0mrk805 pwrkey as /devices/platform/feb20000.spi/spi_master/spi2/spi2.0/rk805-pwrkey.1.auto/input/input1
+[32m[   14.732738] [0m[33mi2c_dev: [0mi2c /dev entries driver
+[32m[   14.747135] [0m[33musb usb3: [0mNew USB device found, idVendor=1d6b, idProduct=0001, bcdDevice= 6.01
+[32m[   14.747861] [0m[33musb usb3: [0mNew USB device strings: Mfr=3, Product=2, SerialNumber=1
+[32m[   14.748492] [0m[33musb usb3: [0mProduct: Generic Platform OHCI controller
+[32m[   14.749009] [0m[33musb usb3: [0mManufacturer: Linux 6.1.172 ohci_hcd
+[32m[   14.749489] [0m[33musb usb3: [0mSerialNumber: fc8c0000.usb
+[32m[   14.750010] [0m[33mhub 3-0:1.0: [0mUSB hub found
+[32m[   14.750346] [0m[33mhub 3-0:1.0: [0m1 port detected
+[32m[   14.750832] [0m[33musb usb2: [0mNew USB device found, idVendor=1d6b, idProduct=0001, bcdDevice= 6.01
+[32m[   14.751581] [0m[33musb usb2: [0mNew USB device strings: Mfr=3, Product=2, SerialNumber=1
+[32m[   14.752228] [0m[33musb usb2: [0mProduct: Generic Platform OHCI controller
+[32m[   14.752755] [0m[33musb usb2: [0mManufacturer: Linux 6.1.172 ohci_hcd
+[32m[   14.753243] [0m[33musb usb2: [0mSerialNumber: fc840000.usb
+[32m[   14.753635] [0m[33m/csi2-dcphy0: [0mFixed dependency cycle(s) with /i2c@feaa0000/gc8034@37
+[32m[   14.754327] [0m[33m/i2c@feaa0000/gc8034@37: [0mFixed dependency cycle(s) with /csi2-dcphy0
+[32m[   14.755145] [0m[33mhub 2-0:1.0: [0mUSB hub found
+[32m[   14.755480] [0m[1mgoodix_ts_probe() start[0m
+[32m[   14.755502] [0m[33mhub 2-0:1.0: [0m1 port detected
+[32m[   14.755788] [0m[1mgoodix_ts_probe val=911[0m
+[32m[   14.756450] [0m[33mGoodix-TS 3-005d: [0m[1msupply tp not found, using dummy regulator[0m
+[32m[   14.797702] [0m[33mata1: [0mSATA link down (SStatus 0 SControl 300)
+[32m[   14.919781] [0m[33m<<-GTP-ERROR->> I2C Read: [0m[1m0x8000, 10 bytes failed, errcode: -6! Process reset.[0m
+[32m[   15.027777] [0m[33m<<-GTP-ERROR->> I2C Read: [0m[1m0x8000, 10 bytes failed, errcode: -6! Process reset.[0m
+[32m[   15.135779] [0m[33m<<-GTP-ERROR->> I2C Read: [0m[1m0x8000, 10 bytes failed, errcode: -6! Process reset.[0m
+[32m[   15.243778] [0m[33m<<-GTP-ERROR->> I2C Read: [0m[1m0x8000, 10 bytes failed, errcode: -6! Process reset.[0m
+[32m[   15.351778] [0m[33m<<-GTP-ERROR->> I2C Read: [0m[1m0x8000, 10 bytes failed, errcode: -6! Process reset.[0m
+[32m[   15.371092] [0m[33mphy phy-fd5d0000.syscon:usb2-phy@0.0: [0mcharger = USB_DCP_CHARGER
+[32m[   15.459778] [0m[33m<<-GTP-ERROR->> I2C Read: [0m[1m0x8000, 10 bytes failed, errcode: -6! Process reset.[0m
+[32m[   15.567089] [0m[1m<<-GTP-ERROR->> I2C read 0x8000, 10 bytes, double check failed![0m
+[32m[   15.567697] [0m[33m<<-GTP-ERROR->> Failed to get chip-type, set chip type default: [0m[1mGOODIX_GT9[0m
+[32m[   15.569076] [0m[33m<<-GTP-ERROR->> I2C Read: [0m[1m0x8047, 1 bytes failed, errcode: -6! Process reset.[0m
+[32m[   15.675089] [0m[1m<<-GTP-ERROR->> GTP i2c test failed time 1.[0m
+[32m[   15.695779] [0m[33m<<-GTP-ERROR->> I2C Read: [0m[1m0x8047, 1 bytes failed, errcode: -6! Process reset.[0m
+[32m[   15.803089] [0m[1m<<-GTP-ERROR->> GTP i2c test failed time 2.[0m
+[32m[   15.823777] [0m[33m<<-GTP-ERROR->> I2C Read: [0m[1m0x8047, 1 bytes failed, errcode: -6! Process reset.[0m
+[32m[   15.931089] [0m[1m<<-GTP-ERROR->> GTP i2c test failed time 3.[0m
+[32m[   15.951777] [0m[33m<<-GTP-ERROR->> I2C Read: [0m[1m0x8047, 1 bytes failed, errcode: -6! Process reset.[0m
+[32m[   16.059089] [0m[1m<<-GTP-ERROR->> GTP i2c test failed time 4.[0m
+[32m[   16.079778] [0m[33m<<-GTP-ERROR->> I2C Read: [0m[1m0x8047, 1 bytes failed, errcode: -6! Process reset.[0m
+[32m[   16.187088] [0m[1m<<-GTP-ERROR->> GTP i2c test failed time 5.[0m
+[32m[   16.207089] [0m[1m<goodix_ts_probe>_2796    I2C communication ERROR![0m
+[32m[   16.207599] [0m[1m   <goodix_ts_probe>_2873  prob error !!!!!!!!!!!!!!![0m
+[32m[   16.208145] [0m[1m------------[ cut here ]------------[0m
+[32m[   16.208550] [0m[33mWARNING: [0m[1mCPU: 5 PID: 1 at drivers/regulator/core.c:2439 _regulator_put.part.0+0x158/0x160[0m
+[32m[   16.209362] [0m[1mModules linked in:[0m
+[32m[   16.209634] [0m[33mCPU: [0m[1m5 PID: 1 Comm: swapper/0 Not tainted 6.1.172 #5[0m
+[32m[   16.210161] [0m[33mHardware name: [0m[1mYouyeetoo YY3588/YY3588, BIOS 4d9a551 11/10/2026[0m
+[32m[   16.210769] [0m[33mpstate: [0m[1m80400009 (Nzcv daif +PAN -UAO -TCO -DIT -SSBS BTYPE=--)[0m
+[32m[   16.211378] [0m[33mpc : [0m[1m_regulator_put.part.0+0x158/0x160[0m
+[32m[   16.211801] [0m[33mlr : [0m[1mregulator_put+0x3c/0x50[0m
+[32m[   16.212149] [0m[33msp : [0m[1mffffffc00aa3b670[0m
+[32m[   16.212441] [0m[33mx29: [0m[1mffffffc00aa3b670 x28: 0000000000000000 x27: ffffffc009d400c8[0m
+[32m[   16.213068] [0m[33mx26: [0m[1mffffffc009e16060 x25: ffffff87fbfbec38 x24: 0000000000000001[0m
+[32m[   16.213694] [0m[33mx23: [0m[1mffffffc009a55b18 x22: ffffffc00aa3b728 x21: ffffffc00aa3b728[0m
+[32m[   16.214319] [0m[33mx20: [0m[1mffffffc00a715768 x19: ffffff8105454100 x18: 0000000000000030[0m
+[32m[   16.214945] [0m[33mx17: [0m[1m502021362d203a65 x16: 646f63727265202c x15: 0721072107210720[0m
+[32m[   16.215569] [0m[33mx14: [0m[1m0772076f07720772 x13: 0721072107210720 x12: 0000000000000040[0m
+[32m[   16.216194] [0m[33mx11: [0m[1m0000000000000001 x10: ffffff81055306a8 x9 : ffffffc00878c120[0m
+[32m[   16.216820] [0m[33mx8 : [0m[1mffffffc008a27790 x7 : ffffff81055306a8 x6 : 000000000000468d[0m
+[32m[   16.217445] [0m[33mx5 : [0m[1mffffff8105530b80 x4 : ffffff87fbebceb0 x3 : 0000000000000000[0m
+[32m[   16.218070] [0m[33mx2 : [0m[1mffffff8102908000 x1 : 0000000000000000 x0 : 0000000000000001[0m
+[32m[   16.218696] [0m[1mCall trace:[0m
+[32m[   16.218913] [0m[1m _regulator_put.part.0+0x158/0x160[0m
+[32m[   16.219307] [0m[1m regulator_put+0x3c/0x50[0m
+[32m[   16.219623] [0m[1m devm_regulator_release+0x18/0x20[0m
+[32m[   16.220007] [0m[1m devres_release_group+0x120/0x200[0m
+[32m[   16.220392] [0m[1m i2c_device_probe+0x138/0x350[0m
+[32m[   16.220747] [0m[1m really_probe+0xc4/0x3e0[0m
+[32m[   16.221063] [0m[1m __driver_probe_device+0x80/0x160[0m
+[32m[   16.221447] [0m[1m driver_probe_device+0x40/0x110[0m
+[32m[   16.221816] [0m[1m __device_attach_driver+0xb8/0x150[0m
+[32m[   16.222208] [0m[1m bus_for_each_drv+0x7c/0xd0[0m
+[32m[   16.222545] [0m[1m __device_attach+0xac/0x1e4[0m
+[32m[   16.222883] [0m[1m device_initial_probe+0x18/0x20[0m
+[32m[   16.223252] [0m[1m bus_probe_device+0x9c/0xac[0m
+[32m[   16.223590] [0m[1m device_add+0x3d0/0x7d4[0m
+[32m[   16.223897] [0m[1m device_register+0x24/0x30[0m
+[32m[   16.224228] [0m[1m i2c_new_client_device+0x1b0/0x400[0m
+[32m[   16.224619] [0m[1m of_i2c_register_devices+0x15c/0x210[0m
+[32m[   16.225027] [0m[1m i2c_register_adapter+0x1f8/0x6f0[0m
+[32m[   16.225411] [0m[1m __i2c_add_numbered_adapter+0x60/0xb0[0m
+[32m[   16.225824] [0m[1m i2c_add_numbered_adapter+0x20/0x34[0m
+[32m[   16.226223] [0m[1m rk3x_i2c_probe+0x36c/0x52c[0m
+[32m[   16.226561] [0m[1m platform_probe+0x6c/0xd4[0m
+[32m[   16.226886] [0m[1m really_probe+0xc4/0x3e0[0m
+[32m[   16.227201] [0m[1m __driver_probe_device+0x80/0x160[0m
+[32m[   16.227586] [0m[1m driver_probe_device+0x40/0x110[0m
+[32m[   16.227954] [0m[1m __driver_attach+0xec/0x1f0[0m
+[32m[   16.228292] [0m[1m bus_for_each_dev+0x74/0xd0[0m
+[32m[   16.228630] [0m[1m driver_attach+0x28/0x30[0m
+[32m[   16.228946] [0m[1m bus_add_driver+0x178/0x234[0m
+[32m[   16.229283] [0m[1m driver_register+0x7c/0x130[0m
+[32m[   16.229621] [0m[1m __platform_driver_register+0x2c/0x34[0m
+[32m[   16.230036] [0m[1m rk3x_i2c_driver_init+0x20/0x28[0m
+[32m[   16.230407] [0m[1m do_one_initcall+0x48/0x250[0m
+[32m[   16.230746] [0m[1m kernel_init_freeable+0x298/0x300[0m
+[32m[   16.231131] [0m[1m kernel_init+0x28/0x12c[0m
+[32m[   16.231440] [0m[1m ret_from_fork+0x10/0x20[0m
+[32m[   16.231755] [0m[1m---[ end trace 0000000000000000 ]---[0m
+[32m[   16.232467] [0m[33m/csi2-dcphy1: [0mFixed dependency cycle(s) with /i2c@feac0000/gc8034@37
+[32m[   16.233144] [0m[33m/i2c@feac0000/gc8034@37: [0mFixed dependency cycle(s) with /csi2-dcphy1
+[32m[   16.234164] [0m[1mgoodix_ts_probe() start[0m
+[32m[   16.234473] [0m[1mgoodix_ts_probe val=9110[0m
+[32m[   16.234795] [0m[33mGoodix-TS 5-005d: [0m[1msupply tp not found, using dummy regulator[0m
+[32m[   16.399768] [0m[33m<<-GTP-ERROR->> I2C Read: [0m[1m0x8000, 10 bytes failed, errcode: -6! Process reset.[0m
+[32m[   16.507766] [0m[33m<<-GTP-ERROR->> I2C Read: [0m[1m0x8000, 10 bytes failed, errcode: -6! Process reset.[0m
+[32m[   16.615766] [0m[33m<<-GTP-ERROR->> I2C Read: [0m[1m0x8000, 10 bytes failed, errcode: -6! Process reset.[0m
+[32m[   16.721937] [0m[33mrk-pcie fe170000.pcie: [0m[31mPCIe Link Fail, LTSSM is 0x3, hw_retries=0[0m
+[32m[   16.722283] [0m[33mrk-pcie fe180000.pcie: [0m[31mPCIe Link Fail, LTSSM is 0x3, hw_retries=0[0m
+[32m[   16.723766] [0m[33m<<-GTP-ERROR->> I2C Read: [0m[1m0x8000, 10 bytes failed, errcode: -6! Process reset.[0m
+[32m[   16.831765] [0m[33m<<-GTP-ERROR->> I2C Read: [0m[1m0x8000, 10 bytes failed, errcode: -6! Process reset.[0m
+[32m[   16.939766] [0m[33m<<-GTP-ERROR->> I2C Read: [0m[1m0x8000, 10 bytes failed, errcode: -6! Process reset.[0m
+[32m[   17.047088] [0m[1m<<-GTP-ERROR->> I2C read 0x8000, 10 bytes, double check failed![0m
+[32m[   17.047696] [0m[33m<<-GTP-ERROR->> Failed to get chip-type, set chip type default: [0m[1mGOODIX_GT9[0m
+[32m[   17.049064] [0m[33m<<-GTP-ERROR->> I2C Read: [0m[1m0x8047, 1 bytes failed, errcode: -6! Process reset.[0m
+[32m[   17.155088] [0m[1m<<-GTP-ERROR->> GTP i2c test failed time 1.[0m
+[32m[   17.175764] [0m[33m<<-GTP-ERROR->> I2C Read: [0m[1m0x8047, 1 bytes failed, errcode: -6! Process reset.[0m
+[32m[   17.283088] [0m[1m<<-GTP-ERROR->> GTP i2c test failed time 2.[0m
+[32m[   17.303765] [0m[33m<<-GTP-ERROR->> I2C Read: [0m[1m0x8047, 1 bytes failed, errcode: -6! Process reset.[0m
+[32m[   17.411088] [0m[1m<<-GTP-ERROR->> GTP i2c test failed time 3.[0m
+[32m[   17.431767] [0m[33m<<-GTP-ERROR->> I2C Read: [0m[1m0x8047, 1 bytes failed, errcode: -6! Process reset.[0m
+[32m[   17.539089] [0m[1m<<-GTP-ERROR->> GTP i2c test failed time 4.[0m
+[32m[   17.559764] [0m[33m<<-GTP-ERROR->> I2C Read: [0m[1m0x8047, 1 bytes failed, errcode: -6! Process reset.[0m
+[32m[   17.667089] [0m[1m<<-GTP-ERROR->> GTP i2c test failed time 5.[0m
+[32m[   17.687088] [0m[1m<goodix_ts_probe>_2796    I2C communication ERROR![0m
+[32m[   17.687598] [0m[1m   <goodix_ts_probe>_2873  prob error !!!!!!!!!!!!!!![0m
+[32m[   17.688143] [0m[1m------------[ cut here ]------------[0m
+[32m[   17.688547] [0m[33mWARNING: [0m[1mCPU: 5 PID: 1 at drivers/regulator/core.c:2439 _regulator_put.part.0+0x158/0x160[0m
+[32m[   17.689358] [0m[1mModules linked in:[0m
+[32m[   17.689630] [0m[33mCPU: [0m[1m5 PID: 1 Comm: swapper/0 Tainted: G        W          6.1.172 #5[0m
+[32m[   17.690284] [0m[33mHardware name: [0m[1mYouyeetoo YY3588/YY3588, BIOS 4d9a551 11/10/2026[0m
+[32m[   17.690891] [0m[33mpstate: [0m[1m80400009 (Nzcv daif +PAN -UAO -TCO -DIT -SSBS BTYPE=--)[0m
+[32m[   17.691500] [0m[33mpc : [0m[1m_regulator_put.part.0+0x158/0x160[0m
+[32m[   17.691923] [0m[33mlr : [0m[1mregulator_put+0x3c/0x50[0m
+[32m[   17.692269] [0m[33msp : [0m[1mffffffc00aa3b670[0m
+[32m[   17.692560] [0m[33mx29: [0m[1mffffffc00aa3b670 x28: 0000000000000000 x27: ffffffc009d400c8[0m
+[32m[   17.693186] [0m[33mx26: [0m[1mffffffc009e16060 x25: ffffff87fbfc0948 x24: 0000000000000001[0m
+[32m[   17.693811] [0m[33mx23: [0m[1mffffffc009a55b18 x22: ffffffc00aa3b728 x21: ffffffc00aa3b728[0m
+[32m[   17.694436] [0m[33mx20: [0m[1mffffffc00a715768 x19: ffffff8105456100 x18: 0000000000000030[0m
+[32m[   17.695061] [0m[33mx17: [0m[1m502021362d203a65 x16: 646f63727265202c x15: 0721072107210720[0m
+[32m[   17.695686] [0m[33mx14: [0m[1m0772076f07720772 x13: 0721072107210720 x12: 0000000000000040[0m
+[32m[   17.696312] [0m[33mx11: [0m[1m0000000000000001 x10: ffffff81036fb6a8 x9 : ffffffc00878c120[0m
+[32m[   17.696936] [0m[33mx8 : [0m[1mffffffc008a27790 x7 : ffffff81036fb6a8 x6 : ffffff81036fb6a8[0m
+[32m[   17.697562] [0m[33mx5 : [0m[1m0000000000000000 x4 : fffffffe040dbec0 x3 : 0000000000000000[0m
+[32m[   17.698187] [0m[33mx2 : [0m[1mffffff8102908000 x1 : 0000000000000000 x0 : 0000000000000001[0m
+[32m[   17.698812] [0m[1mCall trace:[0m
+[32m[   17.699029] [0m[1m _regulator_put.part.0+0x158/0x160[0m
+[32m[   17.699421] [0m[1m regulator_put+0x3c/0x50[0m
+[32m[   17.699739] [0m[1m devm_regulator_release+0x18/0x20[0m
+[32m[   17.700123] [0m[1m devres_release_group+0x120/0x200[0m
+[32m[   17.700508] [0m[1m i2c_device_probe+0x138/0x350[0m
+[32m[   17.700862] [0m[1m really_probe+0xc4/0x3e0[0m
+[32m[   17.701179] [0m[1m __driver_probe_device+0x80/0x160[0m
+[32m[   17.701563] [0m[1m driver_probe_device+0x40/0x110[0m
+[32m[   17.701931] [0m[1m __device_attach_driver+0xb8/0x150[0m
+[32m[   17.702322] [0m[1m bus_for_each_drv+0x7c/0xd0[0m
+[32m[   17.702660] [0m[1m __device_attach+0xac/0x1e4[0m
+[32m[   17.702998] [0m[1m device_initial_probe+0x18/0x20[0m
+[32m[   17.703367] [0m[1m bus_probe_device+0x9c/0xac[0m
+[32m[   17.703704] [0m[1m device_add+0x3d0/0x7d4[0m
+[32m[   17.704011] [0m[1m device_register+0x24/0x30[0m
+[32m[   17.704341] [0m[1m i2c_new_client_device+0x1b0/0x400[0m
+[32m[   17.704733] [0m[1m of_i2c_register_devices+0x15c/0x210[0m
+[32m[   17.705140] [0m[1m i2c_register_adapter+0x1f8/0x6f0[0m
+[32m[   17.705524] [0m[1m __i2c_add_numbered_adapter+0x60/0xb0[0m
+[32m[   17.705937] [0m[1m i2c_add_numbered_adapter+0x20/0x34[0m
+[32m[   17.706336] [0m[1m rk3x_i2c_probe+0x36c/0x52c[0m
+[32m[   17.706676] [0m[1m platform_probe+0x6c/0xd4[0m
+[32m[   17.707001] [0m[1m really_probe+0xc4/0x3e0[0m
+[32m[   17.707316] [0m[1m __driver_probe_device+0x80/0x160[0m
+[32m[   17.707700] [0m[1m driver_probe_device+0x40/0x110[0m
+[32m[   17.708069] [0m[1m __driver_attach+0xec/0x1f0[0m
+[32m[   17.708407] [0m[1m bus_for_each_dev+0x74/0xd0[0m
+[32m[   17.708744] [0m[1m driver_attach+0x28/0x30[0m
+[32m[   17.709060] [0m[1m bus_add_driver+0x178/0x234[0m
+[32m[   17.709397] [0m[1m driver_register+0x7c/0x130[0m
+[32m[   17.709735] [0m[1m __platform_driver_register+0x2c/0x34[0m
+[32m[   17.710150] [0m[1m rk3x_i2c_driver_init+0x20/0x28[0m
+[32m[   17.710520] [0m[1m do_one_initcall+0x48/0x250[0m
+[32m[   17.710858] [0m[1m kernel_init_freeable+0x298/0x300[0m
+[32m[   17.711244] [0m[1m kernel_init+0x28/0x12c[0m
+[32m[   17.711551] [0m[1m ret_from_fork+0x10/0x20[0m
+[32m[   17.711866] [0m[1m---[ end trace 0000000000000000 ]---[0m
+[32m[   17.718326] [0m[1mhym8563_probe[0m
+[32m[   17.731701] [0m[33mrtc-hym8563 6-0051: [0mrtc information is invalid
+[32m[   17.740768] [0m[33mrtc-hym8563 6-0051: [0mregistered as rtc0
+[32m[   17.742192] [0m[33mrtc-hym8563 6-0051: [0msetting system clock to 2021-01-01T12:00:00 UTC (1609502400)
+[32m[   17.744070] [0m[33mrkcifhw fdce0000.rkcif: [0mAdding to iommu group 17
+[32m[   17.745291] [0m[33mrkcifhw fdce0000.rkcif: [0mNo reserved memory region assign to CIF
+[32m[   17.745935] [0m[33mrkcif rkcif-mipi-lvds: [0mrkcif driver version: v00.02.00
+[32m[   17.746515] [0m[33mrkcif rkcif-mipi-lvds: [0mattach to cif hw node
+[32m[   17.746980] [0m[33mrkcif rkcif-mipi-lvds: [0mrkcif wait line 0
+[32m[   17.747423] [0m[33mrkcif rkcif-mipi-lvds: [0mrkcif fastboot reserve bufs num 3
+[32m[   17.747979] [0m[33mrkcif rkcif-mipi-lvds: [0mrkcif pins used group 0
+[32m[   17.748459] [0m[33mrkcif rkcif-mipi-lvds: [0m[31mrkcif is_detect_group_sync 1[0m
+[32m[   17.748978] [0m[33m: [0m[31mterminal subdev does not exist[0m
+[32m[   17.749354] [0m[33m: [0m[31mterminal subdev does not exist[0m
+[32m[   17.749729] [0m[33m: [0m[31mterminal subdev does not exist[0m
+[32m[   17.750103] [0m[33m: [0m[31mterminal subdev does not exist[0m
+[32m[   17.750478] [0m[33m: [0m[31mget_remote_sensor: video pad[0] is null[0m
+[32m[   17.750921] [0m[33m: [0m[31mrkcif_update_sensor_info: stream[0] get remote sensor_sd failed![0m
+[32m[   17.751556] [0m[33m: [0mrkcif_scale_set_fmt: req(40, 30) src out(0, 0)
+[32m[   17.752053] [0m[33m: [0m[31mget_remote_sensor: video pad[0] is null[0m
+[32m[   17.752494] [0m[33m: [0m[31mrkcif_update_sensor_info: stream[0] get remote sensor_sd failed![0m
+[32m[   17.753125] [0m[33m: [0mrkcif_scale_set_fmt: req(40, 30) src out(0, 0)
+[32m[   17.753620] [0m[33m: [0m[31mget_remote_sensor: video pad[0] is null[0m
+[32m[   17.754062] [0m[33m: [0m[31mrkcif_update_sensor_info: stream[0] get remote sensor_sd failed![0m
+[32m[   17.754692] [0m[33m: [0mrkcif_scale_set_fmt: req(40, 30) src out(0, 0)
+[32m[   17.755195] [0m[33m: [0m[31mget_remote_sensor: video pad[0] is null[0m
+[32m[   17.755636] [0m[33m: [0m[31mrkcif_update_sensor_info: stream[0] get remote sensor_sd failed![0m
+[32m[   17.756267] [0m[33m: [0mrkcif_scale_set_fmt: req(40, 30) src out(0, 0)
+[32m[   17.756762] [0m[33m: [0m[31mget_remote_sensor: video pad[0] is null[0m
+[32m[   17.757204] [0m[33m: [0m[31mrkcif_update_sensor_info: stream[0] get remote sensor_sd failed![0m
+[32m[   17.757834] [0m[33m: [0mrkcif_scale_set_fmt: req(40, 30) src out(0, 0)
+[32m[   17.758329] [0m[33m: [0m[31mget_remote_sensor: video pad[0] is null[0m
+[32m[   17.758770] [0m[33m: [0m[31mrkcif_update_sensor_info: stream[0] get remote sensor_sd failed![0m
+[32m[   17.759403] [0m[33m: [0mrkcif_scale_set_fmt: req(40, 30) src out(0, 0)
+[32m[   17.759898] [0m[33m: [0m[31mget_remote_sensor: video pad[0] is null[0m
+[32m[   17.760340] [0m[33m: [0m[31mrkcif_update_sensor_info: stream[0] get remote sensor_sd failed![0m
+[32m[   17.760970] [0m[33m: [0mrkcif_scale_set_fmt: req(40, 30) src out(0, 0)
+[32m[   17.761989] [0m[33mrkcif rkcif-mipi-lvds: [0mNo memory-region-thunderboot specified
+[32m[   17.762628] [0m[33mrkcif rkcif-mipi-lvds1: [0mrkcif driver version: v00.02.00
+[32m[   17.763211] [0m[33mrkcif rkcif-mipi-lvds1: [0mattach to cif hw node
+[32m[   17.763684] [0m[33mrkcif rkcif-mipi-lvds1: [0mrkcif wait line 0
+[32m[   17.764127] [0m[33mrkcif rkcif-mipi-lvds1: [0mrkcif fastboot reserve bufs num 3
+[32m[   17.764689] [0m[33mrkcif rkcif-mipi-lvds1: [0mrkcif pins used group 0
+[32m[   17.765175] [0m[33mrkcif rkcif-mipi-lvds1: [0m[31mrkcif is_detect_group_sync 1[0m
+[32m[   17.765702] [0m[33m: [0m[31mterminal subdev does not exist[0m
+[32m[   17.766076] [0m[33m: [0m[31mterminal subdev does not exist[0m
+[32m[   17.766451] [0m[33m: [0m[31mterminal subdev does not exist[0m
+[32m[   17.766825] [0m[33m: [0m[31mterminal subdev does not exist[0m
+[32m[   17.767203] [0m[33m: [0m[31mget_remote_sensor: video pad[0] is null[0m
+[32m[   17.767645] [0m[33m: [0m[31mrkcif_update_sensor_info: stream[0] get remote sensor_sd failed![0m
+[32m[   17.768276] [0m[33m: [0mrkcif_scale_set_fmt: req(40, 30) src out(0, 0)
+[32m[   17.768772] [0m[33m: [0m[31mget_remote_sensor: video pad[0] is null[0m
+[32m[   17.769213] [0m[33m: [0m[31mrkcif_update_sensor_info: stream[0] get remote sensor_sd failed![0m
+[32m[   17.769842] [0m[33m: [0mrkcif_scale_set_fmt: req(40, 30) src out(0, 0)
+[32m[   17.770337] [0m[33m: [0m[31mget_remote_sensor: video pad[0] is null[0m
+[32m[   17.770778] [0m[33m: [0m[31mrkcif_update_sensor_info: stream[0] get remote sensor_sd failed![0m
+[32m[   17.771411] [0m[33m: [0mrkcif_scale_set_fmt: req(40, 30) src out(0, 0)
+[32m[   17.771905] [0m[33m: [0m[31mget_remote_sensor: video pad[0] is null[0m
+[32m[   17.772347] [0m[33m: [0m[31mrkcif_update_sensor_info: stream[0] get remote sensor_sd failed![0m
+[32m[   17.772976] [0m[33m: [0mrkcif_scale_set_fmt: req(40, 30) src out(0, 0)
+[32m[   17.773472] [0m[33m: [0m[31mget_remote_sensor: video pad[0] is null[0m
+[32m[   17.773914] [0m[33m: [0m[31mrkcif_update_sensor_info: stream[0] get remote sensor_sd failed![0m
+[32m[   17.774543] [0m[33m: [0mrkcif_scale_set_fmt: req(40, 30) src out(0, 0)
+[32m[   17.775038] [0m[33m: [0m[31mget_remote_sensor: video pad[0] is null[0m
+[32m[   17.775482] [0m[33m: [0m[31mrkcif_update_sensor_info: stream[0] get remote sensor_sd failed![0m
+[32m[   17.776113] [0m[33m: [0mrkcif_scale_set_fmt: req(40, 30) src out(0, 0)
+[32m[   17.776608] [0m[33m: [0m[31mget_remote_sensor: video pad[0] is null[0m
+[32m[   17.777049] [0m[33m: [0m[31mrkcif_update_sensor_info: stream[0] get remote sensor_sd failed![0m
+[32m[   17.777679] [0m[33m: [0mrkcif_scale_set_fmt: req(40, 30) src out(0, 0)
+[32m[   17.778634] [0m[33mrkcif rkcif-mipi-lvds1: [0mNo memory-region-thunderboot specified
+[32m[   17.779937] [0m[33mrockchip-mipi-csi2-hw fdd10000.mipi0-csi2-hw: [0menter mipi csi2 hw probe!
+[32m[   17.780667] [0m[33mrockchip-mipi-csi2-hw fdd10000.mipi0-csi2-hw: [0mprobe success, v4l2_dev:mipi0-csi2-hw!
+[32m[   17.781450] [0m[33mrockchip-mipi-csi2-hw fdd20000.mipi1-csi2-hw: [0menter mipi csi2 hw probe!
+[32m[   17.782157] [0m[33mrockchip-mipi-csi2-hw fdd20000.mipi1-csi2-hw: [0mprobe success, v4l2_dev:mipi1-csi2-hw!
+[32m[   17.782937] [0m[33mrockchip-mipi-csi2-hw fdd30000.mipi2-csi2-hw: [0menter mipi csi2 hw probe!
+[32m[   17.783651] [0m[33mrockchip-mipi-csi2-hw fdd30000.mipi2-csi2-hw: [0mprobe success, v4l2_dev:mipi2-csi2-hw!
+[32m[   17.784431] [0m[33mrockchip-mipi-csi2-hw fdd40000.mipi3-csi2-hw: [0menter mipi csi2 hw probe!
+[32m[   17.785133] [0m[33mrockchip-mipi-csi2-hw fdd40000.mipi3-csi2-hw: [0mprobe success, v4l2_dev:mipi3-csi2-hw!
+[32m[   17.785913] [0m[33mrockchip-mipi-csi2-hw fdd50000.mipi4-csi2-hw: [0menter mipi csi2 hw probe!
+[32m[   17.786617] [0m[33mrockchip-mipi-csi2-hw fdd50000.mipi4-csi2-hw: [0mprobe success, v4l2_dev:mipi4-csi2-hw!
+[32m[   17.787400] [0m[33mrockchip-mipi-csi2-hw fdd60000.mipi5-csi2-hw: [0menter mipi csi2 hw probe!
+[32m[   17.788104] [0m[33mrockchip-mipi-csi2-hw fdd60000.mipi5-csi2-hw: [0mprobe success, v4l2_dev:mipi5-csi2-hw!
+[32m[   17.789146] [0m[33mrockchip-mipi-csi2 mipi0-csi2: [0mattach to csi2 hw node
+[32m[   17.789690] [0m[33mrkcif rkcif-mipi-lvds: [0m[1mEntity type for entity rockchip-mipi-csi2 was not initialized![0m
+[32m[   17.790465] [0m[33mrockchip-mipi-csi2: [0m[31mAsync registered subdev[0m
+[32m[   17.790922] [0m[33mrockchip-mipi-csi2: [0mprobe success, v4l2_dev:rkcif-mipi-lvds!
+[32m[   17.791628] [0m[33mrockchip-mipi-csi2 mipi1-csi2: [0mattach to csi2 hw node
+[32m[   17.792169] [0m[33mrkcif rkcif-mipi-lvds1: [0m[1mEntity type for entity rockchip-mipi-csi2 was not initialized![0m
+[32m[   17.792951] [0m[33mrockchip-mipi-csi2: [0m[31mAsync registered subdev[0m
+[32m[   17.793408] [0m[33mrockchip-mipi-csi2: [0mprobe success, v4l2_dev:rkcif-mipi-lvds1!
+[32m[   17.794613] [0m[33mrkisp_hw fdcb0000.rkisp: [0mAdding to iommu group 15
+[32m[   17.795216] [0m[33mrkisp_hw fdcb0000.rkisp: [0mis_thunderboot: 0
+[32m[   17.795667] [0m[33mrkisp_hw fdcb0000.rkisp: [0m[1mMissing rockchip,grf property[0m
+[32m[   17.796215] [0m[33mrkisp_hw fdcb0000.rkisp: [0mmax input:0x0@0fps
+[32m[   17.796733] [0m[33mrkisp_hw fdcb0000.rkisp: [0m[1mno find phandle sram[0m
+[32m[   17.797289] [0m[33mrkisp_hw fdcc0000.rkisp: [0mAdding to iommu group 16
+[32m[   17.797899] [0m[33mrkisp_hw fdcc0000.rkisp: [0mis_thunderboot: 0
+[32m[   17.798350] [0m[33mrkisp_hw fdcc0000.rkisp: [0m[1mMissing rockchip,grf property[0m
+[32m[   17.798898] [0m[33mrkisp_hw fdcc0000.rkisp: [0mmax input:0x0@0fps
+[32m[   17.799417] [0m[33mrkisp_hw fdcc0000.rkisp: [0m[1mno find phandle sram[0m
+[32m[   17.800100] [0m[33mrkisp rkisp0-vir0: [0mrkisp driver version: v03.03.00
+[32m[   17.800655] [0m[33mrkisp rkisp0-vir0: [0mNo memory-region-thunderboot specified
+[32m[   17.801262] [0m[33mrkisp rkisp0-vir0: [0m[1mEntity type for entity rkisp-isp-subdev was not initialized![0m
+[32m[   17.802376] [0m[33mrkisp rkisp1-vir0: [0mrkisp driver version: v03.03.00
+[32m[   17.802927] [0m[33mrkisp rkisp1-vir0: [0mNo memory-region-thunderboot specified
+[32m[   17.803535] [0m[33mrkisp rkisp1-vir0: [0m[1mEntity type for entity rkisp-isp-subdev was not initialized![0m
+[32m[   17.805283] [0m[33mrk_hdmirx fdee0000.hdmirx-controller: [0m[1mNo reserved memory for HDMIRX, use default CMA[0m
+[32m[   17.806060] [0m[33mrk_hdmirx fdee0000.hdmirx-controller: [0mhdmirx_get_phy_cpuid_func: mpidr: 0x0000000500, phy_cpuid:0x5
+[32m[   17.806944] [0m[33mrk_hdmirx fdee0000.hdmirx-controller: [0mhdmirx_probe: cpu_aff:0x500, Bound_cpu:5, wdt_cfg_bound_cpu:2, phy_cpuid:5
+[32m[   17.809037] [0m[33mrk_hdmirx fdee0000.hdmirx-controller: [0mrk_hdmirx_hdcp_register success
+[32m[   17.809702] [0m[33mrk_hdmirx fdee0000.hdmirx-controller: [0mfdee0000.hdmirx-controller driver probe ok!
+[32m[   17.810826] [0m[33musbcore: [0mregistered new interface driver uvcvideo
+[32m[   17.812371] [0m[33musbcore: [0mregistered new interface driver bfusb
+[32m[   17.813678] [0m[33mcpu cpu0: [0mbin=0
+[32m[   17.814096] [0m[33mcpu cpu0: [0midc=27
+[32m[   17.815867] [0m[33mcpu cpu0: [0mpvtm=1621
+[32m[   17.816396] [0m[33mcpu cpu0: [0mpvtm-volt-sel=6
+[32m[   17.818680] [0m[33mcpu cpu4: [0mbin=0
+[32m[   17.819092] [0m[33mcpu cpu4: [0midc=24
+[32m[   17.825917] [0m[33mcpu cpu4: [0mpvtm=1862
+[32m[   17.830246] [0m[33mcpu cpu4: [0mpvtm-volt-sel=7
+[32m[   17.833295] [0m[33mcpu cpu6: [0mbin=0
+[32m[   17.833708] [0m[33mcpu cpu6: [0midc=25
+[32m[   17.840547] [0m[33mcpu cpu6: [0mpvtm=1873
+[32m[   17.844887] [0m[33mcpu cpu6: [0mpvtm-volt-sel=7
+[32m[   17.846865] [0m[33mcpu cpu0: [0mavs=0
+[32m[   17.848038] [0m[33mcpu cpu4: [0mavs=0
+[32m[   17.849041] [0m[33mcpu cpu6: [0mavs=0
+[32m[   17.849352] [0m[33mcpu cpu0: [0ml=15000 h=85000 hyst=5000 l_limit=0 h_limit=1608000000 h_table=0
+[32m[   17.850356] [0m[33mcpu cpu0: [0mEM: OPP:1008000 is inefficient
+[32m[   17.850360] [0m[33mcpu cpu0: [0mEM: OPP:816000 is inefficient
+[32m[   17.850415] [0m[33mcpu cpu0: [0mEM: created perf domain
+[32m[   17.851261] [0m[33mcpu cpu4: [0ml=15000 h=85000 hyst=5000 l_limit=0 h_limit=2208000000 h_table=0
+[32m[   17.860142] [0m[33mcpu cpu4: [0mEM: OPP:1200000 is inefficient
+[32m[   17.860146] [0m[33mcpu cpu4: [0mEM: OPP:1008000 is inefficient
+[32m[   17.860149] [0m[33mcpu cpu4: [0mEM: OPP:816000 is inefficient
+[32m[   17.860259] [0m[33mcpu cpu4: [0mEM: created perf domain
+[32m[   17.861455] [0m[33mcpu cpu6: [0ml=15000 h=85000 hyst=5000 l_limit=0 h_limit=2208000000 h_table=0
+[32m[   17.877705] [0m[33mcpu cpu6: [0mEM: OPP:1200000 is inefficient
+[32m[   17.877708] [0m[33mcpu cpu6: [0mEM: OPP:1008000 is inefficient
+[32m[   17.877710] [0m[33mcpu cpu6: [0mEM: OPP:816000 is inefficient
+[32m[   17.877775] [0m[33mcpu cpu6: [0mEM: created perf domain
+[32m[   17.878906] [0m[33msdhci: [0mSecure Digital Host Controller Interface driver
+[32m[   17.879454] [0m[33msdhci: [0mCopyright(c) Pierre Ossman
+[32m[   17.879835] [0mSynopsys Designware Multimedia Card Interface Driver
+[32m[   17.880566] [0m[33msdhci-pltfm: [0mSDHCI platform and OF driver helper
+[32m[   17.881048] [0m[33mrockchip-pinctrl pinctrl: [0m[31mpin gpio4-24 already requested by feb50000.serial; cannot claim for fe2c0000.mmc[0m
+[32m[   17.881805] [0m[33marm-scmi firmware:scmi: [0m[31mFailed. SCMI protocol 17 not active.[0m
+[32m[   17.881992] [0m[33mrockchip-pinctrl pinctrl: [0m[31mpin-152 (fe2c0000.mmc) status -22[0m
+[32m[   17.882596] [0m[33mpstore: [0m[1mignoring unexpected backend 'efi'[0m
+[32m[   17.883157] [0m[33mrockchip-pinctrl pinctrl: [0m[31mcould not request pin 152 (gpio4-24) from group sdmmc-bus4  on device rockchip-pinctrl[0m
+[32m[   17.883592] [0m[33mSMCCC: [0mSOC_ID: ARCH_SOC_ID not implemented, skipping ....
+[32m[   17.884438] [0m[33mcryptodev: [0mdriver 1.12 loaded.
+[32m[   17.884577] [0m[33mdwmmc_rockchip fe2c0000.mmc: [0m[31mError applying setting, reverse things back[0m
+[32m[   17.885206] [0m[33mhid: [0mraw HID events driver (C) Jiri Kosina
+[32m[   17.887164] [0m[33musbcore: [0mregistered new interface driver usbhid
+[32m[   17.887677] [0m[33musbhid: [0mUSB HID core driver
+[32m[   17.888929] [0m[33mmmc0: [0mCQHCI version 5.10
+[32m[   17.902887] [0m[33moptee: [0mprobing for conduit method.
+[32m[   17.903289] [0m[33moptee: [0m[1mapi uid mismatch[0m
+[32m[   17.903594] [0m[33moptee: [0m[1mprobe of firmware:optee failed with error -22[0m
+[32m[   17.904459] [0m[33musbcore: [0mregistered new interface driver snd-usb-audio
+[32m[   17.907349] [0m[33mrockchip-i2s-tdm fddf0000.i2s: [0mCLK-ALWAYS-ON: mclk: 12288000, bclk: 3072000, fsync: 48000
+[32m[   17.908536] [0m[33mrockchip-i2s-tdm fe470000.i2s: [0mRegister PCM for TRCM mode
+[32m[   17.909309] [0m[33mrockchip-i2s-tdm fddf4000.i2s: [0mCLK-ALWAYS-ON: mclk: 12288000, bclk: 3072000, fsync: 48000
+[32m[   17.910184] [0m[33mrockchip-i2s-tdm fddf8000.i2s: [0mInit RX wait-time-ms: 50
+[32m[   17.919750] [0m[33mmmc0: [0mSDHCI controller on fe2e0000.mmc [fe2e0000.mmc] using ADMA
+[32m[   17.920286] [0m[33mdebugfs: [0m[31mFile 'Capture' in directory 'dapm' already present![0m
+[32m[   17.921488] [0m[33minput: [0mrockchip,hdmiin rockchip,hdmiin as /devices/platform/hdmiin-sound/sound/card0/input2
+[32m[   17.922900] [0m[33minput: [0mheadset-keys as /devices/platform/es8388-sound/input/input3
+[32m[   17.982501] [0m[33msdhci-dwcmshc fe2e0000.mmc: [0m[31mCan't reduce the clock below 52MHz in HS200/HS400 mode[0m
+[32m[   17.984053] [0m[33mmmc0: [0mCommand Queue Engine enabled
+[32m[   17.984462] [0m[33mmmc0: [0mnew HS400 Enhanced strobe MMC card at address 0001
+[32m[   17.984608] [0m[33minput: [0mrockchip-es8388 Headset as /devices/platform/es8388-sound/sound/card1/input4
+[32m[   17.985537] [0m[33mmmcblk0: [0mmmc0:0001 MMC256 234 GiB 
+[32m[   17.988258] [0mInitializing XFRM netlink socket
+[32m[   17.988861] [0m[33mNET: [0mRegistered PF_INET6 protocol family
+[32m[   17.989709] [0m[1mGPT:Primary header thinks Alt. header is not at the end of the disk.[0m
+[32m[   17.990180] [0mSegment Routing with IPv6
+[32m[   17.990353] [0m[1mGPT:21530623 != 490831871[0m
+[32m[   17.990356] [0m[1mGPT:Alternate GPT header not at the end of the disk.[0m
+[32m[   17.990683] [0mIn-situ OAM (IOAM) with IPv6
+[32m[   17.990991] [0m[1mGPT:21530623 != 490831871[0m
+[32m[   17.991587] [0m[33mNET: [0mRegistered PF_PACKET protocol family
+[32m[   17.991862] [0m[33mGPT: [0m[1mUse GNU Parted to correct GPT errors.[0m
+[32m[   17.992186] [0m[33mNET: [0mRegistered PF_KEY protocol family
+[32m[   17.992632] [0m[33m mmcblk0: [0mp1 p2
+[32m[   17.993091] [0mBridge firewalling registered
+[32m[   17.993937] [0m[33mmmcblk0boot0: [0mmmc0:0001 MMC256 4.00 MiB 
+[32m[   17.994087] [0m[33mcan: [0mcontroller area network core
+[32m[   17.995033] [0m[33mNET: [0mRegistered PF_CAN protocol family
+[32m[   17.995037] [0m[33mmmcblk0boot1: [0mmmc0:0001 MMC256 4.00 MiB 
+[32m[   17.995461] [0m[33mcan: [0mraw protocol
+[32m[   17.995466] [0m[33mcan: [0mbroadcast manager protocol
+[32m[   17.995471] [0m[33mcan: [0mnetlink gateway - max_hops=1
+[32m[   17.996449] [0m[33mmmcblk0rpmb: [0mmmc0:0001 MMC256 4.00 MiB, chardev (234:0)
+[32m[   17.996713] [0m[33mBluetooth: [0mRFCOMM TTY layer initialized
+[32m[   17.997893] [0m[33mBluetooth: [0mRFCOMM socket layer initialized
+[32m[   17.998343] [0m[33mBluetooth: [0mRFCOMM ver 1.11
+[32m[   17.998675] [0m[33mBluetooth: [0mHIDP (Human Interface Emulation) ver 1.2
+[32m[   17.999198] [0m[33mBluetooth: [0mHIDP socket layer initialized
+[32m[   17.999642] [0m[33m[BT_RFKILL]: [0mEnter rfkill_rk_init
+[32m[   18.000022] [0m[33m[WLAN_RFKILL]: [0mEnter rfkill_wlan_init
+[32m[   18.000565] [0m[33m[WLAN_RFKILL]: [0mEnter rfkill_wlan_probe
+[32m[   18.000986] [0m[33m[WLAN_RFKILL]: [0mcan't find rockchip,grf property
+[32m[   18.001471] [0m[33m[WLAN_RFKILL]: [0mwlan_platdata_parse_dt: wifi_chip_type = ap6398s
+[32m[   18.002077] [0m[33m[WLAN_RFKILL]: [0mwlan_platdata_parse_dt: enable wifi power control.
+[32m[   18.002698] [0m[33m[WLAN_RFKILL]: [0mwlan_platdata_parse_dt: wifi power controled by gpio.
+[32m[   18.003355] [0m[33m[WLAN_RFKILL]: [0mwlan_platdata_parse_dt: The ref_wifi_clk not found !
+[32m[   18.003991] [0m[33m[WLAN_RFKILL]: [0mrfkill_wlan_probe: init gpio
+[32m[   18.004448] [0m[33m[WLAN_RFKILL]: [0mrfkill_set_wifi_bt_power: 1
+[32m[   18.004897] [0m[33m[WLAN_RFKILL]: [0mExit rfkill_wlan_probe
+[32m[   18.005402] [0mKey type dns_resolver registered
+[32m[   18.006263] [0m[33mgc8034 2-0037: [0mdriver version: 00.01.09
+[32m[   18.006754] [0m[33mgc8034 2-0037: [0m[1msupply dovdd not found, using dummy regulator[0m
+[32m[   18.007376] [0m[33mgc8034 2-0037: [0m[1msupply dvdd not found, using dummy regulator[0m
+[32m[   18.007962] [0m[33mgc8034 2-0037: [0m[1msupply avdd not found, using dummy regulator[0m
+[32m[   18.008545] [0m[33mgc8034 2-0037: [0mlane_num(4)  pixel_rate(319887360)
+[32m[   18.009048] [0m[33mgc8034 2-0037: [0m[31mcould not get default pinstate[0m
+[32m[   18.009518] [0m[33mgc8034 2-0037: [0m[31mcould not get sleep pinstate[0m
+[32m[   18.010133] [0mvendor storage:20190527 ret = 0
+[32m[   18.021349] [0m[33mgc8034 2-0037: [0m[31mgc8034 read reg:0xf0 failed ![0m
+[32m[   18.022028] [0m[33mgc8034 2-0037: [0m[31mgc8034 read reg:0xf1 failed ![0m
+[32m[   18.022495] [0m[33mgc8034 2-0037: [0m[31mUnexpected sensor id(000000), ret(-6)[0m
+[32m[   18.023972] [0m[33mgc8034 4-0037: [0mdriver version: 00.01.09
+[32m[   18.028781] [0m[33mgc8034 4-0037: [0m[1msupply dovdd not found, using dummy regulator[0m
+[32m[   18.029402] [0m[33mgc8034 4-0037: [0m[1msupply dvdd not found, using dummy regulator[0m
+[32m[   18.029993] [0m[33mgc8034 4-0037: [0m[1msupply avdd not found, using dummy regulator[0m
+[32m[   18.030577] [0m[33mgc8034 4-0037: [0mlane_num(4)  pixel_rate(319887360)
+[32m[   18.031082] [0m[33mgc8034 4-0037: [0m[31mcould not get default pinstate[0m
+[32m[   18.031559] [0m[33mgc8034 4-0037: [0m[31mcould not get sleep pinstate[0m
+[32m[   18.044253] [0m[33mgc8034 4-0037: [0m[31mgc8034 read reg:0xf0 failed ![0m
+[32m[   18.044888] [0m[33mgc8034 4-0037: [0m[31mgc8034 read reg:0xf1 failed ![0m
+[32m[   18.045351] [0m[33mgc8034 4-0037: [0m[31mUnexpected sensor id(000000), ret(-6)[0m
+[32m[   18.046274] [0mLoading compiled-in X.509 certificates
+[32m[   18.047894] [0m[33mpstore: [0mUsing crash dump compression: deflate
+[32m[   18.051117] [0m[33mrga3 fdb60000.rga: [0mAdding to iommu group 2
+[32m[   18.051932] [0m[33mrga3 fdb60000.rga: [0mprobe successfully, irq = 52, hw_version:3.0.76831
+[32m[   18.052636] [0m[33mrga3 fdb70000.rga: [0mAdding to iommu group 3
+[32m[   18.053423] [0m[33mrga3 fdb70000.rga: [0mprobe successfully, irq = 53, hw_version:3.0.76831
+[32m[   18.054475] [0m[33mrga2 fdb80000.rga: [0mprobe successfully, irq = 127, hw_version:3.2.63318
+[32m[   18.055240] [0m[33mrga: [0mIOMMU binding successfully, default mapping core[0x1]
+[32m[   18.055861] [0m[33mrga: [0mModule initialized. v1.3.13
+[32m[   18.076019] [0m[33mrockchip-csi2-dphy csi2-dcphy0: [0mcsi2 dphy0 probe successfully!
+[32m[   18.077035] [0m[33mrockchip-csi2-dphy csi2-dcphy1: [0mcsi2 dphy0 probe successfully!
+[32m[   18.077920] [0m[33mmpp_vdpu1 fdb51000.avsd-plus: [0mAdding to iommu group 1
+[32m[   18.078870] [0m[33mmpp_vdpu1 fdb51000.avsd-plus: [0mprobe device
+[32m[   18.079561] [0m[33mmpp_vdpu1 fdb51000.avsd-plus: [0mreset_group->rw_sem_on=0
+[32m[   18.080121] [0m[33mmpp_vdpu1 fdb51000.avsd-plus: [0mreset_group->rw_sem_on=0
+[32m[   18.080727] [0m[33mmpp_vdpu1 fdb51000.avsd-plus: [0mprobing finish
+[32m[   18.081399] [0m[33mmpp_vdpu2 fdb50400.vdpu: [0mAdding to iommu group 1
+[32m[   18.081972] [0m[33mmpp_vdpu2 fdb50400.vdpu: [0mprobe device
+[32m[   18.082548] [0m[33mmpp_vdpu2 fdb50400.vdpu: [0mreset_group->rw_sem_on=0
+[32m[   18.083065] [0m[33mmpp_vdpu2 fdb50400.vdpu: [0mreset_group->rw_sem_on=0
+[32m[   18.083606] [0m[33mmpp_vdpu2 fdb50400.vdpu: [0mprobing finish
+[32m[   18.084228] [0m[33mmpp_vepu2 fdb50000.vepu: [0mAdding to iommu group 1
+[32m[   18.084800] [0m[33mmpp_vepu2 fdb50000.vepu: [0mprobing start
+[32m[   18.085402] [0m[33mmpp_vepu2 fdb50000.vepu: [0mreset_group->rw_sem_on=0
+[32m[   18.085918] [0m[33mmpp_vepu2 fdb50000.vepu: [0mreset_group->rw_sem_on=0
+[32m[   18.086459] [0m[33mmpp_vepu2 fdb50000.vepu: [0mprobing finish
+[32m[   18.087152] [0m[33mmpp_vepu2 fdba0000.jpege-core: [0mAdding to iommu group 5
+[32m[   18.087845] [0m[33mmpp_vepu2 fdba0000.jpege-core: [0mprobing start
+[32m[   18.088537] [0m[33mmpp_vepu2 fdba0000.jpege-core: [0mattach ccu success
+[32m[   18.089079] [0m[33mmpp_vepu2 fdba0000.jpege-core: [0mprobing finish
+[32m[   18.089751] [0m[33mmpp_vepu2 fdba4000.jpege-core: [0mAdding to iommu group 6
+[32m[   18.090400] [0m[33mmpp_vepu2 fdba4000.jpege-core: [0mprobing start
+[32m[   18.091057] [0m[33mmpp_vepu2 fdba4000.jpege-core: [0mattach ccu success
+[32m[   18.091615] [0m[33mmpp_vepu2 fdba4000.jpege-core: [0mprobing finish
+[32m[   18.092292] [0m[33mmpp_vepu2 fdba8000.jpege-core: [0mAdding to iommu group 7
+[32m[   18.092938] [0m[33mmpp_vepu2 fdba8000.jpege-core: [0mprobing start
+[32m[   18.093587] [0m[33mmpp_vepu2 fdba8000.jpege-core: [0mattach ccu success
+[32m[   18.094129] [0m[33mmpp_vepu2 fdba8000.jpege-core: [0mprobing finish
+[32m[   18.094802] [0m[33mmpp_vepu2 fdbac000.jpege-core: [0mAdding to iommu group 8
+[32m[   18.095434] [0m[33mmpp_vepu2 fdbac000.jpege-core: [0mprobing start
+[32m[   18.096035] [0m[33mmpp_vepu2 fdbac000.jpege-core: [0mattach ccu success
+[32m[   18.096565] [0m[33mmpp_vepu2 fdbac000.jpege-core: [0mprobing finish
+[32m[   18.097175] [0m[33mmpp-iep2 fdbb0000.iep: [0mAdding to iommu group 9
+[32m[   18.097734] [0m[33mmpp-iep2 fdbb0000.iep: [0mprobe device
+[32m[   18.098543] [0m[33mmpp-iep2 fdbb0000.iep: [0mprobing finish
+[32m[   18.099039] [0m[33mmpp_jpgdec fdb90000.jpegd: [0mAdding to iommu group 4
+[32m[   18.099675] [0m[33mmpp_jpgdec fdb90000.jpegd: [0mprobe device
+[32m[   18.100194] [0m[33mmpp_jpgdec fdb90000.jpegd: [0mprobing finish
+[32m[   18.100726] [0m[33mmpp_rkvdec2 fdc38100.rkvdec-core: [0mAdding to iommu group 12
+[32m[   18.101475] [0m[33mmpp_rkvdec2 fdc38100.rkvdec-core: [0mrkvdec-core, probing start
+[32m[   18.102134] [0m[33mmpp_rkvdec2 fdc38100.rkvdec-core: [0m[31mshared_niu_a is not found![0m
+[32m[   18.102720] [0m[33mrkvdec2_init:1301: [0m[31mNo niu aclk reset resource define[0m
+[32m[   18.103253] [0m[33mmpp_rkvdec2 fdc38100.rkvdec-core: [0m[31mshared_niu_h is not found![0m
+[32m[   18.103837] [0m[33mrkvdec2_init:1304: [0m[31mNo niu hclk reset resource define[0m
+[32m[   18.104375] [0m[33mmpp_rkvdec2 fdc38100.rkvdec-core: [0mno regulator, devfreq is disabled
+[32m[   18.105050] [0m[33mmpp_rkvdec2 fdc38100.rkvdec-core: [0mcore_mask=00010001
+[32m[   18.105575] [0m[33mmpp_rkvdec2 fdc38100.rkvdec-core: [0mattach ccu as core 0
+[32m[   18.106214] [0m[33mmpp_rkvdec2 fdc38100.rkvdec-core: [0msram_start 0x00000000ff001000
+[32m[   18.106822] [0m[33mmpp_rkvdec2 fdc38100.rkvdec-core: [0mrcb_iova 0x00000000fff00000
+[32m[   18.107419] [0m[33mmpp_rkvdec2 fdc38100.rkvdec-core: [0msram_size 491520
+[32m[   18.107928] [0m[33mmpp_rkvdec2 fdc38100.rkvdec-core: [0mrcb_size 1048576
+[32m[   18.108437] [0m[33mmpp_rkvdec2 fdc38100.rkvdec-core: [0mmin_width 512
+[32m[   18.108925] [0m[33mmpp_rkvdec2 fdc38100.rkvdec-core: [0mrcb_info_count 20
+[32m[   18.109441] [0m[33mmpp_rkvdec2 fdc38100.rkvdec-core: [0m[136, 24576]
+[32m[   18.109921] [0m[33mmpp_rkvdec2 fdc38100.rkvdec-core: [0m[137, 49152]
+[32m[   18.110400] [0m[33mmpp_rkvdec2 fdc38100.rkvdec-core: [0m[141, 90112]
+[32m[   18.110879] [0m[33mmpp_rkvdec2 fdc38100.rkvdec-core: [0m[140, 49152]
+[32m[   18.111361] [0m[33mmpp_rkvdec2 fdc38100.rkvdec-core: [0m[139, 180224]
+[32m[   18.111848] [0m[33mmpp_rkvdec2 fdc38100.rkvdec-core: [0m[133, 49152]
+[32m[   18.112327] [0m[33mmpp_rkvdec2 fdc38100.rkvdec-core: [0m[134, 8192]
+[32m[   18.112798] [0m[33mmpp_rkvdec2 fdc38100.rkvdec-core: [0m[135, 4352]
+[32m[   18.113269] [0m[33mmpp_rkvdec2 fdc38100.rkvdec-core: [0m[138, 13056]
+[32m[   18.113748] [0m[33mmpp_rkvdec2 fdc38100.rkvdec-core: [0m[142, 291584]
+[32m[   18.114249] [0m[33mmpp_rkvdec2 fdc38100.rkvdec-core: [0mprobing finish
+[32m[   18.114826] [0m[33mmpp_rkvdec2 fdc48100.rkvdec-core: [0mAdding to iommu group 13
+[32m[   18.115528] [0m[33mmpp_rkvdec2 fdc48100.rkvdec-core: [0mrkvdec-core, probing start
+[32m[   18.116185] [0m[33mmpp_rkvdec2 fdc48100.rkvdec-core: [0m[31mshared_niu_a is not found![0m
+[32m[   18.116770] [0m[33mrkvdec2_init:1301: [0m[31mNo niu aclk reset resource define[0m
+[32m[   18.117295] [0m[33mmpp_rkvdec2 fdc48100.rkvdec-core: [0m[31mshared_niu_h is not found![0m
+[32m[   18.117878] [0m[33mrkvdec2_init:1304: [0m[31mNo niu hclk reset resource define[0m
+[32m[   18.118414] [0m[33mmpp_rkvdec2 fdc48100.rkvdec-core: [0mno regulator, devfreq is disabled
+[32m[   18.119076] [0m[33mmpp_rkvdec2 fdc48100.rkvdec-core: [0mcore_mask=00020002
+[32m[   18.119632] [0m[33mmpp_rkvdec2 fdc48100.rkvdec-core: [0mattach ccu as core 1
+[32m[   18.120298] [0m[33mmpp_rkvdec2 fdc48100.rkvdec-core: [0msram_start 0x00000000ff079000
+[32m[   18.120906] [0m[33mmpp_rkvdec2 fdc48100.rkvdec-core: [0mrcb_iova 0x00000000ffe00000
+[32m[   18.121498] [0m[33mmpp_rkvdec2 fdc48100.rkvdec-core: [0msram_size 487424
+[32m[   18.122008] [0m[33mmpp_rkvdec2 fdc48100.rkvdec-core: [0mrcb_size 1048576
+[32m[   18.122517] [0m[33mmpp_rkvdec2 fdc48100.rkvdec-core: [0mmin_width 512
+[32m[   18.123004] [0m[33mmpp_rkvdec2 fdc48100.rkvdec-core: [0mrcb_info_count 20
+[32m[   18.123525] [0m[33mmpp_rkvdec2 fdc48100.rkvdec-core: [0m[136, 24576]
+[32m[   18.124005] [0m[33mmpp_rkvdec2 fdc48100.rkvdec-core: [0m[137, 49152]
+[32m[   18.124483] [0m[33mmpp_rkvdec2 fdc48100.rkvdec-core: [0m[141, 90112]
+[32m[   18.124962] [0m[33mmpp_rkvdec2 fdc48100.rkvdec-core: [0m[140, 49152]
+[32m[   18.125440] [0m[33mmpp_rkvdec2 fdc48100.rkvdec-core: [0m[139, 180224]
+[32m[   18.125927] [0m[33mmpp_rkvdec2 fdc48100.rkvdec-core: [0m[133, 49152]
+[32m[   18.126406] [0m[33mmpp_rkvdec2 fdc48100.rkvdec-core: [0m[134, 8192]
+[32m[   18.126876] [0m[33mmpp_rkvdec2 fdc48100.rkvdec-core: [0m[135, 4352]
+[32m[   18.127351] [0m[33mmpp_rkvdec2 fdc48100.rkvdec-core: [0m[138, 13056]
+[32m[   18.127830] [0m[33mmpp_rkvdec2 fdc48100.rkvdec-core: [0m[142, 291584]
+[32m[   18.128339] [0m[33mmpp_rkvdec2 fdc48100.rkvdec-core: [0mprobing finish
+[32m[   18.128926] [0m[33mmpp_rkvenc2 fdbd0000.rkvenc-core: [0mAdding to iommu group 10
+[32m[   18.129598] [0m[33mmpp_rkvenc2 fdbd0000.rkvenc-core: [0mprobing start
+[32m[   18.142074] [0m[33mmpp_rkvenc2 fdbd0000.rkvenc-core: [0mbin=0
+[32m[   18.142701] [0m[33mmpp_rkvenc2 fdbd0000.rkvenc-core: [0midc=22
+[32m[   18.143146] [0m[33mmpp_rkvenc2 fdbd0000.rkvenc-core: [0midc-volt-sel=1
+[32m[   18.144675] [0m[33mmpp_rkvenc2 fdbd0000.rkvenc-core: [0mavs=0
+[32m[   18.145307] [0m[33mmpp_rkvenc2 fdbd0000.rkvenc-core: [0ml=-2147483648 h=2147483647 hyst=0 l_limit=0 h_limit=0 h_table=0
+[32m[   18.149583] [0m[33mmpp_rkvenc2 fdbd0000.rkvenc-core: [0mattach ccu as core 0
+[32m[   18.150142] [0m[33mmpp_rkvenc2 fdbd0000.rkvenc-core: [0mprobing finish
+[32m[   18.150733] [0m[33mmpp_rkvenc2 fdbe0000.rkvenc-core: [0mAdding to iommu group 11
+[32m[   18.151427] [0m[33mmpp_rkvenc2 fdbe0000.rkvenc-core: [0mprobing start
+[32m[   18.152194] [0m[33mmpp_rkvenc2 fdbe0000.rkvenc-core: [0mbin=0
+[32m[   18.152790] [0m[33mmpp_rkvenc2 fdbe0000.rkvenc-core: [0midc=22
+[32m[   18.153225] [0m[33mmpp_rkvenc2 fdbe0000.rkvenc-core: [0midc-volt-sel=1
+[32m[   18.154488] [0m[33mmpp_rkvenc2 fdbe0000.rkvenc-core: [0mavs=0
+[32m[   18.155119] [0m[33mmpp_rkvenc2 fdbe0000.rkvenc-core: [0ml=-2147483648 h=2147483647 hyst=0 l_limit=0 h_limit=0 h_table=0
+[32m[   18.156273] [0m[33mmpp_rkvenc2 fdbe0000.rkvenc-core: [0mattach ccu as core 1
+[32m[   18.156826] [0m[33mmpp_rkvenc2 fdbe0000.rkvenc-core: [0mprobing finish
+[32m[   18.157407] [0m[33mmpp_av1dec fdc70000.av1d: [0mAdding to iommu group 14
+[32m[   18.158048] [0m[33mmpp_av1dec fdc70000.av1d: [0mprobing start
+[32m[   18.158569] [0m[33mmpp_av1dec fdc70000.av1d: [0mprobing finish
+[32m[   18.159119] [0m[33mrockchip-vop2 fdd90000.vop: [0mAdding to iommu group 18
+[32m[   18.160706] [0m[33mpanel-simple panel-edp1: [0m[1mSpecify missing connector_type, please specify "connector-type" in dts[0m
+[32m[   18.161819] [0m[33minput: [0madc-keys as /devices/platform/adc-keys/input/input5
+[32m[   18.161980] [0m[33mmali fb000000.gpu: [0mKernel DDK version g29p1-11eac0
+[32m[   18.162995] [0m[33mmali fb000000.gpu: [0mGPU metrics tracepoint support enabled
+[32m[   18.163438] [0m[33mrockchip-dmc dmc: [0mbin=0
+[32m[   18.164034] [0m[33mrockchip-dmc dmc: [0midc=55
+[32m[   18.164350] [0m[33mrockchip-dmc dmc: [0midc-volt-sel=2
+[32m[   18.164759] [0m[33mrockchip-dmc dmc: [0msoc version=0, speed=2
+[32m[   18.165086] [0m[33mmali fb000000.gpu: [0mbin=0
+[32m[   18.165696] [0m[33mmali fb000000.gpu: [0midc=27
+[32m[   18.166045] [0m[33mdebugfs: [0m[31mDirectory 'fb000000.gpu-mali' with parent 'vdd_gpu_s0' already present![0m
+[32m[   18.166202] [0m[33mrockchip-dmc dmc: [0mavs=0
+[32m[   18.167092] [0m[33mrockchip-dmc dmc: [0mcurrent ATF version 0x100
+[32m[   18.167692] [0m[33mrockchip-dmc dmc: [0mnormal_rate = 1560000000
+[32m[   18.168140] [0m[33mrockchip-dmc dmc: [0mreboot_rate = 2112000000
+[32m[   18.168588] [0m[33mrockchip-dmc dmc: [0msuspend_rate = 528000000
+[32m[   18.169035] [0m[33mrockchip-dmc dmc: [0mvideo_4k_rate = 1560000000
+[32m[   18.169259] [0m[33mmali fb000000.gpu: [0mpvtm=917
+[32m[   18.169496] [0m[33mrockchip-dmc dmc: [0mvideo_4k_10b_rate = 1560000000
+[32m[   18.169498] [0m[33mrockchip-dmc dmc: [0mvideo_svep_rate = 1560000000
+[32m[   18.169919] [0m[33mmali fb000000.gpu: [0mpvtm-volt-sel=5
+[32m[   18.170320] [0m[33mrockchip-dmc dmc: [0mboost_rate = 2112000000
+[32m[   18.170321] [0m[33mrockchip-dmc dmc: [0mfixed_rate(isp|cif0|cif1|dualview) = 2112000000
+[32m[   18.170825] [0m[33mdebugfs: [0m[31mDirectory 'fb000000.gpu-mali' with parent 'vdd_gpu_s0' already present![0m
+[32m[   18.171183] [0m[33mrockchip-dmc dmc: [0mperformance_rate = 2112000000
+[32m[   18.171185] [0m[33mrockchip-dmc dmc: [0mhdmirx_rate = 2112000000
+[32m[   18.171186] [0m[33mrockchip-dmc dmc: [0mdeep_suspend_rate = 2112000000
+[32m[   18.171188] [0m[33mrockchip-dmc dmc: [0m[31mfailed to get vop bandwidth to dmc rate[0m
+[32m[   18.171189] [0m[33mrockchip-dmc dmc: [0m[31mfailed to get vop pn to msch rl[0m
+[32m[   18.171336] [0m[33mrockchip-dmc dmc: [0ml=15000 h=2147483647 hyst=5000 l_limit=0 h_limit=0 h_table=0
+[32m[   18.172694] [0m[33mmali fb000000.gpu: [0mavs=0
+[32m[   18.176612] [0m[33mW : [0m[1m[File] : drivers/gpu/arm/valhall/platform/rk/mali_kbase_config_rk.c; [Line] : 143; [Func] : kbase_platform_rk_init(); power-off-delay-ms not available.[0m
+[32m[   18.178091] [0m[33mmali fb000000.gpu: [0mRegister LUT 000a0800 initialized for GPU arch 0x000a0806
+[32m[   18.178817] [0m[33mmali fb000000.gpu: [0mr0p0 status 5 not found in HW issues table;
+[32m[   18.179440] [0m[33mmali fb000000.gpu: [0mfalling back to closest match: r0p0 status 0
+[32m[   18.180053] [0m[33mmali fb000000.gpu: [0mExecution proceeding normally with fallback match
+[32m[   18.180703] [0m[33mmali fb000000.gpu: [0mGPU identified as 0x7 arch 10.8.6 r0p0 status 0
+[32m[   18.181392] [0m[33mmali fb000000.gpu: [0m[1mCSF_GPU_RESET_TIMEOUT is capped from 20666ms to 4500ms[0m
+[32m[   18.182081] [0m[33mmali fb000000.gpu: [0m[1mCSF_GPU_SUSPEND_TIMEOUT is capped from 10333ms to 4500ms[0m
+[32m[   18.182797] [0m[33mmali fb000000.gpu: [0m[1mKBASE_PRFCNT_ACTIVE_TIMEOUT is capped from 40000ms to 4500ms[0m
+[32m[   18.183547] [0m[33mmali fb000000.gpu: [0m[1mKBASE_AS_INACTIVE_TIMEOUT is capped from 40000ms to 4500ms[0m
+[32m[   18.184273] [0m[33mmali fb000000.gpu: [0m[1mCSF_FIRMWARE_STOP_TIMEOUT is capped from 40000ms to 4500ms[0m
+[32m[   18.185037] [0m[33mmali fb000000.gpu: [0mNo priority control manager is configured
+[32m[   18.185635] [0m[33mmali fb000000.gpu: [0mLarge page allocation set to false after hardware feature check
+[32m[   18.186547] [0m[33mmali fb000000.gpu: [0mNo memory group manager is configured
+[32m[   18.187122] [0m[33mmali fb000000.gpu: [0mProtected memory allocator not available
+[32m[   18.188204] [0m[33mmali fb000000.gpu: [0mEM: OPP:600000 is inefficient
+[32m[   18.188210] [0m[33mmali fb000000.gpu: [0mEM: OPP:500000 is inefficient
+[32m[   18.188214] [0m[33mmali fb000000.gpu: [0mEM: OPP:400000 is inefficient
+[32m[   18.188219] [0m[33mmali fb000000.gpu: [0mEM: OPP:300000 is inefficient
+[32m[   18.188387] [0m[33mmali fb000000.gpu: [0mEM: created perf domain
+[32m[   18.189228] [0m[33mmali fb000000.gpu: [0ml=15000 h=85000 hyst=5000 l_limit=0 h_limit=800000000 h_table=0
+[32m[   18.190922] [0m[33mrockchip-vop2 fdd90000.vop: [0m[drm:vop2_bind] vp0 assign plane mask: Cluster0 | Esmart0[0x5], primary plane phy id: Esmart0[2]
+[32m[   18.192018] [0m[33mrockchip-vop2 fdd90000.vop: [0m[drm:vop2_bind] vp1 assign plane mask: Cluster1 | Esmart1[0xa], primary plane phy id: Esmart1[3]
+[32m[   18.193089] [0m[33mrockchip-vop2 fdd90000.vop: [0m[drm:vop2_bind] vp2 assign plane mask: Cluster2 | Esmart2[0x140], primary plane phy id: Esmart2[8]
+[32m[   18.194175] [0m[33mrockchip-vop2 fdd90000.vop: [0m[drm:vop2_bind] vp3 assign plane mask: Cluster3 | Esmart3[0x280], primary plane phy id: Esmart3[9]
+[32m[   18.195418] [0m[1m[drm] failed to init overlay plane Cluster0-win1[0m
+[32m[   18.195617] [0m[33mmali fb000000.gpu: [0m* MALI kbase_mmap_min_addr compiled to CONFIG_DEFAULT_MMAP_MIN_ADDR, no runtime update possible! *
+[32m[   18.195927] [0m[1m[drm] failed to init overlay plane Cluster1-win1[0m
+[32m[   18.196928] [0m[33mmali fb000000.gpu: [0mProbed as mali0
+[32m[   18.197439] [0m[1m[drm] failed to init overlay plane Cluster2-win1[0m
+[32m[   18.198326] [0m[1m[drm] failed to init overlay plane Cluster3-win1[0m
+[32m[   18.204881] [0m[33mrockchip-vop2 fdd90000.vop: [0mbin=0
+[32m[   18.205435] [0m[33mrockchip-vop2 fdd90000.vop: [0midc=55
+[32m[   18.205826] [0m[33mrockchip-vop2 fdd90000.vop: [0midc-volt-sel=2
+[32m[   18.206669] [0m[33mrockchip-vop2 fdd90000.vop: [0mavs=0
+[32m[   18.207100] [0m[33mrockchip-vop2 fdd90000.vop: [0ml=-2147483648 h=2147483647 hyst=0 l_limit=0 h_limit=0 h_table=0
+[32m[   18.208530] [0m[33mrockchip-vop2 fdd90000.vop: [0m[31mSupported VOP aclk dvfs, normal mode:500000000, reset mode:500000000, advanced mode:750000000[0m
+[32m[   18.209593] [0m[33mrockchip-drm display-subsystem: [0mbound fdd90000.vop (ops 0xffffffc009677538)
+[32m[   18.211491] [0m[33mrockchip-drm display-subsystem: [0mbound fded0000.edp (ops 0xffffffc009698728)
+[32m[   18.213228] [0m[33mdw_hdmi_qp-rockchip fde80000.hdmi: [0mregistered ddc I2C bus driver
+[32m[   18.214370] [0m[33mrockchip-drm display-subsystem: [0mbound fde80000.hdmi (ops 0xffffffc00969bcd0)
+[32m[   18.215375] [0m[33mrockchip-drm display-subsystem: [0mbound fde50000.dp (ops 0xffffffc00969e0f8)
+[32m[   18.217556] [0m[33mdw-hdmi-qp-hdcp dw-hdmi-qp-hdcp.8.auto: [0mdw_hdcp_qp_hdcp_probe success
+[32m[   18.218384] [0m[drm] Initialized rockchip 4.0.0 20140818 for display-subsystem on minor 0
+[32m[   18.369762] [0m[33mrockchip-dp fded0000.edp: [0m[31mfailed to read max link rate[0m
+[32m[   18.370458] [0m[33mrockchip-drm display-subsystem: [0m[drm] Cannot find any crtc or sizes
+[32m[   18.371489] [0m[33mrockchip-drm display-subsystem: [0m[drm] run display error_event monitor
+[32m[   18.374180] [0m[33minput: [0mrockchip-hdmi0 rockchip-hdmi0 as /devices/platform/hdmi0-sound/sound/card3/input6
+[32m[   18.375905] [0m[33mdebugfs: [0m[31mFile 'Capture' in directory 'dapm' already present![0m
+[32m[   18.377248] [0m[33minput: [0mrockchip-dp0 rockchip-dp0 as /devices/platform/dp0-sound/sound/card4/input7
+[32m[   18.380721] [0m[33mrkcif rkcif-mipi-lvds: [0mclear unready subdev num: 1
+[32m[   18.382231] [0m[33mrkcif-mipi-lvds: [0m[31mrkcif_update_sensor_info: stream[0] get remote terminal sensor failed![0m
+[32m[   18.383107] [0m[33mrkcif-mipi-lvds: [0mAsync subdev notifier completed
+[32m[   18.383653] [0m[33mrkcif-mipi-lvds: [0m[31mrkcif_update_sensor_info: stream[0] get remote terminal sensor failed![0m
+[32m[   18.384471] [0m[33mrkcif-mipi-lvds: [0m[31mThere is not terminal subdev, not synchronized with ISP[0m
+[32m[   18.385180] [0m[33mrkcif rkcif-mipi-lvds1: [0mclear unready subdev num: 1
+[32m[   18.386616] [0m[33mrkcif-mipi-lvds1: [0m[31mrkcif_update_sensor_info: stream[0] get remote terminal sensor failed![0m
+[32m[   18.387494] [0m[33mrkcif-mipi-lvds1: [0mAsync subdev notifier completed
+[32m[   18.388101] [0m[33mrkcif-mipi-lvds1: [0m[31mrkcif_update_sensor_info: stream[0] get remote terminal sensor failed![0m
+[32m[   18.388933] [0m[33mrkcif-mipi-lvds1: [0m[31mThere is not terminal subdev, not synchronized with ISP[0m
+[32m[   18.389807] [0m[33mrkcif-mipi-lvds: [0m[31mrkcif_update_sensor_info: stream[0] get remote terminal sensor failed![0m
+[32m[   18.390629] [0m[33mrkcif-mipi-lvds: [0m[31mThere is not terminal subdev, not synchronized with ISP[0m
+[32m[   18.391505] [0m[33mrkcif-mipi-lvds1: [0m[31mrkcif_update_sensor_info: stream[0] get remote terminal sensor failed![0m
+[32m[   18.391923] [0m[33mRKNPU fdab0000.npu: [0mAdding to iommu group 0
+[32m[   18.392313] [0m[33mrkcif-mipi-lvds1: [0m[31mThere is not terminal subdev, not synchronized with ISP[0m
+[32m[   18.393067] [0m[33mRKNPU fdab0000.npu: [0mRKNPU: rknpu iommu is enabled, using iommu mode
+[32m[   18.402715] [0m[33mRKNPU fdab0000.npu: [0m[31mcan't request region for resource [mem 0xfdab0000-0xfdabffff][0m
+[32m[   18.403548] [0m[33mRKNPU fdab0000.npu: [0m[31mcan't request region for resource [mem 0xfdac0000-0xfdacffff][0m
+[32m[   18.404354] [0m[33mRKNPU fdab0000.npu: [0m[31mcan't request region for resource [mem 0xfdad0000-0xfdadffff][0m
+[32m[   18.405692] [0m[drm] Initialized rknpu 0.9.8 20240828 for fdab0000.npu on minor 1
+[32m[   18.407103] [0m[33mrockchip-dp fded0000.edp: [0m[31mfailed to read max link rate[0m
+[32m[   18.407763] [0m[33mrockchip-drm display-subsystem: [0m[drm] Cannot find any crtc or sizes
+[32m[   18.411375] [0m[33mRKNPU fdab0000.npu: [0mRKNPU: bin=0
+[32m[   18.412025] [0m[33mRKNPU fdab0000.npu: [0midc=14
+[32m[   18.412462] [0m[33mdebugfs: [0m[31mDirectory 'fdab0000.npu-rknpu' with parent 'vdd_npu_s0' already present![0m
+[32m[   18.421753] [0m[33mRKNPU fdab0000.npu: [0mpvtm=909
+[32m[   18.427798] [0m[33mRKNPU fdab0000.npu: [0mpvtm-volt-sel=4
+[32m[   18.428434] [0m[33mdebugfs: [0m[31mDirectory 'fdab0000.npu-rknpu' with parent 'vdd_npu_s0' already present![0m
+[32m[   18.433642] [0m[33mRKNPU fdab0000.npu: [0mavs=0
+[32m[   18.433771] [0m[33mrockchip-dp fded0000.edp: [0m[31mfailed to read max link rate[0m
+[32m[   18.434351] [0m[33mRKNPU fdab0000.npu: [0ml=15000 h=85000 hyst=5000 l_limit=0 h_limit=800000000 h_table=0
+[32m[   18.434701] [0m[33mrockchip-drm display-subsystem: [0m[drm] Cannot find any crtc or sizes
+[32m[   18.465803] [0m[33mcfg80211: [0mLoading compiled-in X.509 certificates for regulatory database
+[32m[   18.468866] [0m[33mcfg80211: [0mLoaded X.509 cert 'sforshee: 00b28ddf47aef9cea7'
+[32m[   18.470097] [0m[33mcfg80211: [0mLoaded X.509 cert 'wens: 61c038651aabdcf94bd0ac7ff06c7248db18c600'
+[32m[   18.470891] [0m[33mplatform regulatory.0: [0m[1mDirect firmware load for regulatory.db failed with error -2[0m
+[32m[   18.471684] [0m[33mcfg80211: [0mfailed to load regulatory.db
+[32m[   18.472235] [0m[33mclk: [0mDisabling unused clocks
+[32m[   18.474399] [0m[33mrockchip-pm rockchip-suspend: [0m[1mnot set pwm-regulator-config[0m
+[32m[   18.475789] [0mrockchip-suspend not set sleep-mode-config for mem-lite
+[32m[   18.476350] [0mrockchip-suspend not set wakeup-config for mem-lite
+[32m[   18.476878] [0mrockchip-suspend not set sleep-mode-config for mem-ultra
+[32m[   18.477441] [0mrockchip-suspend not set wakeup-config for mem-ultra
+[32m[   18.479356] [0m[33mI : [0m[File] : drivers/gpu/arm/mali400/mali/linux/mali_kernel_linux.c; [Line] : 407; [Func] : mali_module_init(); svn_rev_string_from_arm of this mali_ko is '', rk_ko_ver is '5', built at '00:58:50', on 'Nov  9 2026'.
+[32m[   18.481531] [0m[1mMali: [0m
+[32m[   18.481535] [0m[1mMali device driver loaded[0m
+[32m[   18.482129] [0m[33mrkisp rkisp0-vir0: [0mclear unready subdev num: 1
+[32m[   18.482843] [0m[33mrkisp rkisp0-vir0: [0minput:800x600 div(h:1 v:1) extend:128
+[32m[   18.483409] [0m[33mrkisp rkisp0-vir0: [0mwin0 800x600 extend(up:0 down:0 left:0 right:0)
+[32m[   18.484047] [0m[33mrkisp0-vir0: [0mAsync subdev notifier completed
+[32m[   18.484512] [0m[33mrkisp rkisp1-vir0: [0mclear unready subdev num: 1
+[32m[   18.485176] [0m[33mrkisp rkisp1-vir0: [0minput:800x600 div(h:1 v:1) extend:128
+[32m[   18.485736] [0m[33mrkisp rkisp1-vir0: [0mwin0 800x600 extend(up:0 down:0 left:0 right:0)
+[32m[   18.486373] [0m[33mrkisp1-vir0: [0mAsync subdev notifier completed
+[32m[   18.486840] [0mALSA device list:
+[32m[   18.487111] [0m[33m  #0: [0mYouyeetoo-YY3588-0
+[32m[   18.487426] [0m[33m  #1: [0mYouyeetoo-YY3588-0
+[32m[   18.487741] [0m[33m  #2: [0mYouyeetoo-YY3588-0
+[32m[   18.488055] [0m[33m  #3: [0mYouyeetoo-YY3588-0
+[32m[   18.488368] [0m[33m  #4: [0mYouyeetoo-YY3588-0
+[32m[   18.488771] [0m[33mdw-apb-uart feb50000.serial: [0m[1mforbid DMA for kernel console[0m
+[32m[   18.847030] [0m[33mEXT4-fs (mmcblk0p2): [0m1 orphan inode deleted
+[32m[   18.847562] [0m[33mEXT4-fs (mmcblk0p2): [0mrecovery complete
+[32m[   18.850886] [0m[33mEXT4-fs (mmcblk0p2): [0mmounted filesystem with ordered data mode. Quota mode: disabled.
+[32m[   18.851789] [0m[33mVFS: [0mMounted root (ext4 filesystem) on device 179:2.
+[32m[   18.852841] [0m[33mdevtmpfs: [0mmounted
+[32m[   18.857480] [0m[33mFreeing unused kernel memory: [0m8000K
+[32m[   18.858007] [0mRun /sbin/init as init process
+[32m[   18.858373] [0m  with arguments:
+[32m[   18.858377] [0m    /sbin/init
+[32m[   18.858380] [0m  with environment:
+[32m[   18.858384] [0m    HOME=/
+[32m[   18.858387] [0m    TERM=linux
+[32m[   18.972136] [0m[33msystemd[1]: [0mSystem time before build time, advancing clock.
+[32m[   18.977120] [0m[33msystemd[1]: [0m[31mFailed to find module 'autofs4'[0m
+[32m[   19.545771] [0m[33msystemd-journald[294]: [0mReceived client request to flush runtime journal.
+[32m[   19.547448] [0m[33msystemd-journald[294]: [0m[1mFile /var/log/journal/57d52cad9fc74bb695fb565ca8ed6849/system.journal corrupted or uncleanly shut down, renaming and replacing.[0m
+[32m[   19.620128] [0m[33mrk_pcie_establish_link: [0m[1m350 callbacks suppressed[0m
+[32m[   19.620140] [0m[33mrk-pcie fe180000.pcie: [0mPCIe Linking... LTSSM is 0x3
+[32m[   19.623119] [0m[33mrk-pcie fe170000.pcie: [0mPCIe Linking... LTSSM is 0x3
+[32m[   19.639427] [0m[33mrk_gmac-dwmac fe1c0000.ethernet end1: [0mrenamed from eth0
+[32m[   19.643893] [0m[33mrk-pcie fe180000.pcie: [0mPCIe Linking... LTSSM is 0x3
+[32m[   19.644694] [0m[33mrk-pcie fe170000.pcie: [0mPCIe Linking... LTSSM is 0x3
+[32m[   19.665450] [0m[33mrk-pcie fe180000.pcie: [0mPCIe Linking... LTSSM is 0x3
+[32m[   19.666588] [0m[33mrk-pcie fe170000.pcie: [0mPCIe Linking... LTSSM is 0x3
+[32m[   19.686989] [0m[33mrk-pcie fe180000.pcie: [0mPCIe Linking... LTSSM is 0x3
+[32m[   19.688260] [0m[33mrk-pcie fe170000.pcie: [0mPCIe Linking... LTSSM is 0x3
+[32m[   19.708722] [0m[33mrk-pcie fe180000.pcie: [0mPCIe Linking... LTSSM is 0x3
+[32m[   19.709908] [0m[33mrk-pcie fe170000.pcie: [0mPCIe Linking... LTSSM is 0x3
+[32m[   19.824478] [0m[33mrkcif-mipi-lvds: [0m[31mrkcif_update_sensor_info: stream[3] get remote terminal sensor failed![0m
+[32m[   19.825323] [0m[33mstream_cif_mipi_id3: [0m[31mupdate sensor info failed -19[0m
+[32m[   19.825494] [0m[33mrkcif-mipi-lvds: [0m[31mrkcif_update_sensor_info: stream[2] get remote terminal sensor failed![0m
+[32m[   19.825701] [0m[33mrkcif-mipi-lvds: [0m[31mrkcif_update_sensor_info: stream[0] get remote terminal sensor failed![0m
+[32m[   19.825703] [0m[33mrkcif_scale_ch0: [0m[31mupdate sensor info failed -19[0m
+[32m[   19.826137] [0m[33mrkcif-mipi-lvds: [0m[31mrkcif_update_sensor_info: stream[1] get remote terminal sensor failed![0m
+[32m[   19.826271] [0m[33mrkcif-mipi-lvds: [0m[31mrkcif_update_sensor_info: stream[3] get remote terminal sensor failed![0m
+[32m[   19.826274] [0m[33mrkcif_scale_ch3: [0m[31mupdate sensor info failed -19[0m
+[32m[   19.826618] [0m[33mrkcif_tools_id2: [0m[31mupdate sensor info failed -19[0m
+[32m[   19.827408] [0m[33mstream_cif_mipi_id1: [0m[31mupdate sensor info failed -19[0m
+[32m[   19.829276] [0m[33mrkcif-mipi-lvds: [0m[31mrkcif_update_sensor_info: stream[0] get remote terminal sensor failed![0m
+[32m[   19.829921] [0m[33mrkcif-mipi-lvds: [0m[31mrkcif_update_sensor_info: stream[2] get remote terminal sensor failed![0m
+[32m[   19.829967] [0m[33mrkcif_tools_id0: [0m[31mupdate sensor info failed -19[0m
+[32m[   19.830443] [0m[33mstream_cif_mipi_id2: [0m[31mupdate sensor info failed -19[0m
+[32m[   19.830988] [0m[33mrkcif-mipi-lvds: [0m[31mrkcif_update_sensor_info: stream[0] get remote terminal sensor failed![0m
+[32m[   19.833701] [0m[33mrkcif-mipi-lvds: [0m[31mrkcif_update_sensor_info: stream[1] get remote terminal sensor failed![0m
+[32m[   19.833715] [0m[33mrkcif-mipi-lvds: [0m[31mrkcif_update_sensor_info: stream[2] get remote terminal sensor failed![0m
+[32m[   19.833721] [0m[33mrkcif_scale_ch2: [0m[31mupdate sensor info failed -19[0m
+[32m[   19.834379] [0m[33mstream_cif_mipi_id0: [0m[31mupdate sensor info failed -19[0m
+[32m[   19.835878] [0m[33mrkcif-mipi-lvds: [0m[31mrkcif_update_sensor_info: stream[1] get remote terminal sensor failed![0m
+[32m[   19.836135] [0m[33mrkcif_scale_ch1: [0m[31mupdate sensor info failed -19[0m
+[32m[   19.836564] [0m[33mrkcif_tools_id1: [0m[31mupdate sensor info failed -19[0m
+[32m[   19.846915] [0m[33mrkcif-mipi-lvds1: [0m[31mrkcif_update_sensor_info: stream[0] get remote terminal sensor failed![0m
+[32m[   19.847036] [0mfile system registered
+[32m[   19.847720] [0m[33mrkcif_scale_ch0: [0m[31mupdate sensor info failed -19[0m
+[32m[   19.848956] [0m[33mrkcif-mipi-lvds1: [0m[31mrkcif_update_sensor_info: stream[2] get remote terminal sensor failed![0m
+[32m[   19.849772] [0m[33mstream_cif_mipi_id2: [0m[31mupdate sensor info failed -19[0m
+[32m[   19.850082] [0m[33mrkcif-mipi-lvds1: [0m[31mrkcif_update_sensor_info: stream[1] get remote terminal sensor failed![0m
+[32m[   19.850439] [0m[33mrkcif-mipi-lvds1: [0m[31mrkcif_update_sensor_info: stream[2] get remote terminal sensor failed![0m
+[32m[   19.851072] [0m[33mstream_cif_mipi_id1: [0m[31mupdate sensor info failed -19[0m
+[32m[   19.851257] [0m[33mrkcif-mipi-lvds1: [0m[31mrkcif_update_sensor_info: stream[3] get remote terminal sensor failed![0m
+[32m[   19.851261] [0m[33mrkcif_scale_ch3: [0m[31mupdate sensor info failed -19[0m
+[32m[   19.851869] [0m[33mrkcif_scale_ch2: [0m[31mupdate sensor info failed -19[0m
+[32m[   19.852621] [0m[33mrkcif-mipi-lvds1: [0m[31mrkcif_update_sensor_info: stream[1] get remote terminal sensor failed![0m
+[32m[   19.853081] [0m[33mrkcif-mipi-lvds1: [0m[31mrkcif_update_sensor_info: stream[0] get remote terminal sensor failed![0m
+[32m[   19.853083] [0m[33mrkcif_tools_id0: [0m[31mupdate sensor info failed -19[0m
+[32m[   19.853218] [0m[33mrkcif-mipi-lvds1: [0m[31mrkcif_update_sensor_info: stream[0] get remote terminal sensor failed![0m
+[32m[   19.853672] [0m[33mrkcif_tools_id1: [0m[31mupdate sensor info failed -19[0m
+[32m[   19.854148] [0m[33mstream_cif_mipi_id0: [0m[31mupdate sensor info failed -19[0m
+[32m[   19.859423] [0m[33mrkcif-mipi-lvds1: [0m[31mrkcif_update_sensor_info: stream[3] get remote terminal sensor failed![0m
+[32m[   19.860137] [0m[33mrkcif-mipi-lvds1: [0m[31mrkcif_update_sensor_info: stream[2] get remote terminal sensor failed![0m
+[32m[   19.860224] [0m[33mstream_cif_mipi_id3: [0m[31mupdate sensor info failed -19[0m
+[32m[   19.861016] [0m[33mrkcif_tools_id2: [0m[31mupdate sensor info failed -19[0m
+[32m[   19.862697] [0m[33mrkcif-mipi-lvds1: [0m[31mrkcif_update_sensor_info: stream[1] get remote terminal sensor failed![0m
+[32m[   19.863538] [0m[33mrkcif_scale_ch1: [0m[31mupdate sensor info failed -19[0m
+[32m[   19.919505] [0mread descriptors
+[32m[   19.919769] [0mread strings
+[32m[   20.044017] [0m[33mrk-pcie fe180000.pcie: [0m[31mPCIe Link Fail, LTSSM is 0x3, hw_retries=1[0m
+[32m[   20.047913] [0m[33mrk-pcie fe170000.pcie: [0m[31mPCIe Link Fail, LTSSM is 0x3, hw_retries=1[0m
+[32m[   20.073169] [0m[33mandroid_work: [0mdid not send uevent (0 0 0000000000000000)
+[32m[   20.508556] [0m[33mrockchip-dp fded0000.edp: [0m[31mfailed to read max link rate[0m
+[32m[   20.544322] [0m[33mrockchip-dp fded0000.edp: [0m[31mfailed to read max link rate[0m
+[32m[   20.573738] [0m[33mrockchip-dp fded0000.edp: [0m[31mfailed to read max link rate[0m
+[32m[   20.599683] [0m[33mrockchip-dp fded0000.edp: [0m[31mfailed to read max link rate[0m
+[32m[   20.629218] [0m[33mrockchip-dp fded0000.edp: [0m[31mfailed to read max link rate[0m
+[32m[   20.655704] [0m[33mrockchip-dp fded0000.edp: [0m[31mfailed to read max link rate[0m
+[32m[   20.684543] [0m[33mrockchip-dp fded0000.edp: [0m[31mfailed to read max link rate[0m
+[32m[   20.719321] [0m[33mrockchip-dp fded0000.edp: [0m[31mfailed to read max link rate[0m
+[32m[   20.746702] [0m[33mrockchip-dp fded0000.edp: [0m[31mfailed to read max link rate[0m
+[32m[   20.864255] [0m[33mEXT4-fs (mmcblk0p2): [0mre-mounted. Quota mode: disabled.
+[32m[   20.921952] [0m[33mrd 0-7: [0m[1mDisabling EAS, schedutil is mandatory[0m
+[32m[   21.067121] [0m[33mrk-pcie fe170000.pcie: [0m[31mfailed to initialize host[0m
+[32m[   21.071126] [0m[33mrk-pcie fe180000.pcie: [0m[31mfailed to initialize host[0m
+[32m[   21.204226] [0m[33mrk_gmac-dwmac fe1c0000.ethernet end1: [0mRegister MEM_TYPE_PAGE_POOL RxQ-0
+[32m[   21.206418] [0m[1mrtl8211f_config_init val1=2d7[0m
+[32m[   21.206427] [0m[1mrtl8211f_config_init 1 val1=6d60[0m
+[32m[   21.299119] [0m[33mrk_gmac-dwmac fe1c0000.ethernet end1: [0mPHY [stmmac-1:00] driver [RTL8211F Gigabit Ethernet] (irq=POLL)
+[32m[   22.300569] [0m[33mrk_gmac-dwmac fe1c0000.ethernet: [0m[31mFailed to reset the dma[0m
+[32m[   22.301151] [0m[33mrk_gmac-dwmac fe1c0000.ethernet end1: [0m[31mstmmac_hw_setup: DMA engine initialization failed[0m
+[32m[   22.301954] [0m[33mrk_gmac-dwmac fe1c0000.ethernet end1: [0m[31m__stmmac_open: Hw setup failed[0m
+[32m[   22.326994] [0m[33mrk_gmac-dwmac fe1c0000.ethernet end1: [0mRegister MEM_TYPE_PAGE_POOL RxQ-0
+[32m[   22.328746] [0m[1mrtl8211f_config_init val1=6d60[0m
+[32m[   22.328748] [0m[1mrtl8211f_config_init 1 val1=6d60[0m
+[32m[   22.419125] [0m[33mrk_gmac-dwmac fe1c0000.ethernet end1: [0mPHY [stmmac-1:00] driver [RTL8211F Gigabit Ethernet] (irq=POLL)
+[32m[   23.361837] [0m[33mrockchip-dp fded0000.edp: [0m[31mfailed to read max link rate[0m
+[32m[   23.400080] [0m[33mrockchip-dp fded0000.edp: [0m[31mfailed to read max link rate[0m
+[32m[   23.420588] [0m[33mrk_gmac-dwmac fe1c0000.ethernet: [0m[31mFailed to reset the dma[0m
+[32m[   23.421158] [0m[33mrk_gmac-dwmac fe1c0000.ethernet end1: [0m[31mstmmac_hw_setup: DMA engine initialization failed[0m
+[32m[   23.421952] [0m[33mrk_gmac-dwmac fe1c0000.ethernet end1: [0m[31m__stmmac_open: Hw setup failed[0m
+[32m[   23.436021] [0m[33mrk_gmac-dwmac fe1c0000.ethernet end1: [0mRegister MEM_TYPE_PAGE_POOL RxQ-0
+[32m[   23.437747] [0m[1mrtl8211f_config_init val1=6d60[0m
+[32m[   23.437750] [0m[1mrtl8211f_config_init 1 val1=6d60[0m
+[32m[   23.507106] [0m[33mrk_gmac-dwmac fe1c0000.ethernet end1: [0mPHY [stmmac-1:00] driver [RTL8211F Gigabit Ethernet] (irq=POLL)
+[32m[   24.508707] [0m[33mrk_gmac-dwmac fe1c0000.ethernet: [0m[31mFailed to reset the dma[0m
+[32m[   24.509303] [0m[33mrk_gmac-dwmac fe1c0000.ethernet end1: [0m[31mstmmac_hw_setup: DMA engine initialization failed[0m
+[32m[   24.510117] [0m[33mrk_gmac-dwmac fe1c0000.ethernet end1: [0m[31m__stmmac_open: Hw setup failed[0m
+[32m[   24.522860] [0m[33mrk_gmac-dwmac fe1c0000.ethernet end1: [0mRegister MEM_TYPE_PAGE_POOL RxQ-0
+[32m[   24.524894] [0m[1mrtl8211f_config_init val1=6d60[0m
+[32m[   24.524903] [0m[1mrtl8211f_config_init 1 val1=6d60[0m
+[32m[   24.615140] [0m[33mrk_gmac-dwmac fe1c0000.ethernet end1: [0mPHY [stmmac-1:00] driver [RTL8211F Gigabit Ethernet] (irq=POLL)
+[32m[   24.832438] [0m[33msystemd-journald[294]: [0m[1mFile /var/log/journal/57d52cad9fc74bb695fb565ca8ed6849/user-1000.journal corrupted or uncleanly shut down, renaming and replacing.[0m
+[32m[   25.310934] [0m[33mrk_hdmirx fdee0000.hdmirx-controller: [0m[31mhdmirx_audio_startup: device is no connected or audio is off[0m
+[32m[   25.311854] [0m[33mhdmi-audio-codec hdmi-audio-codec.4.auto: [0m[31mASoC: error at snd_soc_dai_startup on i2s-hifi: -19[0m
+[32m[   25.312719] [0m[33m rockchip,hdmiin: [0m[31mASoC: error at __soc_pcm_open on rockchip,hdmiin: -19[0m
+[32m[   25.321680] [0m[33mrk_hdmirx fdee0000.hdmirx-controller: [0m[31mhdmirx_audio_startup: device is no connected or audio is off[0m
+[32m[   25.322560] [0m[33mhdmi-audio-codec hdmi-audio-codec.4.auto: [0m[31mASoC: error at snd_soc_dai_startup on i2s-hifi: -19[0m
+[32m[   25.323411] [0m[33m rockchip,hdmiin: [0m[31mASoC: error at __soc_pcm_open on rockchip,hdmiin: -19[0m
+[32m[   25.332052] [0m[33mrk_hdmirx fdee0000.hdmirx-controller: [0m[31mhdmirx_audio_startup: device is no connected or audio is off[0m
+[32m[   25.332935] [0m[33mhdmi-audio-codec hdmi-audio-codec.4.auto: [0m[31mASoC: error at snd_soc_dai_startup on i2s-hifi: -19[0m
+[32m[   25.333782] [0m[33m rockchip,hdmiin: [0m[31mASoC: error at __soc_pcm_open on rockchip,hdmiin: -19[0m
+[32m[   25.345915] [0m[33mrk_hdmirx fdee0000.hdmirx-controller: [0m[31mhdmirx_audio_startup: device is no connected or audio is off[0m
+[32m[   25.346795] [0m[33mhdmi-audio-codec hdmi-audio-codec.4.auto: [0m[31mASoC: error at snd_soc_dai_startup on i2s-hifi: -19[0m
+[32m[   25.347639] [0m[33m rockchip,hdmiin: [0m[31mASoC: error at __soc_pcm_open on rockchip,hdmiin: -19[0m
+[32m[   25.385242] [0m[33mrkcif-mipi-lvds: [0m[31mrkcif_update_sensor_info: stream[0] get remote terminal sensor failed![0m
+[32m[   25.386047] [0m[33mstream_cif_mipi_id0: [0m[31mupdate sensor info failed -19[0m
+[32m[   25.386597] [0m[33mrkcif-mipi-lvds: [0m[31mrkcif_update_sensor_info: stream[1] get remote terminal sensor failed![0m
+[32m[   25.387399] [0m[33mstream_cif_mipi_id1: [0m[31mupdate sensor info failed -19[0m
+[32m[   25.387963] [0m[33mrkcif-mipi-lvds: [0m[31mrkcif_update_sensor_info: stream[2] get remote terminal sensor failed![0m
+[32m[   25.388751] [0m[33mrkcif_tools_id2: [0m[31mupdate sensor info failed -19[0m
+[32m[   25.389267] [0m[33mrkcif-mipi-lvds: [0m[31mrkcif_update_sensor_info: stream[2] get remote terminal sensor failed![0m
+[32m[   25.390053] [0m[33mstream_cif_mipi_id2: [0m[31mupdate sensor info failed -19[0m
+[32m[   25.390598] [0m[33mrkcif-mipi-lvds: [0m[31mrkcif_update_sensor_info: stream[3] get remote terminal sensor failed![0m
+[32m[   25.391394] [0m[33mstream_cif_mipi_id3: [0m[31mupdate sensor info failed -19[0m
+[32m[   25.391940] [0m[33mrkcif-mipi-lvds: [0m[31mrkcif_update_sensor_info: stream[0] get remote terminal sensor failed![0m
+[32m[   25.392727] [0m[33mrkcif_scale_ch0: [0m[31mupdate sensor info failed -19[0m
+[32m[   25.393240] [0m[33mrkcif-mipi-lvds: [0m[31mrkcif_update_sensor_info: stream[1] get remote terminal sensor failed![0m
+[32m[   25.394026] [0m[33mrkcif_scale_ch1: [0m[31mupdate sensor info failed -19[0m
+[32m[   25.394540] [0m[33mrkcif-mipi-lvds: [0m[31mrkcif_update_sensor_info: stream[2] get remote terminal sensor failed![0m
+[32m[   25.395331] [0m[33mrkcif_scale_ch2: [0m[31mupdate sensor info failed -19[0m
+[32m[   25.395844] [0m[33mrkcif-mipi-lvds: [0m[31mrkcif_update_sensor_info: stream[3] get remote terminal sensor failed![0m
+[32m[   25.396632] [0m[33mrkcif_scale_ch3: [0m[31mupdate sensor info failed -19[0m
+[32m[   25.397146] [0m[33mrkcif-mipi-lvds: [0m[31mrkcif_update_sensor_info: stream[0] get remote terminal sensor failed![0m
+[32m[   25.397933] [0m[33mrkcif_tools_id0: [0m[31mupdate sensor info failed -19[0m
+[32m[   25.398445] [0m[33mrkcif-mipi-lvds: [0m[31mrkcif_update_sensor_info: stream[1] get remote terminal sensor failed![0m
+[32m[   25.399234] [0m[33mrkcif_tools_id1: [0m[31mupdate sensor info failed -19[0m
+[32m[   25.399759] [0m[33mrkcif-mipi-lvds1: [0m[31mrkcif_update_sensor_info: stream[0] get remote terminal sensor failed![0m
+[32m[   25.400552] [0m[33mstream_cif_mipi_id0: [0m[31mupdate sensor info failed -19[0m
+[32m[   25.401087] [0m[33mrkcif-mipi-lvds1: [0m[31mrkcif_update_sensor_info: stream[1] get remote terminal sensor failed![0m
+[32m[   25.401880] [0m[33mstream_cif_mipi_id1: [0m[31mupdate sensor info failed -19[0m
+[32m[   25.402420] [0m[33mrkcif-mipi-lvds1: [0m[31mrkcif_update_sensor_info: stream[2] get remote terminal sensor failed![0m
+[32m[   25.403217] [0m[33mstream_cif_mipi_id2: [0m[31mupdate sensor info failed -19[0m
+[32m[   25.403756] [0m[33mrkcif-mipi-lvds1: [0m[31mrkcif_update_sensor_info: stream[3] get remote terminal sensor failed![0m
+[32m[   25.404549] [0m[33mstream_cif_mipi_id3: [0m[31mupdate sensor info failed -19[0m
+[32m[   25.405087] [0m[33mrkcif-mipi-lvds1: [0m[31mrkcif_update_sensor_info: stream[0] get remote terminal sensor failed![0m
+[32m[   25.405880] [0m[33mrkcif_scale_ch0: [0m[31mupdate sensor info failed -19[0m
+[32m[   25.406387] [0m[33mrkcif-mipi-lvds1: [0m[31mrkcif_update_sensor_info: stream[1] get remote terminal sensor failed![0m
+[32m[   25.407186] [0m[33mrkcif_scale_ch1: [0m[31mupdate sensor info failed -19[0m
+[32m[   25.407695] [0m[33mrkcif-mipi-lvds1: [0m[31mrkcif_update_sensor_info: stream[2] get remote terminal sensor failed![0m
+[32m[   25.408489] [0m[33mrkcif_scale_ch2: [0m[31mupdate sensor info failed -19[0m
+[32m[   25.409068] [0m[33mrkcif-mipi-lvds1: [0m[31mrkcif_update_sensor_info: stream[3] get remote terminal sensor failed![0m
+[32m[   25.409860] [0m[33mrkcif_scale_ch3: [0m[31mupdate sensor info failed -19[0m
+[32m[   25.410382] [0m[33mrkcif-mipi-lvds1: [0m[31mrkcif_update_sensor_info: stream[0] get remote terminal sensor failed![0m
+[32m[   25.411181] [0m[33mrkcif_tools_id0: [0m[31mupdate sensor info failed -19[0m
+[32m[   25.411686] [0m[33mrkcif-mipi-lvds1: [0m[31mrkcif_update_sensor_info: stream[1] get remote terminal sensor failed![0m
+[32m[   25.412480] [0m[33mrkcif_tools_id1: [0m[31mupdate sensor info failed -19[0m
+[32m[   25.413004] [0m[33mrkcif-mipi-lvds1: [0m[31mrkcif_update_sensor_info: stream[2] get remote terminal sensor failed![0m
+[32m[   25.413797] [0m[33mrkcif_tools_id2: [0m[31mupdate sensor info failed -19[0m
+[32m[   25.616507] [0m[33mrk_gmac-dwmac fe1c0000.ethernet: [0m[31mFailed to reset the dma[0m
+[32m[   25.617088] [0m[33mrk_gmac-dwmac fe1c0000.ethernet end1: [0m[31mstmmac_hw_setup: DMA engine initialization failed[0m
+[32m[   25.617888] [0m[33mrk_gmac-dwmac fe1c0000.ethernet end1: [0m[31m__stmmac_open: Hw setup failed[0m
+[32m[   25.630060] [0m[33mrk_gmac-dwmac fe1c0000.ethernet end1: [0mRegister MEM_TYPE_PAGE_POOL RxQ-0
+[32m[   25.631824] [0m[1mrtl8211f_config_init val1=6d60[0m
+[32m[   25.631826] [0m[1mrtl8211f_config_init 1 val1=6d60[0m
+[32m[   25.695116] [0m[33mrk_gmac-dwmac fe1c0000.ethernet end1: [0mPHY [stmmac-1:00] driver [RTL8211F Gigabit Ethernet] (irq=POLL)
+[32m[   26.552675] [0m[33mrockchip-dp fded0000.edp: [0m[31mfailed to read max link rate[0m
+[32m[   26.696679] [0m[33mrk_gmac-dwmac fe1c0000.ethernet: [0m[31mFailed to reset the dma[0m
+[32m[   26.697260] [0m[33mrk_gmac-dwmac fe1c0000.ethernet end1: [0m[31mstmmac_hw_setup: DMA engine initialization failed[0m
+[32m[   26.698057] [0m[33mrk_gmac-dwmac fe1c0000.ethernet end1: [0m[31m__stmmac_open: Hw setup failed[0m
+[32m[   30.187366] [0m[33mplatform mtd_vendor_storage: [0mdeferred probe pending
+[32m[   43.793394] [0m[33mrkcif-mipi-lvds: [0m[31mrkcif_update_sensor_info: stream[0] get remote terminal sensor failed![0m
+[32m[   43.794190] [0m[33mstream_cif_mipi_id0: [0m[31mupdate sensor info failed -19[0m
+[32m[   43.794782] [0m[33mrkcif-mipi-lvds: [0m[31mrkcif_update_sensor_info: stream[1] get remote terminal sensor failed![0m
+[32m[   43.795581] [0m[33mstream_cif_mipi_id1: [0m[31mupdate sensor info failed -19[0m
+[32m[   43.796161] [0m[33mrkcif-mipi-lvds: [0m[31mrkcif_update_sensor_info: stream[2] get remote terminal sensor failed![0m
+[32m[   43.796947] [0m[33mrkcif_tools_id2: [0m[31mupdate sensor info failed -19[0m
+[32m[   43.797493] [0m[33mrkcif-mipi-lvds: [0m[31mrkcif_update_sensor_info: stream[2] get remote terminal sensor failed![0m
+[32m[   43.798279] [0m[33mstream_cif_mipi_id2: [0m[31mupdate sensor info failed -19[0m
+[32m[   43.798856] [0m[33mrkcif-mipi-lvds: [0m[31mrkcif_update_sensor_info: stream[3] get remote terminal sensor failed![0m
+[32m[   43.799651] [0m[33mstream_cif_mipi_id3: [0m[31mupdate sensor info failed -19[0m
+[32m[   43.800374] [0m[33mrkcif-mipi-lvds: [0m[31mrkcif_update_sensor_info: stream[0] get remote terminal sensor failed![0m
+[32m[   43.801163] [0m[33mrkcif_scale_ch0: [0m[31mupdate sensor info failed -19[0m
+[32m[   43.801716] [0m[33mrkcif-mipi-lvds: [0m[31mrkcif_update_sensor_info: stream[1] get remote terminal sensor failed![0m
+[32m[   43.802502] [0m[33mrkcif_scale_ch1: [0m[31mupdate sensor info failed -19[0m
+[32m[   43.803047] [0m[33mrkcif-mipi-lvds: [0m[31mrkcif_update_sensor_info: stream[2] get remote terminal sensor failed![0m
+[32m[   43.803846] [0m[33mrkcif_scale_ch2: [0m[31mupdate sensor info failed -19[0m
+[32m[   43.804394] [0m[33mrkcif-mipi-lvds: [0m[31mrkcif_update_sensor_info: stream[3] get remote terminal sensor failed![0m
+[32m[   43.805181] [0m[33mrkcif_scale_ch3: [0m[31mupdate sensor info failed -19[0m
+[32m[   43.805726] [0m[33mrkcif-mipi-lvds: [0m[31mrkcif_update_sensor_info: stream[0] get remote terminal sensor failed![0m
+[32m[   43.806512] [0m[33mrkcif_tools_id0: [0m[31mupdate sensor info failed -19[0m
+[32m[   43.807081] [0m[33mrkcif-mipi-lvds: [0m[31mrkcif_update_sensor_info: stream[1] get remote terminal sensor failed![0m
+[32m[   43.807876] [0m[33mrkcif_tools_id1: [0m[31mupdate sensor info failed -19[0m
+[32m[   43.808443] [0m[33mrkcif-mipi-lvds1: [0m[31mrkcif_update_sensor_info: stream[0] get remote terminal sensor failed![0m
+[32m[   43.809238] [0m[33mstream_cif_mipi_id0: [0m[31mupdate sensor info failed -19[0m
+[32m[   43.809820] [0m[33mrkcif-mipi-lvds1: [0m[31mrkcif_update_sensor_info: stream[1] get remote terminal sensor failed![0m
+[32m[   43.810613] [0m[33mstream_cif_mipi_id1: [0m[31mupdate sensor info failed -19[0m
+[32m[   43.811203] [0m[33mrkcif-mipi-lvds1: [0m[31mrkcif_update_sensor_info: stream[2] get remote terminal sensor failed![0m
+[32m[   43.811998] [0m[33mstream_cif_mipi_id2: [0m[31mupdate sensor info failed -19[0m
+[32m[   43.812579] [0m[33mrkcif-mipi-lvds1: [0m[31mrkcif_update_sensor_info: stream[3] get remote terminal sensor failed![0m
+[32m[   43.813374] [0m[33mstream_cif_mipi_id3: [0m[31mupdate sensor info failed -19[0m
+[32m[   43.813953] [0m[33mrkcif-mipi-lvds1: [0m[31mrkcif_update_sensor_info: stream[0] get remote terminal sensor failed![0m
+[32m[   43.814747] [0m[33mrkcif_scale_ch0: [0m[31mupdate sensor info failed -19[0m
+[32m[   43.815307] [0m[33mrkcif-mipi-lvds1: [0m[31mrkcif_update_sensor_info: stream[1] get remote terminal sensor failed![0m
+[32m[   43.816101] [0m[33mrkcif_scale_ch1: [0m[31mupdate sensor info failed -19[0m
+[32m[   43.816654] [0m[33mrkcif-mipi-lvds1: [0m[31mrkcif_update_sensor_info: stream[2] get remote terminal sensor failed![0m
+[32m[   43.817448] [0m[33mrkcif_scale_ch2: [0m[31mupdate sensor info failed -19[0m
+[32m[   43.818003] [0m[33mrkcif-mipi-lvds1: [0m[31mrkcif_update_sensor_info: stream[3] get remote terminal sensor failed![0m
+[32m[   43.818797] [0m[33mrkcif_scale_ch3: [0m[31mupdate sensor info failed -19[0m
+[32m[   43.819333] [0m[33mrkcif-mipi-lvds1: [0m[31mrkcif_update_sensor_info: stream[0] get remote terminal sensor failed![0m
+[32m[   43.820128] [0m[33mrkcif_tools_id0: [0m[31mupdate sensor info failed -19[0m
+[32m[   43.820657] [0m[33mrkcif-mipi-lvds1: [0m[31mrkcif_update_sensor_info: stream[1] get remote terminal sensor failed![0m
+[32m[   43.821449] [0m[33mrkcif_tools_id1: [0m[31mupdate sensor info failed -19[0m
+[32m[   43.821981] [0m[33mrkcif-mipi-lvds1: [0m[31mrkcif_update_sensor_info: stream[2] get remote terminal sensor failed![0m
+[32m[   43.822774] [0m[33mrkcif_tools_id2: [0m[31mupdate sensor info failed -19[0m
+[32m[   49.899221] [0m[33mvcc3v3_lcd0_n: [0mdisabling
+[32m[   55.799656] [0m[33mrockchip-dp fded0000.edp: [0m[31mfailed to read max link rate[0m
+[32m[   55.824382] [0m[33mrockchip-dp fded0000.edp: [0m[31mfailed to read max link rate[0m
+[32m[   55.927186] [0m[33mdw_hdmi_qp-rockchip fde80000.hdmi: [0m[31mi2c read time out![0m
+[32m[   55.975273] [0m[33mConsole: [0mswitching to colour frame buffer device 240x67
+[32m[   55.975869] [0m[33mrockchip-drm display-subsystem: [0m[drm] fb0: rockchipdrmfb frame buffer device
+[32m[   55.989615] [0m[33mrockchip-dp fded0000.edp: [0m[31mfailed to read max link rate[0m
+[32m[   56.057016] [0m[33mrockchip-vop2 fdd90000.vop: [0m[drm:vop2_crtc_atomic_enable] Update mode to 1280x720p60, type: 11(if:HDMI0, flag:0x0) for vp0 dclk: 74250000
+[32m[   56.058368] [0m[33mrockchip-vop2 fdd90000.vop: [0m[drm:vop2_crtc_atomic_enable] dclk_out0 div: 0 dclk_core0 div: 2
+[32m[   56.059217] [0m[33mrockchip-vop2 fdd90000.vop: [0m[drm:vop2_crtc_atomic_enable] set dclk_vop0 to 74250000, get 74250000
+[32m[   56.060445] [0m[33mdw_hdmi_qp-rockchip fde80000.hdmi: [0mfinal tmdsclk = 74250000
+[32m[   56.061051] [0m[33mdw_hdmi_qp-rockchip fde80000.hdmi: [0mdon't use dsc mode
+[32m[   56.061583] [0m[33mdw_hdmi_qp-rockchip fde80000.hdmi: [0mdw hdmi qp use tmds mode
+[32m[   56.062479] [0m[33mrockchip-vop2 fdd90000.vop: [0m[drm] vp0 post enable for intf:800
+[32m[   56.207830] [0m[33mrockchip-dp fded0000.edp: [0m[31mfailed to read max link rate[0m
+[32m[  210.977446] [0m[33mdwc3 fc000000.usb: [0mdevice reset
+[32m[  211.151604] [0m[33mandroid_work: [0msent uevent USB_STATE=CONNECTED
+[32m[  211.157929] [0m[33mdwc3 fc000000.usb: [0mdevice reset
+[32m[  211.390533] [0m[33mandroid_work: [0msent uevent USB_STATE=CONFIGURED
+[32m[  230.187679] [0m[33madbd (2302): [0m[1m/proc/2302/oom_adj is deprecated, please use /proc/2302/oom_score_adj instead.[0m

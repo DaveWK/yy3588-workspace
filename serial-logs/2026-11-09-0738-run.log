@@ -1,0 +1,295 @@
+DDR a4ba73facc cym 26/06/26-12:04:20,fwver: v1.24
+ch0 ttot10
+ch1 ttot10
+ch2 ttot10
+ch3 ttot10
+ch0 ttot16
+LPDDR4X, 2112MHz
+channel[0] BW=16 Col=10 Bk=8 CS0 Row=18 CS1 Row=18 CS=2 Die BW=8 Size=8192MB
+ch1 ttot16
+channel[1] BW=16 Col=10 Bk=8 CS0 Row=18 CS1 Row=18 CS=2 Die BW=8 Size=8192MB
+ch2 ttot16
+channel[2] BW=16 Col=10 Bk=8 CS0 Row=18 CS1 Row=18 CS=2 Die BW=8 Size=8192MB
+ch3 ttot16
+channel[3] BW=16 Col=10 Bk=8 CS0 Row=18 CS1 Row=18 CS=2 Die BW=8 Size=8192MB
+Manufacturer ID:0xff
+DQS rds:l0,l0, 
+CH0 RX Vref:31.0%, TX Vref:21.8%,21.8%
+DQ rds:l0 h4 l0 h4 l0 h6 h2 h7 , h1 l3 h6 h2 h5 h4 h5 h6 , l1 l0 
+
+DQS rds:h1,h2, 
+CH1 RX Vref:28.5%, TX Vref:21.8%,22.8%
+DQ rds:l1 h1 h4 h1 h4 l0 h7 l0 , h1 h1 h3 h1 l0 h5 h2 h4 , l0 h2 
+
+DQS rds:h2,h1, 
+CH2 RX Vref:29.4%, TX Vref:21.8%,21.8%
+DQ rds:h1 h2 h1 h2 l1 l0 h7 l0 , h2 h1 h2 h2 h1 l0 l1 h5 , h7 h2 
+
+DQS rds:l0,l0, 
+CH3 RX Vref:28.5%, TX Vref:23.8%,22.8%
+DQ rds:l0 l0 l0 l0 l1 l1 h2 l0 , h1 h6 h1 h7 l0 h1 h1 l0 , l0 l1 
+
+change to F1: 528MHz
+ch0 ttot10
+ch1 ttot10
+ch2 ttot10
+ch3 ttot10
+CH0 rx vref:31.0%
+CH1 rx vref:28.5%
+CH2 rx vref:29.4%
+CH3 rx vref:28.5%
+change to F2: 1068MHz
+ch0 ttot12
+ch1 ttot12
+ch2 ttot12
+ch3 ttot12
+CH0 rx vref:31.0%
+CH1 rx vref:28.5%
+CH2 rx vref:29.4%
+CH3 rx vref:28.5%
+change to F3: 1560MHz
+ch0 ttot14
+ch1 ttot14
+ch2 ttot14
+ch3 ttot14
+CH0 rx vref:31.0%
+CH1 rx vref:28.5%
+CH2 rx vref:29.4%
+CH3 rx vref:28.5%
+change to F0: 2112MHz
+ch0 ttot16
+ch1 ttot16
+ch2 ttot16
+ch3 ttot16
+stride=0x2, ddr_config=0x4
+hash ch_mask0-1 0x20 0x40, bank_mask0-3 0xa00 0x1400 0x2800 0x0, rank_mask0 0x401000
+out
+
+yy3588 bt0 (rkbin DDR init) at EL3
+pmic: rk806 0x8062, active, 21/21 rails on
+carrier 3.3 V: OFF (USB hub, Ethernet PHY, RTC unpowered)
+dram: Handoff LPDDR4X 32768 MiB (pairs 16384 + 16384)
+dram: quick check ok (1 MiB at 0x4000000)
+fastboot: BootROM boot source 0xa (USB)
+fastboot: USB-C OTG (USB3OTG0), 18d1:4ee0, download buffer 0x10000000 + 0x20000000
+[usb] usb2phy0 status 0x0000: sessvld 0 vbusvalid 0 linestate 0
+[usb] dwc3 GSNPSID 0x5533300a (DWC_usb3 3.00a)
+[usb] device controller running, waiting for the host
+[usb] high speed
+[usb] high speed
+[usb] configured
+[fastboot] < getvar:is-userspace
+[fastboot] > OKAYno
+[fastboot] < getvar:has-slot:emmc
+[fastboot] > OKAYno
+[fastboot] < getvar:is-logical:emmc
+[fastboot] > OKAYno
+[fastboot] < getvar:is-logical:emmc
+[fastboot] > OKAYno
+[fastboot] < getvar:max-download-size
+[fastboot] > OKAY0x20000000
+[fastboot] < download:1ef7174c
+[fastboot] > DATA1ef7174c
+[usb] 64 MiB
+[usb] 128 MiB
+[usb] 192 MiB
+[usb] 256 MiB
+[usb] 320 MiB
+[usb] 384 MiB
+[usb] 448 MiB
+[fastboot] > OKAY
+[fastboot] < flash:emmc
+[mmc] eMMC clock source 24000 kHz, bus power 1.8 V on (0x0b)
+[mmc] card ready (RCA 2)
+[fastboot] > OKAY
+[fastboot] < download:1eb8042c
+[fastboot] > DATA1eb8042c
+[usb] 64 MiB
+[usb] 128 MiB
+[usb] 192 MiB
+[usb] 256 MiB
+[usb] 320 MiB
+[usb] 384 MiB
+[usb] 448 MiB
+[fastboot] > OKAY
+[fastboot] < flash:emmc
+[fastboot] > OKAY
+[fastboot] < download:1d91e3bc
+[fastboot] > DATA1d91e3bc
+[usb] 64 MiB
+[usb] 128 MiB
+[usb] 192 MiB
+[usb] 256 MiB
+[usb] 320 MiB
+[usb] 384 MiB
+[usb] 448 MiB
+[fastboot] > OKAY
+[fastboot] < flash:emmc
+[fastboot] > OKAY
+[fastboot] < download:1f7522c0
+[fastboot] > DATA1f7522c0
+[usb] 64 MiB
+[usb] 128 MiB
+[usb] 192 MiB
+[usb] 256 MiB
+[usb] 320 MiB
+[usb] 384 MiB
+[usb] 448 MiB
+[fastboot] > OKAY
+[fastboot] < flash:emmc
+[fastboot] > OKAY
+[fastboot] < download:1d31a3c8
+[fastboot] > DATA1d31a3c8
+[usb] 64 MiB
+[usb] 128 MiB
+[usb] 192 MiB
+[usb] 256 MiB
+[usb] 320 MiB
+[usb] 384 MiB
+[usb] 448 MiB
+[fastboot] > OKAY
+[fastboot] < flash:emmc
+[fastboot] > OKAY
+[fastboot] < download:1c000088
+[fastboot] > DATA1c000088
+[usb] 64 MiB
+[usb] 128 MiB
+[usb] 192 MiB
+[usb] 256 MiB
+[usb] 320 MiB
+[usb] 384 MiB
+[usb] 448 MiB
+[fastboot] > OKAY
+[fastboot] < flash:emmc
+[fastboot] > OKAY
+[fastboot] < download:1f60a0b4
+[fastboot] > DATA1f60a0b4
+[usb] 64 MiB
+[usb] 128 MiB
+[usb] 192 MiB
+[usb] 256 MiB
+[usb] 320 MiB
+[usb] 384 MiB
+[usb] 448 MiB
+[fastboot] > OKAY
+[fastboot] < flash:emmc
+[fastboot] > OKAY
+[fastboot] < download:117860d4
+[fastboot] > DATA117860d4
+[usb] 64 MiB
+[usb] 128 MiB
+[usb] 192 MiB
+[usb] 256 MiB
+[fastboot] > OKAY
+[fastboot] < flash:emmc
+[fastboot] > OKAY
+[fastboot] < reboot
+fastboot: reboot
+DDR a4ba73facc cym 26/06/26-12:04:20,fwver: v1.24
+ch0 ttot10
+ch1 ttot10
+ch2 ttot10
+ch3 ttot10
+ch0 ttot16
+LPDDR4X, 2112MHz
+channel[0] BW=16 Col=10 Bk=8 CS0 Row=18 CS1 Row=18 CS=2 Die BW=8 Size=8192MB
+ch1 ttot16
+channel[1] BW=16 Col=10 Bk=8 CS0 Row=18 CS1 Row=18 CS=2 Die BW=8 Size=8192MB
+ch2 ttot16
+channel[2] BW=16 Col=10 Bk=8 CS0 Row=18 CS1 Row=18 CS=2 Die BW=8 Size=8192MB
+ch3 ttot16
+channel[3] BW=16 Col=10 Bk=8 CS0 Row=18 CS1 Row=18 CS=2 Die BW=8 Size=8192MB
+Manufacturer ID:0xff
+DQS rds:l0,l0, 
+CH0 RX Vref:31.0%, TX Vref:21.8%,21.8%
+DQ rds:l0 h2 l0 h3 l1 h5 h1 h6 , l0 l3 h6 h2 h7 h4 h6 h7 , l1 l0 
+
+DQS rds:h1,h1, 
+CH1 RX Vref:28.5%, TX Vref:21.8%,21.8%
+DQ rds:l1 h1 h4 h1 h3 l0 h7 l0 , h1 h1 h4 h1 l0 h5 h2 h4 , l0 h3 
+
+DQS rds:h2,h1, 
+CH2 RX Vref:30.2%, TX Vref:22.8%,21.8%
+DQ rds:h1 h2 h1 h3 l1 h1 h7 l0 , h3 h1 h3 h2 h2 l0 l1 h5 , h6 h2 
+
+DQS rds:l0,l0, 
+CH3 RX Vref:29.4%, TX Vref:23.8%,22.8%
+DQ rds:l0 l0 l0 l0 l1 l0 h2 h1 , h1 h7 h1 h6 l0 h1 h1 l0 , l0 l0 
+
+change to F1: 528MHz
+ch0 ttot10
+ch1 ttot10
+ch2 ttot10
+ch3 ttot10
+CH0 rx vref:31.0%
+CH1 rx vref:28.5%
+CH2 rx vref:30.2%
+CH3 rx vref:29.4%
+change to F2: 1068MHz
+ch0 ttot12
+ch1 ttot12
+ch2 ttot12
+ch3 ttot12
+CH0 rx vref:31.0%
+CH1 rx vref:28.5%
+CH2 rx vref:30.2%
+CH3 rx vref:29.4%
+change to F3: 1560MHz
+ch0 ttot14
+ch1 ttot14
+ch2 ttot14
+ch3 ttot14
+CH0 rx vref:31.0%
+CH1 rx vref:28.5%
+CH2 rx vref:30.2%
+CH3 rx vref:29.4%
+change to F0: 2112MHz
+ch0 ttot16
+ch1 ttot16
+ch2 ttot16
+ch3 ttot16
+stride=0x2, ddr_config=0x4
+hash ch_mask0-1 0x20 0x40, bank_mask0-3 0xa00 0x1400 0x2800 0x0, rank_mask0 0x401000
+out
+
+yy3588 bt0 (rkbin DDR init) at EL3
+pmic: rk806 0x8062, active, 21/21 rails on
+carrier 3.3 V: OFF (USB hub, Ethernet PHY, RTC unpowered)
+dram: Handoff LPDDR4X 32768 MiB (pairs 16384 + 16384)
+dram: quick check ok (1 MiB at 0x4000000)
+[mmc] eMMC clock source 24000 kHz, bus power 1.8 V on (0x0b)
+[mmc] card ready (RCA 2)
+load atf-1    0x00060000 <- fit+0x500a00 (149196 bytes)
+load edk2     0x00200000 <- fit+0xa00 (5242880 bytes)
+load atf-2    0x000f0000 <- fit+0x525200 (24576 bytes)
+load atf-3    0xff100000 <- fit+0x52b200 (36864 bytes)
+load nvdata   0x007c0000 <- fit+0x6c0000 (196608 bytes)
+enter BL31 at 0x60000 (bl_params 0x3100000, fdt 0x3000000 427 bytes)
+INFO:    Preloader serial: 2
+NOTICE:  BL31: v2.3():v2.3-975-g6c06d3bad:derrick.huang, fwver: v1.56
+NOTICE:  BL31: Built : 15:06:47, Mar 27 2026
+INFO:    spec: 0x1
+INFO:    code: 0x88
+INFO:    customer demand: 0x0
+INFO:    ext 32k is not valid
+INFO:    ddr: stride-en 4CH
+INFO:    GICv3 without legacy support detected.
+INFO:    ARM GICv3 driver initialized in EL3
+INFO:    valid_cpu_msk=0xff bcore0_rst = 0x0, bcore1_rst = 0x0
+INFO:    l3 cache partition cfg-0
+INFO:    system boots from cpu-hwid-0
+INFO:    bypass memory repair
+INFO:    idle_st=0x21fff, pd_st=0x11fff9, repair_st=0xfff70001
+INFO:    dfs DDR fsp_params[0].freq_mhz= 2112MHz
+INFO:    dfs DDR fsp_params[1].freq_mhz= 528MHz
+INFO:    dfs DDR fsp_params[2].freq_mhz= 1068MHz
+INFO:    dfs DDR fsp_params[3].freq_mhz= 1560MHz
+INFO:    BL31: Initialising Exception Handling Framework
+INFO:    BL31: Initializing runtime services
+WARNING: No OPTEE provided by BL2 boot loader, Booting device without OPTEE initialization. SMC`s destined for OPTEE will return SMC_UNK
+ERROR:   Error initializing runtime service opteed_fast
+INFO:    BL31: Preparing for EL3 exit to normal world
+INFO:    Entry point address = 0x200000
+INFO:    SPSR = 0x3c9
+UEFI firmware (version 3018386 built at 00:00:00 on Nov  4 2026)
+    

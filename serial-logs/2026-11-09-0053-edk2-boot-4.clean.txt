@@ -1,0 +1,2424 @@
+DDR a4ba73facc cym 26/06/26-12:04:20,fwver: v1.24
+ch0 ttot10
+ch1 ttot10
+ch2 ttot10
+ch3 ttot10
+ch0 ttot16
+LPDDR4X, 2112MHz
+channel[0] BW=16 Col=10 Bk=8 CS0 Row=18 CS1 Row=18 CS=2 Die BW=8 Size=8192MB
+ch1 ttot16
+channel[1] BW=16 Col=10 Bk=8 CS0 Row=18 CS1 Row=18 CS=2 Die BW=8 Size=8192MB
+ch2 ttot16
+channel[2] BW=16 Col=10 Bk=8 CS0 Row=18 CS1 Row=18 CS=2 Die BW=8 Size=8192MB
+ch3 ttot16
+channel[3] BW=16 Col=10 Bk=8 CS0 Row=18 CS1 Row=18 CS=2 Die BW=8 Size=8192MB
+Manufacturer ID:0xff
+DQS rds:l0,l0, 
+CH0 RX Vref:31.0%, TX Vref:21.8%,21.8%
+DQ rds:l0 h3 l0 h3 l0 h5 h1 h7 , h1 l2 h5 h3 h4 h5 h7 h7 , l1 l0 
+
+DQS rds:h1,h1, 
+CH1 RX Vref:27.4%, TX Vref:21.8%,21.8%
+DQ rds:l1 l0 h2 l0 h2 l0 h6 l0 , h1 h1 h2 l0 l0 h3 h1 h4 , l0 h2 
+
+DQS rds:h2,h1, 
+CH2 RX Vref:29.4%, TX Vref:21.8%,21.8%
+DQ rds:h1 h2 h1 h2 l1 l0 h7 l0 , h3 h1 h2 h2 h2 l0 l1 h3 , h7 h1 
+
+DQS rds:l0,l0, 
+CH3 RX Vref:29.4%, TX Vref:21.8%,21.8%
+DQ rds:l0 l0 l0 l0 l1 l1 h1 l0 , h1 h7 h1 h6 l0 h1 h1 l0 , l0 l0 
+
+change to F1: 528MHz
+ch0 ttot10
+ch1 ttot10
+ch2 ttot10
+ch3 ttot10
+CH0 rx vref:31.0%
+CH1 rx vref:27.4%
+CH2 rx vref:29.4%
+CH3 rx vref:29.4%
+change to F2: 1068MHz
+ch0 ttot12
+ch1 ttot12
+ch2 ttot12
+ch3 ttot12
+CH0 rx vref:31.0%
+CH1 rx vref:27.4%
+CH2 rx vref:29.4%
+CH3 rx vref:29.4%
+change to F3: 1560MHz
+ch0 ttot14
+ch1 ttot14
+ch2 ttot14
+ch3 ttot14
+CH0 rx vref:31.0%
+CH1 rx vref:27.4%
+CH2 rx vref:29.4%
+CH3 rx vref:29.4%
+change to F0: 2112MHz
+ch0 ttot16
+ch1 ttot16
+ch2 ttot16
+ch3 ttot16
+stride=0x2, ddr_config=0x4
+hash ch_mask0-1 0x20 0x40, bank_mask0-3 0xa00 0x1400 0x2800 0x0, rank_mask0 0x401000
+out
+
+yy3588 bt0 stepping-stone (rkbin DDR init, DEV ONLY) at EL3
+pmic rk806 spi2 ver=0x00110002 chip_name=0x00 chip_ver=0x00 id=BAD
+pmic rk806 power_en1=0x00 power_en2=0x00 power_en3=0x00
+pmic rk806 buck5 vdd_ddr_s0 vsel=0x00 500.000 mV off
+pmic rk806 buck6 vdd2_ddr_s3 vsel=0x00 500.000 mV off
+pmic rk806 buck9 vddq_ddr_s0 vsel=0x00 500.000 mV off
+pmic rk806 nldo2 vdd_ddr_pll_s0 vsel=0x00 500.000 mV off
+dram: Handoff LPDDR4X 32768 MiB (pairs 16384 + 16384)
+dram-info osreg raw=3a561a56,300010f5,3a561a56,300010f5
+dram-info pair=0 osreg version=3 type=LPDDR4X channels=2 size_mib=16384
+dram-info pair=0 osreg ch=0 rank=2 col=10/10 bank_bits=3 row=18/18 bw_bytes_log2=1 dbw=2 row_3_4=0 size_mib=8192
+dram-info pair=0 osreg ch=1 rank=2 col=10/10 bank_bits=3 row=18/18 bw_bytes_log2=1 dbw=2 row_3_4=0 size_mib=8192
+dram-info pair=1 osreg version=3 type=LPDDR4X channels=2 size_mib=16384
+dram-info pair=1 osreg ch=0 rank=2 col=10/10 bank_bits=3 row=18/18 bw_bytes_log2=1 dbw=2 row_3_4=0 size_mib=8192
+dram-info pair=1 osreg ch=1 rank=2 col=10/10 bank_bits=3 row=18/18 bw_bytes_log2=1 dbw=2 row_3_4=0 size_mib=8192
+dram-info mr ch=0 rank=0 mr0=0xbb mr5=0xff mr6=0x07 mr7=0x00 mr8=0x58 mr12=0x24 mr14=0x0b
+dram-info mr ch=0 rank=1 mr0=0x3b mr5=0xff mr6=0x07 mr7=0x00 mr8=0x58 mr12=0x24 mr14=0x0b
+dram-info ctl ch=0 10000=03080002 10014=00000002 10510=00000005 10d00=00020030 10d04=00060000 30000=00060000 30004=00000007 30008=00000007 3000c=00070707 30010=00003f3f 30014=1f000000 30018=00000000 3001c=08080808 30020=08080808 30024=08080808 30028=08080808 3002c=00000808 30030=00000000 00000=46554859 00004=00121080 00008=12283135 0000c=001e5056 00010=27081627 00014=08122012 00018=00000014 0001c=00000000 00020=00004405 00024=0004040d 00028=0004040d 0002c=0004040d 00030=00040000 00034=1c200004 00038=00550333 00500=007c003f 00504=00310000 00508=00260024 0050c=0086000b 00580=07350210 00584=00000404 00600=82100405 00604=00000192
+dram-info phy ch=0 off=0000 44005028 7cd606e8 20142001 84070300 fc7f9800 80c38aaf 000c5440 0300f00f
+dram-info phy ch=0 off=0020 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+dram-info phy ch=0 off=0040 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+dram-info phy ch=0 off=0060 00000000 00000000 00000000 00000000 01e80473 40465580 00000b00 00000000
+dram-info phy ch=0 off=0080 00000000 00000000 00000000 00000000 00000000 00000000 00ff55aa ff00aa55
+dram-info phy ch=0 off=00a0 00ff55aa ff00aa55 00005aa5 000055aa 2002ef7e 21fc0113 00000840 61881d86
+dram-info phy ch=0 off=00c0 42c69d86 b0800000 b0800000 40064070 40064070 4513ffff 4513ffff 00363f3f
+dram-info phy ch=0 off=00e0 00363f3f 00000000 00000000 00000000 010d010d 00000000 00000000 00000000
+dram-info phy ch=0 off=0100 00450047 00000000 00000000 00000000 0023001e 00000000 00000000 00000000
+dram-info phy ch=0 off=0120 00970096 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+dram-info phy ch=0 off=0140 00560055 00000000 00000000 00000000 00c200c4 00000000 00000000 00000000
+dram-info phy ch=0 off=0160 0000007e 003f3f3f 003f3f3f 00000000 00000000 00000000 00000000 00000000
+dram-info phy ch=0 off=0180 00000000 00000000 00000000 005e0051 00520050 00000000 00000000 004f0048
+dram-info phy ch=0 off=01a0 00000000 00000000 005b0051 00000000 00000000 0061004f 00000000 00000000
+dram-info phy ch=0 off=01c0 00500059 00000000 00000000 0056004f 00000000 00000000 0050004e 00000000
+dram-info phy ch=0 off=01e0 00000000 004f0053 00000000 00000000 00950097 00000000 00000000 009e00a4
+dram-info phy ch=0 off=0a00 003f0033 003f0033 00000000 00000000 00000000 00000000 00000000 00020828
+dram-info phy ch=0 off=0a20 00000040 00cc0000 816e3600 00020412 67c9d008 03c5a780 00000080 0002038e
+dram-info phy ch=0 off=0a40 67c74c08 03442580 0402cc01 0002030c 67c50a08 02c2e3c0 0402cc01 00000000
+dram-info phy ch=0 off=0a60 00000000 00000000 00000000 00000000 00000001 00000000 00000000 aa550000
+dram-info phy ch=0 off=0a80 00263f7c 00000000 00000000 00000000 00000204 00000009 65432100 00000000
+dram-info phy ch=0 off=0aa0 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+dram-info phy ch=0 off=0ac0 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+dram-info phy ch=0 off=0ae0 23340758 23340758 23340758 0008d000 00000000 00000000 00000000 0000010f
+dram-info phy ch=0 off=0b00 000003e0 00001be0 000003e0 00001be0 000003e0 00002be0 00000be0 00003be0
+dram-info phy ch=0 off=0b20 00000be0 000103e0 00002be0 00001be0 000023e0 00002be0 00003be0 00003be0
+dram-info phy ch=0 off=0b40 000083e0 000003e0 000003e0 000003e0 000199e0 000199e0 000199e0 000199e0
+dram-info phy ch=0 off=0b60 000199e0 000199e0 000199e0 000199e0 000199e0 000199e0 000199e0 000199e0
+dram-info phy ch=0 off=0b80 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+dram-info phy ch=0 off=0ba0 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+dram-info phy ch=0 off=0bc0 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+dram-info phy ch=0 off=0be0 00000000 00000000 00000000 00000000 00000009 00000009 00000000 00000000
+dram-info mr ch=1 rank=0 mr0=0xbb mr5=0xff mr6=0x07 mr7=0x00 mr8=0x58 mr12=0x24 mr14=0x0b
+dram-info mr ch=1 rank=1 mr0=0x3b mr5=0xff mr6=0x07 mr7=0x00 mr8=0x58 mr12=0x24 mr14=0x0b
+dram-info ctl ch=1 10000=03080002 10014=00000001 10510=00000005 10d00=00020030 10d04=00060000 30000=00060000 30004=00000007 30008=00000007 3000c=00070707 30010=00003f3f 30014=1f000000 30018=00000000 3001c=08080808 30020=08080808 30024=08080808 30028=08080808 3002c=00000808 30030=00000000 00000=46554859 00004=00121080 00008=12283135 0000c=001e5056 00010=27081627 00014=08122012 00018=00000014 0001c=00000000 00020=00004405 00024=0004040d 00028=0004040d 0002c=0004040d 00030=00040000 00034=1c200004 00038=00550333 00500=007c003f 00504=00310000 00508=00260024 0050c=0086000b 00580=07350210 00584=00000404 00600=82100405 00604=00000192
+dram-info phy ch=1 off=0000 44005028 7cd606e8 20142001 84070300 fc7f9800 80c38aaf 000c5440 0300f00f
+dram-info phy ch=1 off=0020 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+dram-info phy ch=1 off=0040 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+dram-info phy ch=1 off=0060 00000000 00000000 00000000 00000000 01e80473 40465580 00000b00 00000000
+dram-info phy ch=1 off=0080 00000000 00000000 00000000 00000000 00000000 00000000 00ff55aa ff00aa55
+dram-info phy ch=1 off=00a0 00ff55aa ff00aa55 00005aa5 000055aa 2002ef7e 217c010f 00000840 61881d86
+dram-info phy ch=1 off=00c0 42c69d86 b0800000 b0800000 40064070 40064070 34d3ffff 34d3ffff 00363f3f
+dram-info phy ch=1 off=00e0 00363f3f 00000000 00000000 00000000 010a010a 00000000 00000000 00000000
+dram-info phy ch=1 off=0100 0045004a 00000000 00000000 00000000 00290022 00000000 00000000 00000000
+dram-info phy ch=1 off=0120 009b0096 00000000 00000000 00000000 00040004 00000000 00000000 00000000
+dram-info phy ch=1 off=0140 00480053 00000000 00000000 00000000 00490054 00000000 00000000 00000000
+dram-info phy ch=1 off=0160 0000007e 003f3f3f 003f3f3f 00000000 00000000 00000000 00000000 00000000
+dram-info phy ch=1 off=0180 00000000 00000000 00000000 0051005a 00590057 00000000 00000000 00540051
+dram-info phy ch=1 off=01a0 00000000 00000000 0059004e 00000000 00000000 00690052 00000000 00000000
+dram-info phy ch=1 off=01c0 00530054 00000000 00000000 00510052 00000000 00000000 0052005b 00000000
+dram-info phy ch=1 off=01e0 00000000 00560050 00000000 00000000 008e008e 00000000 00000000 008e009c
+dram-info phy ch=1 off=0a00 003f0033 003f0033 00000000 00000000 00000000 00000000 00000000 00020828
+dram-info phy ch=1 off=0a20 00000040 00cc0000 816e3600 00020412 67c9d008 03c5a780 00000080 0002038e
+dram-info phy ch=1 off=0a40 67c74c08 03442580 0402cc01 0002030c 67c50a08 02c2e3c0 0402cc01 00000000
+dram-info phy ch=1 off=0a60 00000000 00000000 00000000 00000000 00000001 00000000 00000000 aa550000
+dram-info phy ch=1 off=0a80 00263f7c 00000000 00000000 00000000 00000204 00000009 65432100 00000000
+dram-info phy ch=1 off=0aa0 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+dram-info phy ch=1 off=0ac0 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+dram-info phy ch=1 off=0ae0 23340758 23340758 23340758 0008d000 00000000 00000000 00000000 0000010b
+dram-info phy ch=1 off=0b00 000083e0 000003e0 000013e0 000003e0 000013e0 000003e0 000033e0 000003e0
+dram-info phy ch=1 off=0b20 00000be0 00000be0 000013e0 000003e0 000003e0 00001be0 00000be0 000023e0
+dram-info phy ch=1 off=0b40 000003e0 000013e0 00000be0 00000be0 000199e0 000199e0 000199e0 000199e0
+dram-info phy ch=1 off=0b60 000199e0 000199e0 000199e0 000199e0 000199e0 000199e0 000199e0 000199e0
+dram-info phy ch=1 off=0b80 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+dram-info phy ch=1 off=0ba0 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+dram-info phy ch=1 off=0bc0 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+dram-info phy ch=1 off=0be0 00000000 00000000 00000000 00000000 00000009 00000009 00000000 00000000
+dram-info mr ch=2 rank=0 mr0=0xbb mr5=0xff mr6=0x07 mr7=0x00 mr8=0x58 mr12=0x24 mr14=0x0b
+dram-info mr ch=2 rank=1 mr0=0x3b mr5=0xff mr6=0x07 mr7=0x00 mr8=0x58 mr12=0x24 mr14=0x0b
+dram-info ctl ch=2 10000=03080002 10014=00000001 10510=00000005 10d00=00020030 10d04=00060000 30000=00060000 30004=00000007 30008=00000007 3000c=00070707 30010=00003f3f 30014=1f000000 30018=00000000 3001c=08080808 30020=08080808 30024=08080808 30028=08080808 3002c=00000808 30030=00000000 00000=46554859 00004=00121080 00008=12283135 0000c=001e5056 00010=27081627 00014=08122012 00018=00000014 0001c=00000000 00020=00004405 00024=0004040d 00028=0004040d 0002c=0004040d 00030=00040000 00034=1c200004 00038=00550333 00500=007c003f 00504=00310000 00508=00260024 0050c=0086000b 00580=07350210 00584=00000404 00600=82100405 00604=00000192
+dram-info phy ch=2 off=0000 44005028 7cd606e8 20142001 84070300 fc7f9800 80c38aaf 000c5440 0300f00f
+dram-info phy ch=2 off=0020 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+dram-info phy ch=2 off=0040 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+dram-info phy ch=2 off=0060 00000000 00000000 00000000 00000000 01e80473 40465580 00000b00 00000000
+dram-info phy ch=2 off=0080 00000000 00000000 00000000 00000000 00000000 00000000 00ff55aa ff00aa55
+dram-info phy ch=2 off=00a0 00ff55aa ff00aa55 00005aa5 000055aa 2002ef7e 213c010d 00000840 61881d86
+dram-info phy ch=2 off=00c0 42c69d86 b0800000 b0800000 40064070 40064070 3cf3ffff 3cf3ffff 00363f3f
+dram-info phy ch=2 off=00e0 00363f3f 00000000 00000000 00000000 01070107 00000000 00000000 00000000
+dram-info phy ch=2 off=0100 00430046 00000000 00000000 00000000 0020001b 00000000 00000000 00000000
+dram-info phy ch=2 off=0120 00990092 00000000 00000000 00000000 00040004 00000000 00000000 00000000
+dram-info phy ch=2 off=0140 00490050 00000000 00000000 00000000 004a0051 00000000 00000000 00000000
+dram-info phy ch=2 off=0160 0000007e 003f3f3f 003f3f3f 00000000 00000000 00000000 00000000 00000000
+dram-info phy ch=2 off=0180 00000000 00000000 00000000 00510055 005a0055 00000000 00000000 0055004d
+dram-info phy ch=2 off=01a0 00000000 00000000 0061004c 00000000 00000000 005e004b 00000000 00000000
+dram-info phy ch=2 off=01c0 004a004b 00000000 00000000 00540055 00000000 00000000 004c0059 00000000
+dram-info phy ch=2 off=01e0 00000000 004d0054 00000000 00000000 00840089 00000000 00000000 00900093
+dram-info phy ch=2 off=0a00 003f0033 003f0033 00000000 00000000 00000000 00000000 00000000 00020828
+dram-info phy ch=2 off=0a20 00000040 00cc0000 816e3600 00020412 67c9d008 03c5a780 00000080 0002038e
+dram-info phy ch=2 off=0a40 67c74c08 03442580 0402cc01 0002030c 67c50a08 02c2e3c0 0402cc01 00000000
+dram-info phy ch=2 off=0a60 00000000 00000000 00000000 00000000 00000001 00000000 00000000 aa550000
+dram-info phy ch=2 off=0a80 00263f7c 00000000 00000000 00000000 00000204 00000009 65432100 00000000
+dram-info phy ch=2 off=0aa0 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+dram-info phy ch=2 off=0ac0 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+dram-info phy ch=2 off=0ae0 23340758 23340758 23340758 0008d000 00000000 00000000 00000000 00000109
+dram-info phy ch=2 off=0b00 00000be0 000013e0 00000be0 000013e0 000083e0 000003e0 00003be0 000003e0
+dram-info phy ch=2 off=0b20 00001be0 00000be0 000013e0 000013e0 000013e0 000003e0 000083e0 00001be0
+dram-info phy ch=2 off=0b40 00003be0 00000be0 000013e0 00000be0 000199e0 000199e0 000199e0 000199e0
+dram-info phy ch=2 off=0b60 000199e0 000199e0 000199e0 000199e0 000199e0 000199e0 000199e0 000199e0
+dram-info phy ch=2 off=0b80 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+dram-info phy ch=2 off=0ba0 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+dram-info phy ch=2 off=0bc0 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+dram-info phy ch=2 off=0be0 00000000 00000000 00000000 00000000 00000009 00000009 00000000 00000000
+dram-info mr ch=3 rank=0 mr0=0xbb mr5=0xff mr6=0x07 mr7=0x00 mr8=0x58 mr12=0x24 mr14=0x0b
+dram-info mr ch=3 rank=1 mr0=0x3b mr5=0xff mr6=0x07 mr7=0x00 mr8=0x58 mr12=0x24 mr14=0x0b
+dram-info ctl ch=3 10000=03080002 10014=00000001 10510=00000005 10d00=00020030 10d04=00060000 30000=00060000 30004=00000007 30008=00000007 3000c=00070707 30010=00003f3f 30014=1f000000 30018=00000000 3001c=08080808 30020=08080808 30024=08080808 30028=08080808 3002c=00000808 30030=00000000 00000=46554859 00004=00121080 00008=12283135 0000c=001e5056 00010=27081627 00014=08122012 00018=00000014 0001c=00000000 00020=00004405 00024=0004040d 00028=0004040d 0002c=0004040d 00030=00040000 00034=1c200004 00038=00550333 00500=007c003f 00504=00310000 00508=00260024 0050c=0086000b 00580=07350210 00584=00000404 00600=82100405 00604=00000192
+dram-info phy ch=3 off=0000 44005028 7cd606e8 20142001 84070300 fc7f9800 80c38aaf 000c5440 0300f00f
+dram-info phy ch=3 off=0020 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+dram-info phy ch=3 off=0040 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+dram-info phy ch=3 off=0060 00000000 00000000 00000000 00000000 01e80473 40465580 00000b00 00000000
+dram-info phy ch=3 off=0080 00000000 00000000 00000000 00000000 00000000 00000000 00ff55aa ff00aa55
+dram-info phy ch=3 off=00a0 00ff55aa ff00aa55 00005aa5 000055aa 2002ef7e 217c010f 00000840 61881d86
+dram-info phy ch=3 off=00c0 42c69d86 b0800000 b0800000 40064070 40064070 3cf3ffff 3cf3ffff 00363f3f
+dram-info phy ch=3 off=00e0 00363f3f 00000000 00000000 00000000 01090109 00000000 00000000 00000000
+dram-info phy ch=3 off=0100 00420042 00000000 00000000 00000000 00270022 00000000 00000000 00000000
+dram-info phy ch=3 off=0120 009f008e 00000000 00000000 00000000 00040004 00000000 00000000 00000000
+dram-info phy ch=3 off=0140 0040004f 00000000 00000000 00000000 00410050 00000000 00000000 00000000
+dram-info phy ch=3 off=0160 0000007e 003f3f3f 003f3f3f 00000000 00000000 00000000 00000000 00000000
+dram-info phy ch=3 off=0180 00000000 00000000 00000000 004a005c 005a0055 00000000 00000000 00580049
+dram-info phy ch=3 off=01a0 00000000 00000000 0052004e 00000000 00000000 0061004d 00000000 00000000
+dram-info phy ch=3 off=01c0 004f004c 00000000 00000000 004f0050 00000000 00000000 004c004a 00000000
+dram-info phy ch=3 off=01e0 00000000 00500051 00000000 00000000 007f008c 00000000 00000000 0089009d
+dram-info phy ch=3 off=0a00 003f0033 003f0033 00000000 00000000 00000000 00000000 00000000 00020828
+dram-info phy ch=3 off=0a20 00000040 00cc0000 816e3600 00020412 67c9d008 03c5a780 00000080 0002038e
+dram-info phy ch=3 off=0a40 67c74c08 03442580 0402cc01 0002030c 67c50a08 02c2e3c0 0402cc01 00000000
+dram-info phy ch=3 off=0a60 00000000 00000000 00000000 00000000 00000001 00000000 00000000 aa550000
+dram-info phy ch=3 off=0a80 00263f7c 00000000 00000000 00000000 00000204 00000009 65432100 00000000
+dram-info phy ch=3 off=0aa0 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+dram-info phy ch=3 off=0ac0 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+dram-info phy ch=3 off=0ae0 23340758 23340758 23340758 0008d000 00000000 00000000 00000000 0000010b
+dram-info phy ch=3 off=0b00 000003e0 000003e0 000003e0 000003e0 000083e0 000083e0 00000be0 000003e0
+dram-info phy ch=3 off=0b20 00000be0 00003be0 00000be0 000033e0 000003e0 00000be0 00000be0 000003e0
+dram-info phy ch=3 off=0b40 000003e0 000003e0 000003e0 000003e0 000199e0 000199e0 000199e0 000199e0
+dram-info phy ch=3 off=0b60 000199e0 000199e0 000199e0 000199e0 000199e0 000199e0 000199e0 000199e0
+dram-info phy ch=3 off=0b80 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+dram-info phy ch=3 off=0ba0 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+dram-info phy ch=3 off=0bc0 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+dram-info phy ch=3 off=0be0 00000000 00000000 00000000 00000000 00000009 00000009 00000000 00000000
+dram-info end entries=1248 record=0x1f0000
+dram: quick check ok (1 MiB at 0x4000000)
+fastboot: BootROM boot source 0xa (USB)
+fastboot: USB-C OTG (USB3OTG0), 18d1:4ee0, download buffer 0x10000000 + 0x20000000
+[usb] usb2phy0 status 0x0000: sessvld 0 vbusvalid 0 linestate 0
+[usb] dwc3 GSNPSID 0x5533300a (DWC_usb3 3.00a)
+[usb] device controller running, waiting for the host
+[usb] high speed
+[usb] high speed
+[usb] configured
+[fastboot] < download:00700800
+[fastboot] > DATA00700800
+[fastboot] > OKAY
+[fastboot] < boot
+[fastboot] > OKAY
+load atf-1    0x00040000 <- fit+0x500a00 (151552 bytes)
+load edk2     0x00200000 <- fit+0xa00 (5242880 bytes)
+load atf-2    0x00065000 <- fit+0x525a00 (9745 bytes)
+load atf-3    0xff100000 <- fit+0x528200 (8192 bytes)
+load nvdata   0x007c0000 <- fit+0x6c0000 (196608 bytes)
+enter BL31 at 0x40000 (bl_params 0x3100000, fdt 0x3000000)
+NOTICE:  BL31: v2.15.0(debug):51d8794-dirty
+NOTICE:  BL31: Built : 00:00:00, Nov  4 2026
+INFO:    GICv3 without legacy support detected.
+INFO:    ARM GICv3 driver initialized in EL3
+INFO:    Maximum SPI INTID supported: 511
+INFO:    BL31: Initializing runtime services
+INFO:    BL31: cortex_a55: CPU workaround for erratum 1530923 was applied
+INFO:    BL31: Preparing for EL3 exit to normal world
+INFO:    Entry point address = 0x200000
+INFO:    SPSR = 0x3c9
+FtwPei: Work block header valid bit check error
+FtwPei: Both working and spare block are invalid.
+Firmware Volume for Variable Store is corrupted
+UEFI firmware (version 673a762 built at 00:00:00 on Nov  4 2026)
+MmrPiSdramGetMemorySize(): Bank #0: 2 channel(s), type 0x0, version 0x3
+SdramGetMemorySize(): Ch #0: 8192 MB
+SdramGetMemorySize(): Ch #1: 8192 MB
+SdramGetMemorySize(): Bank #1: 2 channel(s), type 0x0, version 0x3
+SdramGetMemorySize(): Ch #2: 8192 MB
+SdramGetMemorySize(): Ch #3: 8192 MB
+SdramGetMemorySize(): Detected 32768 MB RAM
+RAM: 0x00000000 (Size 0x800000000)
+TF-A + Shared Memory:
+	PhysicalBase: 0x0
+	VirtualBase: 0x0
+	Length: 0x200000
+UEFI FV:
+	PhysicalBase: 0x200000
+	VirtualBase: 0x200000
+	Length: 0x500000
+Variable Store:
+	PhysicalBase: 0x7C0000
+	VirtualBase: 0x7C0000
+	Length: 0x30000
+System RAM (< OP-TEE):
+	PhysicalBase: 0x7F0000
+	VirtualBase: 0x7F0000
+	Length: 0x7C10000
+OP-TEE:
+	PhysicalBase: 0x8400000
+	VirtualBase: 0x8400000
+	Length: 0x1000000
+System RAM (< 4GB):
+	PhysicalBase: 0x9400000
+	VirtualBase: 0x9400000
+	Length: 0xE6C00000
+MMIO:
+	PhysicalBase: 0xF0000000
+	VirtualBase: 0xF0000000
+	Length: 0x10000000
+System RAM >= 4GB:
+	PhysicalBase: 0x100000000
+	VirtualBase: 0x100000000
+	Length: 0x700000000
+MMIO > 32GB:
+	PhysicalBase: 0x900000000
+	VirtualBase: 0x900000000
+	Length: 0x141400000
+BAD1:
+	PhysicalBase: 0x3FC000000
+	VirtualBase: 0x3FC000000
+	Length: 0x500000
+BAD2:
+	PhysicalBase: 0x3FFF00000
+	VirtualBase: 0x3FFF00000
+	Length: 0x100000
+SecMain: No TransferList found, continuing boot
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/MdeModulePkg/Core/Dxe/DxeMain/DEBUG/DxeCore.dll 0x3E94F000
+Loading DxeCore at 0x003E94E000 EntryPoint=0x003E955D74
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/MdeModulePkg/Core/Dxe/DxeMain/DEBUG/DxeCore.dll 0x3E94F000
+HOBLIST address in DXE = 0xEFF8D018
+Memory Allocation 0x00000004 0x3FFEF000 - 0x3FFEFFFF
+Memory Allocation 0x00000000 0x200000 - 0x6FFFFF
+Memory Allocation 0x00000006 0x7C0000 - 0x7EFFFF
+Memory Allocation 0x00000000 0x8400000 - 0x93FFFFF
+Memory Allocation 0x00000000 0x3FC000000 - 0x3FC4FFFFF
+Memory Allocation 0x00000000 0x3FFF00000 - 0x3FFFFFFFF
+Memory Allocation 0x00000004 0x3FFEE000 - 0x3FFEEFFF
+Memory Allocation 0x00000004 0x3FFED000 - 0x3FFEDFFF
+Memory Allocation 0x00000004 0x3FFEC000 - 0x3FFECFFF
+Memory Allocation 0x00000004 0x3FFEB000 - 0x3FFEBFFF
+Memory Allocation 0x00000004 0x3FFEA000 - 0x3FFEAFFF
+Memory Allocation 0x00000004 0x3FFE9000 - 0x3FFE9FFF
+Memory Allocation 0x00000004 0x3FFE8000 - 0x3FFE8FFF
+Memory Allocation 0x00000004 0x3FFE7000 - 0x3FFE7FFF
+Memory Allocation 0x00000004 0x3FFE6000 - 0x3FFE6FFF
+Memory Allocation 0x00000004 0x3FFE5000 - 0x3FFE5FFF
+Memory Allocation 0x00000004 0x3FFF0000 - 0x3FFFFFFF
+Memory Allocation 0x00000004 0x3FFD5000 - 0x3FFE4FFF
+Memory Allocation 0x00000004 0x3F4B5000 - 0x3FFD4FFF
+Memory Allocation 0x00000004 0x3E995000 - 0x3F4B4FFF
+Memory Allocation 0x00000003 0x3E94E000 - 0x3E994FFF
+Memory Allocation 0x00000003 0x3E94E000 - 0x3E994FFF
+FV Hob            0x200000 - 0x6FFFFF
+FV Hob            0x3E995000 - 0x3F4B303F
+FV2 Hob           0x3E995000 - 0x3F4B303F
+                  00000000-0000-0000-0000-000000000000 - 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792
+FV3 Hob           0x3E995000 - 0x3F4B303F - 0x0 - 0x1
+                  00000000-0000-0000-0000-000000000000 - 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/Silicon/Rockchip/Drivers/StatusLedDxe/StatusLedDxe/DEBUG/StatusLedDxe.dll 0xEF308000
+Loading driver at 0x000EF307000 EntryPoint=0x000EF309250 StatusLedDxe.efi
+GpioPinSetDirection Group:1 Pin:30 Direction:1
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/MdeModulePkg/Universal/PCD/Dxe/Pcd/DEBUG/PcdDxe.dll 0xEF2F5000
+Loading driver at 0x000EF2F4000 EntryPoint=0x000EF2F8E2C PcdDxe.efi
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/ArmPkg/Drivers/CpuDxe/CpuDxe/DEBUG/ArmCpuDxe.dll 0xEF2DC000
+Loading driver at 0x000EF2DB000 EntryPoint=0x000EF2DF41C ArmCpuDxe.efi
+ReplaceTableEntry: splitting block entry with MMU disabled
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/MdeModulePkg/Core/RuntimeDxe/RuntimeDxe/DEBUG/RuntimeDxe.dll 0xEF250000
+Loading driver at 0x000EF240000 EntryPoint=0x000EF2518F0 RuntimeDxe.efi
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/MdeModulePkg/Universal/SecurityStubDxe/SecurityStubDxe/DEBUG/SecurityStubDxe.dll 0xEF2D2000
+Loading driver at 0x000EF2D1000 EntryPoint=0x000EF2D5D90 SecurityStubDxe.efi
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/EmbeddedPkg/EmbeddedMonotonicCounter/EmbeddedMonotonicCounter/DEBUG/EmbeddedMonotonicCounter.dll 0xEF1C0000
+Loading driver at 0x000EF1B0000 EntryPoint=0x000EF1C0FC0 EmbeddedMonotonicCounter.efi
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/MdeModulePkg/Universal/ResetSystemRuntimeDxe/ResetSystemRuntimeDxe/DEBUG/ResetSystemRuntimeDxe.dll 0xEF170000
+Loading driver at 0x000EF160000 EntryPoint=0x000EF171D54 ResetSystemRuntimeDxe.efi
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/EmbeddedPkg/MetronomeDxe/MetronomeDxe/DEBUG/MetronomeDxe.dll 0xEF2E9000
+Loading driver at 0x000EF2E8000 EntryPoint=0x000EF2E9F84 MetronomeDxe.efi
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/MdeModulePkg/Universal/HiiDatabaseDxe/HiiDatabaseDxe/DEBUG/HiiDatabase.dll 0xEF293000
+Loading driver at 0x000EF292000 EntryPoint=0x000EF2969AC HiiDatabase.efi
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/SecurityPkg/RandomNumberGenerator/RngDxe/RngDxe/DEBUG/RngDxe.dll 0xEF2C5000
+Loading driver at 0x000EF2C4000 EntryPoint=0x000EF2C680C RngDxe.efi
+FW-TRNG: UUID 583C5223-4874-8340-9D16-E3FAB9F173BC
+FW-TRNG: Version 1.0, GUID {583C5223-4874-8340-9D16-E3FAB9F173BC}
+RngLib uses an Unsafe algorithm and must not be used for production builds.
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/Silicon/Rockchip/Drivers/ExitBootServicesHookDxe/ExitBootServicesHookDxe/DEBUG/ExitBootServicesHookDxe.dll 0xEF2BF000
+Loading driver at 0x000EF2BE000 EntryPoint=0x000EF2C0850 ExitBootServicesHookDxe.efi
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/Silicon/Rockchip/Drivers/NorFlashDxe/NorFlashDxe/DEBUG/NorFlashDxe.dll 0xEF080000
+Loading driver at 0x000EF070000 EntryPoint=0x000EF08272C NorFlashDxe.efi
+SPI Nor ID: 0 0 0
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/MdeModulePkg/Universal/SerialDxe/SerialDxe/DEBUG/SerialDxe.dll 0xEF2BA000
+Loading driver at 0x000EF2B9000 EntryPoint=0x000EF2BB210 SerialDxe.efi
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/ArmPkg/Drivers/ArmScmiDxe/ArmScmiDxe/DEBUG/ArmScmiDxe.dll 0xEF2B4000
+Loading driver at 0x000EF2B3000 EntryPoint=0x000EF2B5FE8 ArmScmiDxe.efi
+MtlSendMessage ringing doorbell 0x82000010 with message header 0x00004000 length 0x00000004
+MtlSendMessage ringing doorbell 0x82000010 with message header 0x00004001 length 0x00000004
+MtlSendMessage ringing doorbell 0x82000010 with message header 0x00004001 length 0x00000004
+MtlSendMessage ringing doorbell 0x82000010 with message header 0x00004006 length 0x00000008
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/MdeModulePkg/Universal/Acpi/AcpiTableDxe/AcpiTableDxe/DEBUG/AcpiTableDxe.dll 0xEF0FA000
+Loading driver at 0x000EF0F9000 EntryPoint=0x000EF0FE0FC AcpiTableDxe.efi
+Fail to locate AcpiSiliconHob!!
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/MdeModulePkg/Universal/SmbiosDxe/SmbiosDxe/DEBUG/SmbiosDxe.dll 0xEF0F2000
+Loading driver at 0x000EF0F1000 EntryPoint=0x000EF0F4D58 SmbiosDxe.efi
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/Silicon/Rockchip/Drivers/I2c/Rk860xRegulatorDxe/Rk860xRegulatorDxe/DEBUG/Rk860xRegulatorDxe.dll 0xEF0EC000
+Loading driver at 0x000EF0EB000 EntryPoint=0x000EF0ED974 Rk860xRegulatorDxe.efi
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/Silicon/Rockchip/Drivers/Rtc8563PlatformDxe/Rtc8563PlatformDxe/DEBUG/RtcPlatformDxe.dll 0xEF10D000
+Loading driver at 0x000EF10C000 EntryPoint=0x000EF10E070 RtcPlatformDxe.efi
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/Silicon/Rockchip/Drivers/Vop2Dxe/Vop2Dxe/DEBUG/Vop2Dxe.dll 0xEF0C9000
+Loading driver at 0x000EF0C8000 EntryPoint=0x000EF0CD48C Vop2Dxe.efi
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/Drivers/AMD/Gop/AmdGopOpRomOverrideDxe/DEBUG/AmdGopOpRomOverrideDxe.dll 0xEF0E7000
+Loading driver at 0x000EF0E6000 EntryPoint=0x000EF0E8344 AmdGopOpRomOverrideDxe.efi
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/Silicon/Rockchip/Drivers/UsbHcdInitDxe/UsbHcd/DEBUG/UsbHcdDxe.dll 0xEF0E1000
+Loading driver at 0x000EF0E0000 EntryPoint=0x000EF0E2884 UsbHcdDxe.efi
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/NetworkPkg/DpcDxe/DpcDxe/DEBUG/DpcDxe.dll 0xEF0DC000
+Loading driver at 0x000EF0DB000 EntryPoint=0x000EF0DD2C4 DpcDxe.efi
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/MdeModulePkg/Universal/DevicePathDxe/DevicePathDxe/DEBUG/DevicePathDxe.dll 0xEF002000
+Loading driver at 0x000EF001000 EntryPoint=0x000EF00A0A4 DevicePathDxe.efi
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/ArmPkg/Drivers/ArmPciCpuIo2Dxe/ArmPciCpuIo2Dxe/DEBUG/ArmPciCpuIo2Dxe.dll 0xEF0C4000
+Loading driver at 0x000EF0C3000 EntryPoint=0x000EF0C5514 ArmPciCpuIo2Dxe.efi
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/Silicon/Rockchip/Drivers/RuntimeServicesManagerDxe/RuntimeServicesManagerDxe/DEBUG/RuntimeServicesManagerDxe.dll 0xEEFA0000
+Loading driver at 0x000EEF90000 EntryPoint=0x000EEFA111C RuntimeServicesManagerDxe.efi
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/Silicon/Rockchip/Drivers/RkFvbDxe/RkFvbDxe/DEBUG/RkFvbDxe.dll 0xEEF00000
+Loading driver at 0x000EEEF0000 EntryPoint=0x000EEF0586C RkFvbDxe.efi
+RkAtagsGetTagBuffer: Tag not found! Type=54410051.
+RkFvbEntryPoint: Couldn't identify boot device.
+FvbConfigureFlashInstance: SPI flash not present.
+FvbValidateFvHeader: No Firmware Volume header present
+FvbPrepareFvHeader: The FVB Header is not valid.
+FvbPrepareFvHeader: Installing a correct one for this volume.
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/MdeModulePkg/Universal/FaultTolerantWriteDxe/FaultTolerantWriteDxe/DEBUG/FaultTolerantWriteDxe.dll 0xEF105000
+Loading driver at 0x000EF104000 EntryPoint=0x000EF108B4C FaultTolerantWriteDxe.efi
+Ftw: FtwWorkSpaceLba - 0x10, WorkBlockSize  - 0x1000, FtwWorkSpaceBase - 0x0
+Ftw: FtwSpareLba     - 0x20, SpareBlockSize - 0x1000
+Ftw: NumberOfWorkBlock - 0x10, FtwWorkBlockLba - 0x10
+Ftw: WorkSpaceLbaInSpare - 0x0, WorkSpaceBaseInSpare - 0x0
+Ftw: Work block header check mismatch
+Ftw: Init.. WorkSpaceRefresh failed: Status = Aborted
+Ftw: Work block header check mismatch
+Ftw: Work block header check mismatch
+Ftw: Both working and spare blocks are invalid, init workspace
+Ftw: start to reclaim work space
+Ftw: reclaim work space successfully
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/ArmPkg/Drivers/ArmGicDxe/ArmGicV3Dxe/DEBUG/ArmGicV3Dxe.dll 0xEF012000
+Loading driver at 0x000EF011000 EntryPoint=0x000EF014214 ArmGicV3Dxe.efi
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/Silicon/Rockchip/Drivers/PlatformSmbiosDxe/PlatformSmbiosDxe/DEBUG/PlatformSmbiosDxe.dll 0xEEFEA000
+Loading driver at 0x000EEFE9000 EntryPoint=0x000EEFEB9DC PlatformSmbiosDxe.efi
+PlatformSmbiosDriverEntryPoint() called
+SdramGetMemorySize(): Bank #0: 2 channel(s), type 0x0, version 0x3
+SdramGetMemorySize(): Ch #0: 8192 MB
+SdramGetMemorySize(): Ch #1: 8192 MB
+SdramGetMemorySize(): Bank #1: 2 channel(s), type 0x0, version 0x3
+SdramGetMemorySize(): Ch #2: 8192 MB
+SdramGetMemorySize(): Ch #3: 8192 MB
+SdramGetMemorySize(): Detected 32768 MB RAM
+SmbiosAdd: Smbios type 0 with size 0x35 is added to 32-bit table
+SmbiosAdd: Smbios type 0 with size 0x35 is added to 64-bit table
+SmbiosCreateTable: Initialize 32-bit entry point structure
+SmbiosCreateTable() re-allocate SMBIOS 32-bit table
+SmbiosCreateTable: Initialize 64-bit entry point structure
+SmbiosCreate64BitTable() re-allocate SMBIOS 64-bit table
+Board Serial Number: 306B6F3F7610835B
+SmbiosAdd: Smbios type 1 with size 0x58 is added to 32-bit table
+SmbiosAdd: Smbios type 1 with size 0x58 is added to 64-bit table
+SmbiosAdd: Smbios type 3 with size 0x3D is added to 32-bit table
+SmbiosAdd: Smbios type 3 with size 0x3D is added to 64-bit table
+SmbiosAdd: Smbios type 2 with size 0x41 is added to 32-bit table
+SmbiosAdd: Smbios type 2 with size 0x41 is added to 64-bit table
+SmbiosAdd: Smbios type 7 with size 0x2B is added to 32-bit table
+SmbiosAdd: Smbios type 7 with size 0x2B is added to 64-bit table
+SmbiosAdd: Smbios type 7 with size 0x24 is added to 32-bit table
+SmbiosAdd: Smbios type 7 with size 0x24 is added to 64-bit table
+SmbiosAdd: Smbios type 7 with size 0x1F is added to 32-bit table
+SmbiosAdd: Smbios type 7 with size 0x1F is added to 64-bit table
+MtlSendMessage ringing doorbell 0x82000010 with message header 0x00005006 length 0x00000008
+SCMI: SMBIOS reported rate 900000000Hz
+SmbiosAdd: Smbios type 4 with size 0x54 is added to 32-bit table
+SmbiosAdd: Smbios type 4 with size 0x54 is added to 64-bit table
+SmbiosAdd: Smbios type 9 with size 0x21 is added to 32-bit table
+SmbiosAdd: Smbios type 9 with size 0x21 is added to 64-bit table
+SmbiosAdd: Smbios type 11 with size 0x43 is added to 32-bit table
+SmbiosAdd: Smbios type 11 with size 0x43 is added to 64-bit table
+SmbiosAdd: Smbios type 16 with size 0x19 is added to 32-bit table
+SmbiosAdd: Smbios type 16 with size 0x19 is added to 64-bit table
+SmbiosAdd: Smbios type 17 with size 0x6F is added to 32-bit table
+SmbiosAdd: Smbios type 17 with size 0x6F is added to 64-bit table
+SmbiosAdd: Smbios type 19 with size 0x21 is added to 32-bit table
+SmbiosAdd: Smbios type 19 with size 0x21 is added to 64-bit table
+SmbiosAdd: Smbios type 32 with size 0xD is added to 32-bit table
+SmbiosAdd: Smbios type 32 with size 0xD is added to 64-bit table
+PlatformSmbiosDriverEntryPoint() returning
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/Silicon/Rockchip/Drivers/I2c/I2cDxe/I2cDxe/DEBUG/I2cDxe.dll 0xEEE70000
+Loading driver at 0x000EEE60000 EntryPoint=0x000EEE724A0 I2cDxe.efi
+GpioPinSetFunction Group:0 Pin:25 Function:3
+GpioPinSetFunction Group:0 Pin:26 Function:3
+Succesfully installed controller 0 at 0xFD880000
+GpioPinSetFunction Group:0 Pin:24 Function:9
+GpioPinSetFunction Group:0 Pin:23 Function:9
+Succesfully installed controller 6 at 0xFEC80000
+GpioPinSetFunction Group:1 Pin:24 Function:9
+GpioPinSetFunction Group:1 Pin:25 Function:9
+Succesfully installed controller 7 at 0xFEC90000
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/Silicon/Rockchip/Drivers/OhciDxe/OhciDxe/DEBUG/OhciDxe.dll 0xEEF7A000
+Loading driver at 0x000EEF79000 EntryPoint=0x000EEF7FB90 OhciDxe.efi
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/NetworkPkg/HttpUtilitiesDxe/HttpUtilitiesDxe/DEBUG/HttpUtilitiesDxe.dll 0xEEF8B000
+Loading driver at 0x000EEF8A000 EntryPoint=0x000EEF8CB40 HttpUtilitiesDxe.efi
+add-symbol-file /tiano/Build/MultiArchUefiPkg/RELEASE_GCC/AARCH64/MultiArchUefiPkg/Drivers/Emulator/Emulator/DEBUG/EmulatorDxe.dll 0xEED48000
+Loading driver at 0x000EED47000 EntryPoint=0x000EED492D8 EmulatorDxe.efi
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/MdeModulePkg/Universal/BootManagerPolicyDxe/BootManagerPolicyDxe/DEBUG/BootManagerPolicyDxe.dll 0xEEF43000
+Loading driver at 0x000EEF42000 EntryPoint=0x000EEF456CC BootManagerPolicyDxe.efi
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/MdeModulePkg/Universal/SetupBrowserDxe/SetupBrowserDxe/DEBUG/SetupBrowser.dll 0xE8771000
+Loading driver at 0x000E8770000 EntryPoint=0x000E877246C SetupBrowser.efi
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/MdeModulePkg/Universal/BdsDxe/BdsDxe/DEBUG/BdsDxe.dll 0xE8757000
+Loading driver at 0x000E8756000 EntryPoint=0x000E875D130 BdsDxe.efi
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/ShellPkg/DynamicCommand/TftpDynamicCommand/TftpDynamicCommand/DEBUG/TftpDynamicCommand.dll 0xE878D000
+Loading driver at 0x000E878C000 EntryPoint=0x000E8792EB8 TftpDynamicCommand.efi
+Status: 0x0000000E
+
+ASSERT_EFI_ERROR (Status = Not Found)
+ASSERT [TftpDynamicCommand] AutoGen.c(364): !(((RETURN_STATUS)(Status)) >= 0x8000000000000000ULL)
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/Silicon/Rockchip/RK3588/Drivers/RK3588Dxe/RK3588Dxe/DEBUG/RK3588Dxe.dll 0xE8732000
+Loading driver at 0x000E8731000 EntryPoint=0x000E8736DCC RK3588Dxe.efi
+GpioPinSetDirection Group:2 Pin:21 Direction:1
+GpioPinSetFunction Group:1 Pin:20 Function:0
+RK3588InitPeripherals: Entry
+GpioPinSetFunction Group:1 Pin:28 Function:2
+GpioPinSetFunction Group:1 Pin:23 Function:1
+GpioPinSetFunction Group:1 Pin:21 Function:1
+GpioPinSetFunction Group:1 Pin:19 Function:1
+GpioPinSetFunction Group:1 Pin:18 Function:1
+RK806Init(780): base: FEB20000
+SpiCongig(737): 0: 0
+RK806PinSetFunction: RegId=0x0, Pin=1, Function=2
+buck_set_voltage: volt=750000, buck=1, reg=0x1A, mask=0xFF, val=0x28
+buck_set_voltage: volt=750000, buck=3, reg=0x1C, mask=0xFF, val=0x28
+buck_set_voltage: volt=750000, buck=4, reg=0x1D, mask=0xFF, val=0x28
+buck_set_voltage: volt=850000, buck=5, reg=0x1E, mask=0xFF, val=0x38
+buck_set_voltage: volt=2000000, buck=7, reg=0x20, mask=0xFF, val=0xB5
+buck_set_voltage: volt=3300000, buck=8, reg=0x21, mask=0xFF, val=0xE9
+buck_set_voltage: volt=1800000, buck=10, reg=0x23, mask=0xFF, val=0xAD
+nldo_set_voltage: volt=750000, ldo=1, reg=0x43, mask=0xFF, val=0x14
+nldo_set_voltage: volt=850000, ldo=2, reg=0x44, mask=0xFF, val=0x1C
+nldo_set_voltage: volt=750000, ldo=3, reg=0x45, mask=0xFF, val=0x14
+nldo_set_voltage: volt=850000, ldo=4, reg=0x46, mask=0xFF, val=0x1C
+nldo_set_voltage: volt=750000, ldo=5, reg=0x47, mask=0xFF, val=0x14
+pd_e_otg: volt=1800000, ldo=1, reg=0x4E, mask=0xFF, val=0x68
+pd_e_otg: volt=1800000, ldo=2, reg=0x4F, mask=0xFF, val=0x68
+pd_e_otg: volt=1200000, ldo=3, reg=0x50, mask=0xFF, val=0x38
+pd_e_otg: volt=3300000, ldo=4, reg=0x51, mask=0xFF, val=0xE0
+pd_e_otg: volt=3300000, ldo=5, reg=0x52, mask=0xFF, val=0xE0
+pd_e_otg: volt=1800000, ldo=6, reg=0x53, mask=0xFF, val=0x68
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/EmbeddedPkg/Drivers/NonCoherentIoMmuDxe/NonCoherentIoMmuDxe/DEBUG/NonCoherentIoMmuDxe.dll 0xEEF85000
+Loading driver at 0x000EEF84000 EntryPoint=0x000EEF86C94 NonCoherentIoMmuDxe.efi
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/Silicon/Rockchip/RK3588/Drivers/GmacPlatformDxe/GmacPlatformDxe/DEBUG/GmacPlatformDxe.dll 0xE87A1000
+Loading driver at 0x000E87A0000 EntryPoint=0x000E87A2E4C GmacPlatformDxe.efi
+GpioPinSetDirection Group:3 Pin:15 Direction:1
+PhyInit: Unknown PHY ID 00000000
+GmacPlatformDxeInitialize: GMAC1 MAC address: E2:05:39:02:C7:2A
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableRuntimeDxe/DEBUG/VariableRuntimeDxe.dll 0xE86B0000
+Loading driver at 0x000E86A0000 EntryPoint=0x000E86B80A0 VariableRuntimeDxe.efi
+Variable driver common space: 0xFF9C 0xFF9C 0xFF9C
+Variable driver will work with auth variable format!
+NOTICE - AuthVariableLibInitialize() returns Unsupported!
+Variable driver will continue to work without auth variable support!
+RecordSecureBootPolicyVarData GetVariable SecureBoot Status E
+MtlSendMessage ringing doorbell 0x82000010 with message header 0x00005003 length 0x00000008
+MtlSendMessage ringing doorbell 0x82000010 with message header 0x00005006 length 0x00000008
+SCMI: scmi_clk_cpul: Current rate is 900000000Hz
+SCMI: scmi_clk_cpul: New rate is 1800000000Hz
+MtlSendMessage ringing doorbell 0x82000010 with message header 0x00005005 length 0x00000014
+MtlSendMessage ringing doorbell 0x82000010 with message header 0x00005006 length 0x00000008
+SCMI: scmi_clk_cpul: Current rate is 1621000000Hz
+MtlSendMessage ringing doorbell 0x82000010 with message header 0x00005003 length 0x00000008
+MtlSendMessage ringing doorbell 0x82000010 with message header 0x00005006 length 0x00000008
+SCMI: scmi_clk_cpub01: Current rate is 24000000Hz
+SCMI: scmi_clk_cpub01: New rate is 2400000000Hz
+MtlSendMessage ringing doorbell 0x82000010 with message header 0x00005005 length 0x00000014
+MtlSendMessage ringing doorbell 0x82000010 with message header 0x00005006 length 0x00000008
+SCMI: scmi_clk_cpub01: Current rate is 1949000000Hz
+MtlSendMessage ringing doorbell 0x82000010 with message header 0x00005003 length 0x00000008
+MtlSendMessage ringing doorbell 0x82000010 with message header 0x00005006 length 0x00000008
+SCMI: scmi_clk_cpub23: Current rate is 24000000Hz
+SCMI: scmi_clk_cpub23: New rate is 2400000000Hz
+MtlSendMessage ringing doorbell 0x82000010 with message header 0x00005005 length 0x00000014
+MtlSendMessage ringing doorbell 0x82000010 with message header 0x00005006 length 0x00000008
+SCMI: scmi_clk_cpub23: Current rate is 1962000000Hz
+InitComPhyConfig reg=FEE00000 FD5BC000 mode = 2
+InitComPhyConfig reg=FEE10000 FD5C0000 mode = 1
+InitComPhyConfig reg=FEE20000 FD5C4000 mode = 1
+GpioPinSetFunction Group:4 Pin:18 Function:11
+VarCheckLibRegisterSetVariableCheckHandler - 0xE86B4FB0 Success
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/ArmPkg/Drivers/TimerDxe/TimerDxe/DEBUG/ArmTimerDxe.dll 0xE879A000
+Loading driver at 0x000E8799000 EntryPoint=0x000E879B178 ArmTimerDxe.efi
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/MdeModulePkg/Universal/Disk/RamDiskDxe/RamDiskDxe/DEBUG/RamDiskDxe.dll 0xE8644000
+Loading driver at 0x000E8643000 EntryPoint=0x000E864AC30 RamDiskDxe.efi
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/NetworkPkg/TlsAuthConfigDxe/TlsAuthConfigDxe/DEBUG/TlsAuthConfigDxe.dll 0xE8634000
+Loading driver at 0x000E8633000 EntryPoint=0x000E863C12C TlsAuthConfigDxe.efi
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/MdeModulePkg/Universal/DisplayEngineDxe/DisplayEngineDxe/DEBUG/DisplayEngine.dll 0xE8607000
+Loading driver at 0x000E8606000 EntryPoint=0x000E8608C58 DisplayEngine.efi
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/MdeModulePkg/Universal/CapsuleRuntimeDxe/CapsuleRuntimeDxe/DEBUG/CapsuleRuntimeDxe.dll 0xE85A0000
+Loading driver at 0x000E8590000 EntryPoint=0x000E85A1328 CapsuleRuntimeDxe.efi
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/EmbeddedPkg/RealTimeClockRuntimeDxe/RealTimeClockRuntimeDxe/DEBUG/RealTimeClock.dll 0xE8560000
+Loading driver at 0x000E8550000 EntryPoint=0x000E856186C RealTimeClock.efi
+I2cMasterRegistrationEvent: found I2C master!
+InitializeRealTimeClock: using default timezone/daylight settings
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/MdeModulePkg/Universal/WatchdogTimerDxe/WatchdogTimer/DEBUG/WatchdogTimer.dll 0xE8744000
+Loading driver at 0x000E8743000 EntryPoint=0x000E87450D0 WatchdogTimer.efi
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/Silicon/Rockchip/Library/DisplayLib/DwHdmiQpLib/DEBUG/DwHdmiQpLib.dll 0xE8623000
+Loading driver at 0x000E8622000 EntryPoint=0x000E86266F4 DwHdmiQpLib.efi
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/Silicon/Rockchip/Library/DisplayLib/DwDpLib/DEBUG/DwDpLib.dll 0xE85FF000
+Loading driver at 0x000E85FE000 EntryPoint=0x000E86022D0 DwDpLib.efi
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/Silicon/Rockchip/Library/DisplayLib/DwMipiDsi2Lib/DEBUG/DwMipiDsi2Lib.dll 0xE85E6000
+Loading driver at 0x000E85E5000 EntryPoint=0x000E85E9994 DwMipiDsi2Lib.efi
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/Silicon/Rockchip/Drivers/LcdGraphicsOutputDxe/LcdGraphicsOutputDxe/DEBUG/LcdGraphicsOutputDxe.dll 0xE862B000
+Loading driver at 0x000E862A000 EntryPoint=0x000E862EEAC LcdGraphicsOutputDxe.efi
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/Silicon/Rockchip/Drivers/NetworkStackConfigDxe/NetworkStackConfigDxe/DEBUG/NetworkStackConfigDxe.dll 0xE85FA000
+Loading driver at 0x000E85F9000 EntryPoint=0x000E85FB200 NetworkStackConfigDxe.efi
+NetworkStackConfigApply: PXE Boot disabled!
+NetworkStackConfigApply: HTTP Boot disabled!
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/EmbeddedPkg/Drivers/MemoryAttributeManagerDxe/MemoryAttributeManagerDxe/DEBUG/MemoryAttributeManagerDxe.dll 0xE85F5000
+Loading driver at 0x000E85F4000 EntryPoint=0x000E85F6200 MemoryAttributeManagerDxe.efi
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/MdeModulePkg/Bus/Pci/PciHostBridgeDxe/PciHostBridgeDxe/DEBUG/PciHostBridgeDxe.dll 0xE8541000
+Loading driver at 0x000E8540000 EntryPoint=0x000E854910C PciHostBridgeDxe.efi
+
+PCIe: Segment 0
+PCIe: ApbBase 0xFE150000
+PCIe: DbiBase 0xA40000000
+PCIe: NumLanes 4
+PCIe: LinkSpeed 3
+GpioPinSetDirection Group:1 Pin:12 Direction:1
+GpioPinSetDirection Group:2 Pin:21 Direction:1
+PCIe30: PHY init
+PCIe30: PHY mode 4
+PCIe30: PHY init complete
+PCIe: Setup clocks
+PCIe: Switching to RC mode
+PCIe: Enabling DBI access
+PCIe: Setup BARs
+PCIe: Setup iATU
+PCIe: Set link speed
+PCIe: SetupBars: Speed change
+PCIe: Assert reset
+PCIe: Start LTSSM
+PCIe: Deassert reset
+PCIe: Waiting for link up...
+PCIe: PciIsLinkUp(): LTSSM_STATUS=0x00000000
+PCIe: Link up timeout!
+
+PCIe: Segment 2
+PCIe: ApbBase 0xFE170000
+PCIe: DbiBase 0xA40800000
+PCIe: NumLanes 1
+PCIe: LinkSpeed 2
+GpioPinSetDirection Group:4 Pin:5 Direction:1
+GpioPinSetDirection Group:2 Pin:21 Direction:1
+PCIe: Setup clocks
+PCIe: Switching to RC mode
+PCIe: Enabling DBI access
+PCIe: Setup BARs
+PCIe: Setup iATU
+PCIe: Set link speed
+PCIe: SetupBars: Speed change
+PCIe: Assert reset
+PCIe: Start LTSSM
+PCIe: Deassert reset
+PCIe: Waiting for link up...
+PCIe: PciIsLinkUp(): LTSSM_STATUS=0x00000003
+PCIe: Link up timeout!
+
+PCIe: Segment 3
+PCIe: ApbBase 0xFE180000
+PCIe: DbiBase 0xA40C00000
+PCIe: NumLanes 1
+PCIe: LinkSpeed 2
+GpioPinSetDirection Group:4 Pin:2 Direction:1
+GpioPinSetDirection Group:2 Pin:21 Direction:1
+PCIe: Setup clocks
+PCIe: Switching to RC mode
+PCIe: Enabling DBI access
+PCIe: Setup BARs
+PCIe: Setup iATU
+PCIe: Set link speed
+PCIe: SetupBars: Speed change
+PCIe: Assert reset
+PCIe: Start LTSSM
+PCIe: Deassert reset
+PCIe: Waiting for link up...
+PCIe: Link up timeout!
+Error: Image at 000E8540000 start failed: Unsupported
+remove-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/MdeModulePkg/Bus/Pci/PciHostBridgeDxe/PciHostBridgeDxe/DEBUG/PciHostBridgeDxe.dll 0xE8541000
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/Silicon/Rockchip/RK3588/Drivers/UsbDpPhyDxe/UsbDpPhyDxe/DEBUG/UsbDpPhyDxe.dll 0xE85D7000
+Loading driver at 0x000E85D6000 EntryPoint=0x000E85D8FA4 UsbDpPhyDxe.efi
+failed to find dp lane mux, following dp alt mode
+cmn ana lcpll lock timeout
+failed to init usbdp combophy
+UsbDpPhySetup: rockchip_u3phy_init errno -110
+failed to find dp lane mux, following dp alt mode
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/Silicon/Rockchip/RK3588/Drivers/AcpiPlatformDxe/AcpiPlatformDxe/DEBUG/AcpiPlatformDxe.dll 0xE861D000
+Loading driver at 0x000E861C000 EntryPoint=0x000E861F0A4 AcpiPlatformDxe.efi
+AcpiPlatform: ACPI support is disabled by the settings.
+Error: Image at 000E861C000 start failed: Unsupported
+remove-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/Silicon/Rockchip/RK3588/Drivers/AcpiPlatformDxe/AcpiPlatformDxe/DEBUG/AcpiPlatformDxe.dll 0xE861D000
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/Silicon/Rockchip/RK3588/Drivers/FdtPlatformDxe/FdtPlatformDxe/DEBUG/FdtPlatformDxe.dll 0xE8530000
+Loading driver at 0x000E852F000 EntryPoint=0x000E8537A80 FdtPlatformDxe.efi
+FdtPlatform: Using vendor FDT.
+FdtPlatform: Fixing up Combo PHY devices (PCIe, SATA, USB)
+FdtPlatform: Couldn't locate FDT node path '/usb@fcd00000'. Ret=FDT_ERR_NOTFOUND
+FdtPlatform: Fixing up PCIe 3 devices
+FdtPlatform: Fixing up PCIe resources
+FdtPlatform: Failed to get 'iommu-map' property for '/pcie@fe150000'. Ret=FDT_ERR_NOTFOUND
+FdtPlatform: Failed to get 'iommu-map' property for '/pcie@fe160000'. Ret=FDT_ERR_NOTFOUND
+FdtPlatform: Failed to get 'iommu-map' property for '/pcie@fe170000'. Ret=FDT_ERR_NOTFOUND
+FdtPlatform: Failed to get 'iommu-map' property for '/pcie@fe180000'. Ret=FDT_ERR_NOTFOUND
+FdtPlatform: Failed to get 'iommu-map' property for '/pcie@fe190000'. Ret=FDT_ERR_NOTFOUND
+FdtPlatform: Fixing up GMAC MAC address
+FdtPlatform: Set MAC address E2:05:39:02:C7:29 for '/ethernet@fe1b0000'
+FdtPlatform: Set MAC address E2:05:39:02:C7:2A for '/ethernet@fe1c0000'
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/SecurityPkg/Hash2DxeCrypto/Hash2DxeCrypto/DEBUG/Hash2DxeCrypto.dll 0xE854A000
+Loading driver at 0x000E8549000 EntryPoint=0x000E854C5BC Hash2DxeCrypto.efi
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/MdeModulePkg/Universal/Console/ConPlatformDxe/ConPlatformDxe/DEBUG/ConPlatformDxe.dll 0xE8543000
+Loading driver at 0x000E8542000 EntryPoint=0x000E8545B74 ConPlatformDxe.efi
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/MdeModulePkg/Universal/Console/ConSplitterDxe/ConSplitterDxe/DEBUG/ConSplitterDxe.dll 0xE84D0000
+Loading driver at 0x000E84CF000 EntryPoint=0x000E84D55D0 ConSplitterDxe.efi
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/MdeModulePkg/Universal/Console/GraphicsConsoleDxe/GraphicsConsoleDxe/DEBUG/GraphicsConsoleDxe.dll 0xE84C7000
+Loading driver at 0x000E84C6000 EntryPoint=0x000E84C9EA4 GraphicsConsoleDxe.efi
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/MdeModulePkg/Universal/Console/TerminalDxe/TerminalDxe/DEBUG/TerminalDxe.dll 0xE84DA000
+Loading driver at 0x000E84D9000 EntryPoint=0x000E84E0214 TerminalDxe.efi
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/MdeModulePkg/Universal/Acpi/BootGraphicsResourceTableDxe/BootGraphicsResourceTableDxe/DEBUG/BootGraphicsResourceTableDxe.dll 0xE85D1000
+Loading driver at 0x000E85D0000 EntryPoint=0x000E85D27C0 BootGraphicsResourceTableDxe.efi
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/MdeModulePkg/Bus/I2c/I2cDxe/I2cDxe/DEBUG/I2cDxe.dll 0xE84B6000
+Loading driver at 0x000E84B5000 EntryPoint=0x000E84B956C I2cDxe.efi
+add-symbol-file c:\atombios\staging\uefi\udk2014_rel\Build\AmdGopPkg\DEBUG_ARMGCC\AARCH64\AmdGopPkg\AmdGop\stg\atombios\bios\VideoFirmware\AmdGop\DEBUG\AmdGop.dll 0xE840B260
+Loading driver at 0x000E840B000 EntryPoint=0x000E840B2B0 AmdGop.efi
+!!!!!!!!  Image Section Alignment(0x20) does not match Required Alignment (0x1000)  !!!!!!!!
+ProtectUefiImage failed to create image properties record
+AmdGopOpRomOverrideDxe: 62C34CEA-A08D-4676-81E5-F16B0EE22F22
+add-symbol-file c:\atombios\staging\uefi\udk2014\Build\AmdGopPkg\DEBUG_ARMGCC\AARCH64\AmdGopPkg\AmdGop\stg\atombios\bios\VideoFirmware\AmdGop\DEBUG\AmdGop.dll 0xE8436260
+Loading driver at 0x000E8436000 EntryPoint=0x000E84362B0 AmdGop.efi
+!!!!!!!!  Image Section Alignment(0x20) does not match Required Alignment (0x1000)  !!!!!!!!
+ProtectUefiImage failed to create image properties record
+AmdGopOpRomOverrideDxe: 92F10585-FB63-430F-8188-71FEEB2DDA5B
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/MdeModulePkg/Bus/Pci/EhciDxe/EhciDxe/DEBUG/EhciDxe.dll 0xE849D000
+Loading driver at 0x000E849C000 EntryPoint=0x000E84A3184 EhciDxe.efi
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/MdeModulePkg/Bus/Pci/XhciDxe/XhciDxe/DEBUG/XhciDxe.dll 0xE83EB000
+Loading driver at 0x000E83EA000 EntryPoint=0x000E83ED468 XhciDxe.efi
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/MdeModulePkg/Bus/Usb/UsbBusDxe/UsbBusDxe/DEBUG/UsbBusDxe.dll 0xE84A9000
+Loading driver at 0x000E84A8000 EntryPoint=0x000E84AFA24 UsbBusDxe.efi
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/MdeModulePkg/Bus/Usb/UsbMassStorageDxe/UsbMassStorageDxe/DEBUG/UsbMassStorageDxe.dll 0xE84BE000
+Loading driver at 0x000E84BD000 EntryPoint=0x000E84C210C UsbMassStorageDxe.efi
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/MdeModulePkg/Bus/Usb/UsbKbDxe/UsbKbDxe/DEBUG/UsbKbDxe.dll 0xE8403000
+Loading driver at 0x000E8402000 EntryPoint=0x000E840766C UsbKbDxe.efi
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/MdeModulePkg/Bus/Usb/UsbMouseDxe/UsbMouseDxe/DEBUG/UsbMouseDxe.dll 0xEFF7E000
+Loading driver at 0x000EFF7D000 EntryPoint=0x000EFF80BD0 UsbMouseDxe.efi
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/MdeModulePkg/Bus/Usb/UsbMouseAbsolutePointerDxe/UsbMouseAbsolutePointerDxe/DEBUG/UsbMouseAbsolutePointerDxe.dll 0xE8430000
+Loading driver at 0x000E842F000 EntryPoint=0x000E8432C08 UsbMouseAbsolutePointerDxe.efi
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/MdeModulePkg/Bus/Pci/NonDiscoverablePciDeviceDxe/NonDiscoverablePciDeviceDxe/DEBUG/NonDiscoverablePciDeviceDxe.dll 0xEFF86000
+Loading driver at 0x000EFF85000 EntryPoint=0x000EFF893D8 NonDiscoverablePciDeviceDxe.efi
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/MdeModulePkg/Bus/Sd/SdDxe/SdDxe/DEBUG/SdDxe.dll 0xE83B7000
+Loading driver at 0x000E83B6000 EntryPoint=0x000E83BB30C SdDxe.efi
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/MdeModulePkg/Bus/Sd/EmmcDxe/EmmcDxe/DEBUG/EmmcDxe.dll 0xE83A0000
+Loading driver at 0x000E839F000 EntryPoint=0x000E83A5434 EmmcDxe.efi
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/Silicon/Synopsys/DesignWare/Drivers/DwMmcHcDxe/DwMmcHcDxe/DEBUG/DwMmcHcDxe.dll 0xE8395000
+Loading driver at 0x000E8394000 EntryPoint=0x000E839A6CC DwMmcHcDxe.efi
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/Silicon/Rockchip/Drivers/RkSdmmcDxe/RkSdmmcDxe/DEBUG/RkSdmmcDxe.dll 0xE83C5000
+Loading driver at 0x000E83C4000 EntryPoint=0x000E83C61B8 RkSdmmcDxe.efi
+GpioPinSetDirection Group:0 Pin:4 Direction:0
+MtlSendMessage ringing doorbell 0x82000010 with message header 0x00005005 length 0x00000014
+ == Slot [0] Capability is 0xE849ABA0 ==
+   Base Clk Freq     52000KHz
+   BusWidth          4
+   HighSpeed Support TRUE
+   Voltage 1.8       FALSE
+   64-bit Sys Bus    FALSE
+   SlotType          Removable Slot
+   SDR50  Support    FALSE
+   SDR104 Support    FALSE
+   DDR50  Support    FALSE
+BaseClkFreq 52000KHz Divisor 65 ClockFreq 400Khz
+EmmcIdentification: Executing Cmd0 fails with No Media
+SdCardIdentification: Executing Cmd0 fails with No Media
+DwMmcHcDriverBindingStart: Success End on E849B698
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/MdeModulePkg/Bus/Pci/SdMmcPciHcDxe/SdMmcPciHcDxe/DEBUG/SdMmcPciHcDxe.dll 0xE837A000
+Loading driver at 0x000E8379000 EntryPoint=0x000E838127C SdMmcPciHcDxe.efi
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/Silicon/Rockchip/Drivers/DwcSdhciDxe/DwcSdhciDxe/DEBUG/DwcSdhciDxe.dll 0xE83B1000
+Loading driver at 0x000E83B0000 EntryPoint=0x000E83B2704 DwcSdhciDxe.efi
+SdMmcPciHcDriverBindingStart: Start
+SdMmcPciHcDriverBindingStart: found SD/MMC override protocol
+EmmcSdMmcNotifyPhase
+ == Slot [0] Capability is 0x880000072265C881 ==
+   Timeout Clk Freq  1MHz
+   Base Clk Freq     200MHz
+   Max Blk Len       1024bytes
+   8-bit Support     TRUE
+   ADMA2 Support     FALSE
+   HighSpeed Support TRUE
+   SDMA Support      TRUE
+   Suspend/Resume    FALSE
+   Voltage 3.3       FALSE
+   Voltage 3.0       TRUE
+   Voltage 1.8       FALSE
+   V4 64-bit Sys Bus FALSE
+   V3 64-bit Sys Bus FALSE
+   Async Interrupt   TRUE
+   SlotType          Removable Slot
+   SDR50  Support    TRUE
+   SDR104 Support    TRUE
+   DDR50  Support    TRUE
+   UHS-II Support    FALSE
+   Driver Type A     FALSE
+   Driver Type C     FALSE
+   Driver Type D     FALSE
+   Driver Type 4     FALSE
+   Retuning TimerCnt Disabled
+   SDR50 Tuning      FALSE
+   Retuning Mode     Mode 1
+   Clock Multiplier  M = 1
+   ADMA3 Support     TRUE
+   1.8V VDD2         FALSE
+   HS 400            TRUE
+Slot[0] Base Clock Frequency: 200MHz
+EmmcSdMmcNotifyPhase
+EmmcSdMmcNotifyPhase
+EmmcSdMmcNotifyPhase
+Enabled V4 26 bit data length ADMA support
+BaseClkFreq 200MHz Divisor 250 ClockFreq 400Khz
+EmmcSdMmcNotifyPhase
+EmmcIdentification: Found a EMMC device at slot [0], RCA [1]
+EmmcSetBusMode: Target bus mode: timing = 11, width = 8, clock freq = 200, driver strength = 0
+EmmcSdMmcNotifyPhase
+BaseClkFreq 200MHz Divisor 0 ClockFreq 200000Khz
+EmmcSdMmcNotifyPhase
+EmmcSdMmcNotifyPhase
+BaseClkFreq 200MHz Divisor 2 ClockFreq 52000Khz
+EmmcSdMmcNotifyPhase
+EmmcSdMmcNotifyPhase
+BaseClkFreq 200MHz Divisor 0 ClockFreq 200000Khz
+EmmcSdMmcNotifyPhase
+EmmcSetBusMode: Switch to HS400 Success
+SdMmcPciHcDriverBindingStart: Success End on E842EC98
+Error reported by SDHCI
+Interrupt status = 8101
+Error interrupt status = 1
+TRB failed with Device Error
+Printing SD_MMC_HC_TRB
+Slot: 0
+BlockSize: 512
+Data: 0
+DataLen: 0
+Read: 0
+DataPhy: 0
+DataMap: 0
+Mode: 0
+AdmaLengthMode: 0
+Event: 0
+Started: 0
+CommandComplete: 0
+Timeout: 2500000
+Retries: 5
+PioModeTransferCompleted: 0
+PioBlockIndex: 0
+Adma32Desc: 0
+Adma64V3Desc: 0
+Adma64V4Desc: 0
+AdmaMap: 0
+AdmaPages: 0
+Printing EFI_SD_MMC_PASS_THRU_COMMAND_PACKET
+Command index: 7, argument: 0
+Command type: 2, response type: 0
+Response 0: 0, 1: 0, 2: 0, 3: 0
+Timeout: 2500000
+InDataBuffer: 0
+OutDataBuffer: 0
+InTransferLength: 0
+OutTransferLength: 0
+TransactionStatus: Success
+== Dump Emmc Csd Register==
+  CSD structure                    0x3
+  System specification version     0x4
+  Data read access-time 1          0x4F
+  Data read access-time 2          0x1
+  Max. bus clock frequency         0x32
+  Device command classes           0x8F5
+  Max. read data block length      0x9
+  Partial blocks for read allowed  0x0
+  Write block misalignment         0x0
+  Read block misalignment          0x0
+  DSR implemented                  0x0
+  Device size                      0xFFF
+  Max. read current @ VDD min      0x7
+  Max. read current @ VDD max      0x7
+  Max. write current @ VDD min     0x7
+  Max. write current @ VDD max     0x7
+  Device size multiplier           0x7
+  Erase group size                 0x1F
+  Erase group size multiplier      0x1F
+  Write protect group size         0xF
+  Write protect group enable       0x1
+  Manufacturer default ECC         0x0
+  Write speed factor               0x2
+  Max. write data block length     0x9
+  Partial blocks for write allowed 0x0
+  Content protection application   0x0
+  File format group                0x0
+  Copy flag (OTP)                  0x0
+  Permanent write protection       0x0
+  Temporary write protection       0x0
+  File format                      0x0
+  ECC code                         0x0
+==Dump Emmc ExtCsd Register==
+  Supported Command Sets                 0x0
+  HPI features                           0x1
+  Background operations support          0x1
+  Background operations status           0x0
+  Number of correctly programmed sectors 0x0
+  Initialization time after partitioning 0xC
+  TRIM Multiplier                        0x22
+  Secure Feature support                 0x55
+  Secure Erase Multiplier                0xF7
+  Secure TRIM Multiplier                 0xF7
+  Boot information                       0x7
+  Boot partition size                    0x20
+  Access size                            0xA
+  High-capacity erase unit size          0x1
+  High-capacity erase timeout            0x22
+  Reliable write sector count            0x1
+  High-capacity write protect group size 0x10
+  Sleep/awake timeout                    0x14
+  Sector Count                           0x1D418000
+  Partition switching timing             0xB
+  Out-of-interrupt busy timing           0x25
+  I/O Driver Strength                    0x1F
+  Device type                            0x57
+  CSD STRUCTURE                          0x2
+  Extended CSD revision                  0x8
+  Command set                            0x0
+  Command set revision                   0x0
+  Power class                            0x0
+  High-speed interface timing            0x3
+  Bus width mode                         0x6
+  Erased memory content                  0x0
+  Partition configuration                0x0
+  Boot config protection                 0x0
+  Boot bus Conditions                    0x0
+  High-density erase group definition    0x0
+  Boot write protection status register  0x0
+  Boot area write protection register    0x0
+  User area write protection register    0x0
+  FW configuration                       0x0
+  RPMB Size                              0x20
+  H/W reset function                     0x0
+  Partitioning Support                   0x7
+  Max Enhanced Area Size                 0x002702
+  Partitions attribute                   0x0
+  Partitioning Setting                   0x0
+  General Purpose Partition 1 Size       0x000000
+  General Purpose Partition 2 Size       0x000000
+  General Purpose Partition 3 Size       0x000000
+  General Purpose Partition 4 Size       0x000000
+  Enhanced User Data Area Size           0x000000
+  Enhanced User Data Start Address       0x0
+  Bad Block Management mode              0x0
+  Native sector size                     0x0
+  Sector size emulation                  0x0
+  Sector size                            0x0
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/MdeModulePkg/Bus/Pci/SataControllerDxe/SataControllerDxe/DEBUG/SataController.dll 0xE8373000
+Loading driver at 0x000E8372000 EntryPoint=0x000E83751A0 SataController.efi
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/MdeModulePkg/Bus/Ata/AtaAtapiPassThru/AtaAtapiPassThru/DEBUG/AtaAtapiPassThruDxe.dll 0xE8387000
+Loading driver at 0x000E8386000 EntryPoint=0x000E838F3BC AtaAtapiPassThruDxe.efi
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/MdeModulePkg/Bus/Ata/AtaBusDxe/AtaBusDxe/DEBUG/AtaBusDxe.dll 0xE83D8000
+Loading driver at 0x000E83D7000 EntryPoint=0x000E83DC52C AtaBusDxe.efi
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/MdeModulePkg/Universal/Disk/DiskIoDxe/DiskIoDxe/DEBUG/DiskIoDxe.dll 0xE83D0000
+Loading driver at 0x000E83CF000 EntryPoint=0x000E83D30A0 DiskIoDxe.efi
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/MdeModulePkg/Universal/Disk/PartitionDxe/PartitionDxe/DEBUG/PartitionDxe.dll 0xE83E1000
+Loading driver at 0x000E83E0000 EntryPoint=0x000E83E58C0 PartitionDxe.efi
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/FatPkg/EnhancedFatDxe/Fat/DEBUG/Fat.dll 0xE8327000
+Loading driver at 0x000E8326000 EntryPoint=0x000E832EF78 Fat.efi
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/Features/Ext4Pkg/Ext4Dxe/Ext4Dxe/DEBUG/Ext4Dxe.dll 0xE831B000
+Loading driver at 0x000E831A000 EntryPoint=0x000E832104C Ext4Dxe.efi
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/MdeModulePkg/Universal/Disk/UnicodeCollation/EnglishDxe/EnglishDxe/DEBUG/EnglishDxe.dll 0xE83C0000
+Loading driver at 0x000E83BF000 EntryPoint=0x000E83C1158 EnglishDxe.efi
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/NetworkPkg/SnpDxe/SnpDxe/DEBUG/SnpDxe.dll 0xE8310000
+Loading driver at 0x000E830F000 EntryPoint=0x000E8315464 SnpDxe.efi
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/NetworkPkg/VlanConfigDxe/VlanConfigDxe/DEBUG/VlanConfigDxe.dll 0xE8307000
+Loading driver at 0x000E8306000 EntryPoint=0x000E830B5C8 VlanConfigDxe.efi
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/NetworkPkg/MnpDxe/MnpDxe/DEBUG/MnpDxe.dll 0xE8334000
+Loading driver at 0x000E8333000 EntryPoint=0x000E833BC6C MnpDxe.efi
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/NetworkPkg/ArpDxe/ArpDxe/DEBUG/ArpDxe.dll 0xE82F4000
+Loading driver at 0x000E82F3000 EntryPoint=0x000E82F8294 ArpDxe.efi
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/NetworkPkg/Dhcp4Dxe/Dhcp4Dxe/DEBUG/Dhcp4Dxe.dll 0xE82D9000
+Loading driver at 0x000E82D8000 EntryPoint=0x000E82E09BC Dhcp4Dxe.efi
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/NetworkPkg/Ip4Dxe/Ip4Dxe/DEBUG/Ip4Dxe.dll 0xE8346000
+Loading driver at 0x000E8345000 EntryPoint=0x000E834BB4C Ip4Dxe.efi
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/NetworkPkg/Udp4Dxe/Udp4Dxe/DEBUG/Udp4Dxe.dll 0xE82E8000
+Loading driver at 0x000E82E7000 EntryPoint=0x000E82EEAE4 Udp4Dxe.efi
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/NetworkPkg/Mtftp4Dxe/Mtftp4Dxe/DEBUG/Mtftp4Dxe.dll 0xE828C000
+Loading driver at 0x000E828B000 EntryPoint=0x000E8292E54 Mtftp4Dxe.efi
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/NetworkPkg/Dhcp6Dxe/Dhcp6Dxe/DEBUG/Dhcp6Dxe.dll 0xE827E000
+Loading driver at 0x000E827D000 EntryPoint=0x000E8286DF8 Dhcp6Dxe.efi
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/NetworkPkg/Ip6Dxe/Ip6Dxe/DEBUG/Ip6Dxe.dll 0xE8241000
+Loading driver at 0x000E8240000 EntryPoint=0x000E8243C9C Ip6Dxe.efi
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/NetworkPkg/Udp6Dxe/Udp6Dxe/DEBUG/Udp6Dxe.dll 0xE8272000
+Loading driver at 0x000E8271000 EntryPoint=0x000E8278A3C Udp6Dxe.efi
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/NetworkPkg/Mtftp6Dxe/Mtftp6Dxe/DEBUG/Mtftp6Dxe.dll 0xE8265000
+Loading driver at 0x000E8264000 EntryPoint=0x000E826C720 Mtftp6Dxe.efi
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/NetworkPkg/TlsDxe/TlsDxe/DEBUG/TlsDxe.dll 0xE800C000
+Loading driver at 0x000E800B000 EntryPoint=0x000E8014E84 TlsDxe.efi
+GenerateRandomNumberViaNist800Algorithm: GetRNG algorithm TRNG - Status = Success
+GenerateRandomNumberViaNist800Algorithm: GetRNG algorithm TRNG - Status = Success
+GenerateRandomNumberViaNist800Algorithm: GetRNG algorithm TRNG - Status = Success
+GenerateRandomNumberViaNist800Algorithm: GetRNG algorithm TRNG - Status = Success
+GenerateRandomNumberViaNist800Algorithm: GetRNG algorithm TRNG - Status = Success
+GenerateRandomNumberViaNist800Algorithm: GetRNG algorithm TRNG - Status = Success
+I2C Write Data Timeout
+i2c_con: 0x00051109
+i2c_clkdiv: 0x007B007B
+i2c_mrxaddr: 0x00000000
+i2c_mrxraddR: 0x00000000
+i2c_mtxcnt: 0x00000002
+i2c_mrxcnt: 0x00000000
+i2c_ien: 0x00000044
+i2c_ipd: 0x00000000
+i2c_fcnt: 0x00000000
+i2c_txdata0: 0x000002A2
+i2c_txdata1: 0x00000000
+i2c_txdata2: 0x00000000
+i2c_txdata3: 0x00000000
+i2c_txdata4: 0x00000000
+i2c_txdata5: 0x00000000
+i2c_txdata6: 0x00000000
+i2c_txdata7: 0x00000000
+i2c_rxdata0: 0x00000000
+i2c_rxdata1: 0x00000000
+i2c_rxdata2: 0x00000000
+i2c_rxdata3: 0x00000000
+i2c_rxdata4: 0x00000000
+i2c_rxdata5: 0x00000000
+i2c_rxdata6: 0x00000000
+i2c_rxdata7: 0x00000000
+I2C Send Stop Bit Timeout
+i2c_con: 0x00051111
+i2c_clkdiv: 0x007B007B
+i2c_mrxaddr: 0x00000000
+i2c_mrxraddR: 0x00000000
+i2c_mtxcnt: 0x00000002
+i2c_mrxcnt: 0x00000000
+i2c_ien: 0x00000010
+i2c_ipd: 0x00000000
+i2c_fcnt: 0x00000000
+i2c_txdata0: 0x000002A2
+i2c_txdata1: 0x00000000
+i2c_txdata2: 0x00000000
+i2c_txdata3: 0x00000000
+i2c_txdata4: 0x00000000
+i2c_txdata5: 0x00000000
+i2c_txdata6: 0x00000000
+i2c_txdata7: 0x00000000
+i2c_rxdata0: 0x00000000
+i2c_rxdata1: 0x00000000
+i2c_rxdata2: 0x00000000
+i2c_rxdata3: 0x00000000
+i2c_rxdata4: 0x00000000
+i2c_rxdata5: 0x00000000
+i2c_rxdata6: 0x00000000
+i2c_rxdata7: 0x00000000
+GenerateRandomNumberViaNist800Algorithm: GetRNG algorithm TRNG - Status = Success
+GenerateRandomNumberViaNist800Algorithm: GetRNG algorithm TRNG - Status = Success
+GenerateRandomNumberViaNist800Algorithm: GetRNG algorithm TRNG - Status = Success
+GenerateRandomNumberViaNist800Algorithm: GetRNG algorithm TRNG - Status = Success
+I2C Write Data Timeout
+i2c_con: 0x00051109
+i2c_clkdiv: 0x007B007B
+i2c_mrxaddr: 0x00000000
+i2c_mrxraddR: 0x00000000
+i2c_mtxcnt: 0x00000002
+i2c_mrxcnt: 0x00000000
+i2c_ien: 0x00000044
+i2c_ipd: 0x00000000
+i2c_fcnt: 0x00000000
+i2c_txdata0: 0x000002A2
+i2c_txdata1: 0x00000000
+i2c_txdata2: 0x00000000
+i2c_txdata3: 0x00000000
+i2c_txdata4: 0x00000000
+i2c_txdata5: 0x00000000
+i2c_txdata6: 0x00000000
+i2c_txdata7: 0x00000000
+i2c_rxdata0: 0x00000000
+i2c_rxdata1: 0x00000000
+i2c_rxdata2: 0x00000000
+i2c_rxdata3: 0x00000000
+i2c_rxdata4: 0x00000000
+i2c_rxdata5: 0x00000000
+i2c_rxdata6: 0x00000000
+i2c_rxdata7: 0x00000000
+I2C Send Stop Bit Timeout
+i2c_con: 0x00051111
+i2c_clkdiv: 0x007B007B
+i2c_mrxaddr: 0x00000000
+i2c_mrxraddR: 0x00000000
+i2c_mtxcnt: 0x00000002
+i2c_mrxcnt: 0x00000000
+i2c_ien: 0x00000010
+i2c_ipd: 0x00000000
+i2c_fcnt: 0x00000000
+i2c_txdata0: 0x000002A2
+i2c_txdata1: 0x00000000
+i2c_txdata2: 0x00000000
+i2c_txdata3: 0x00000000
+i2c_txdata4: 0x00000000
+i2c_txdata5: 0x00000000
+i2c_txdata6: 0x00000000
+i2c_txdata7: 0x00000000
+i2c_rxdata0: 0x00000000
+i2c_rxdata1: 0x00000000
+i2c_rxdata2: 0x00000000
+i2c_rxdata3: 0x00000000
+i2c_rxdata4: 0x00000000
+i2c_rxdata5: 0x00000000
+i2c_rxdata6: 0x00000000
+i2c_rxdata7: 0x00000000
+LibGetTime: Invalid clock. Resetting to build time.
+I2C Write Data Timeout
+i2c_con: 0x00051109
+i2c_clkdiv: 0x007B007B
+i2c_mrxaddr: 0x00000000
+i2c_mrxraddR: 0x00000000
+i2c_mtxcnt: 0x00000009
+i2c_mrxcnt: 0x00000000
+i2c_ien: 0x00000044
+i2c_ipd: 0x00000000
+i2c_fcnt: 0x00000000
+i2c_txdata0: 0x000002A2
+i2c_txdata1: 0x11000400
+i2c_txdata2: 0x00000026
+i2c_txdata3: 0x00000000
+i2c_txdata4: 0x00000000
+i2c_txdata5: 0x00000000
+i2c_txdata6: 0x00000000
+i2c_txdata7: 0x00000000
+i2c_rxdata0: 0x00000000
+i2c_rxdata1: 0x00000000
+i2c_rxdata2: 0x00000000
+i2c_rxdata3: 0x00000000
+i2c_rxdata4: 0x00000000
+i2c_rxdata5: 0x00000000
+i2c_rxdata6: 0x00000000
+i2c_rxdata7: 0x00000000
+I2C Send Stop Bit Timeout
+i2c_con: 0x00051111
+i2c_clkdiv: 0x007B007B
+i2c_mrxaddr: 0x00000000
+i2c_mrxraddR: 0x00000000
+i2c_mtxcnt: 0x00000009
+i2c_mrxcnt: 0x00000000
+i2c_ien: 0x00000010
+i2c_ipd: 0x00000000
+i2c_fcnt: 0x00000000
+i2c_txdata0: 0x000002A2
+i2c_txdata1: 0x11000400
+i2c_txdata2: 0x00000026
+i2c_txdata3: 0x00000000
+i2c_txdata4: 0x00000000
+i2c_txdata5: 0x00000000
+i2c_txdata6: 0x00000000
+i2c_txdata7: 0x00000000
+i2c_rxdata0: 0x00000000
+i2c_rxdata1: 0x00000000
+i2c_rxdata2: 0x00000000
+i2c_rxdata3: 0x00000000
+i2c_rxdata4: 0x00000000
+i2c_rxdata5: 0x00000000
+i2c_rxdata6: 0x00000000
+i2c_rxdata7: 0x00000000
+I2C Write Data Timeout
+i2c_con: 0x00051109
+i2c_clkdiv: 0x007B007B
+i2c_mrxaddr: 0x00000000
+i2c_mrxraddR: 0x00000000
+i2c_mtxcnt: 0x00000002
+i2c_mrxcnt: 0x00000000
+i2c_ien: 0x00000044
+i2c_ipd: 0x00000000
+i2c_fcnt: 0x00000000
+i2c_txdata0: 0x000002A2
+i2c_txdata1: 0x11000400
+i2c_txdata2: 0x00000026
+i2c_txdata3: 0x00000000
+i2c_txdata4: 0x00000000
+i2c_txdata5: 0x00000000
+i2c_txdata6: 0x00000000
+i2c_txdata7: 0x00000000
+i2c_rxdata0: 0x00000000
+i2c_rxdata1: 0x00000000
+i2c_rxdata2: 0x00000000
+i2c_rxdata3: 0x00000000
+i2c_rxdata4: 0x00000000
+i2c_rxdata5: 0x00000000
+i2c_rxdata6: 0x00000000
+i2c_rxdata7: 0x00000000
+I2C Send Stop Bit Timeout
+i2c_con: 0x00051111
+i2c_clkdiv: 0x007B007B
+i2c_mrxaddr: 0x00000000
+i2c_mrxraddR: 0x00000000
+i2c_mtxcnt: 0x00000002
+i2c_mrxcnt: 0x00000000
+i2c_ien: 0x00000010
+i2c_ipd: 0x00000000
+i2c_fcnt: 0x00000000
+i2c_txdata0: 0x000002A2
+i2c_txdata1: 0x11000400
+i2c_txdata2: 0x00000026
+i2c_txdata3: 0x00000000
+i2c_txdata4: 0x00000000
+i2c_txdata5: 0x00000000
+i2c_txdata6: 0x00000000
+i2c_txdata7: 0x00000000
+i2c_rxdata0: 0x00000000
+i2c_rxdata1: 0x00000000
+i2c_rxdata2: 0x00000000
+i2c_rxdata3: 0x00000000
+i2c_rxdata4: 0x00000000
+i2c_rxdata5: 0x00000000
+i2c_rxdata6: 0x00000000
+i2c_rxdata7: 0x00000000
+GenerateRandomNumberViaNist800Algorithm: GetRNG algorithm TRNG - Status = Success
+GenerateRandomNumberViaNist800Algorithm: GetRNG algorithm TRNG - Status = Success
+GenerateRandomNumberViaNist800Algorithm: GetRNG algorithm TRNG - Status = Success
+GenerateRandomNumberViaNist800Algorithm: GetRNG algorithm TRNG - Status = Success
+I2C Write Data Timeout
+i2c_con: 0x00051109
+i2c_clkdiv: 0x007B007B
+i2c_mrxaddr: 0x00000000
+i2c_mrxraddR: 0x00000000
+i2c_mtxcnt: 0x00000002
+i2c_mrxcnt: 0x00000000
+i2c_ien: 0x00000044
+i2c_ipd: 0x00000000
+i2c_fcnt: 0x00000000
+i2c_txdata0: 0x000002A2
+i2c_txdata1: 0x11000400
+i2c_txdata2: 0x00000026
+i2c_txdata3: 0x00000000
+i2c_txdata4: 0x00000000
+i2c_txdata5: 0x00000000
+i2c_txdata6: 0x00000000
+i2c_txdata7: 0x00000000
+i2c_rxdata0: 0x00000000
+i2c_rxdata1: 0x00000000
+i2c_rxdata2: 0x00000000
+i2c_rxdata3: 0x00000000
+i2c_rxdata4: 0x00000000
+i2c_rxdata5: 0x00000000
+i2c_rxdata6: 0x00000000
+i2c_rxdata7: 0x00000000
+I2C Send Stop Bit Timeout
+i2c_con: 0x00051111
+i2c_clkdiv: 0x007B007B
+i2c_mrxaddr: 0x00000000
+i2c_mrxraddR: 0x00000000
+i2c_mtxcnt: 0x00000002
+i2c_mrxcnt: 0x00000000
+i2c_ien: 0x00000010
+i2c_ipd: 0x00000000
+i2c_fcnt: 0x00000000
+i2c_txdata0: 0x000002A2
+i2c_txdata1: 0x11000400
+i2c_txdata2: 0x00000026
+i2c_txdata3: 0x00000000
+i2c_txdata4: 0x00000000
+i2c_txdata5: 0x00000000
+i2c_txdata6: 0x00000000
+i2c_txdata7: 0x00000000
+i2c_rxdata0: 0x00000000
+i2c_rxdata1: 0x00000000
+i2c_rxdata2: 0x00000000
+i2c_rxdata3: 0x00000000
+i2c_rxdata4: 0x00000000
+i2c_rxdata5: 0x00000000
+i2c_rxdata6: 0x00000000
+i2c_rxdata7: 0x00000000
+ASSERT [RealTimeClock] String.c(1682): (Value & 0xf) < 0xa
+ASSERT [RealTimeClock] String.c(1682): (Value & 0xf) < 0xa
+I2C Write Data Timeout
+i2c_con: 0x00051109
+i2c_clkdiv: 0x007B007B
+i2c_mrxaddr: 0x00000000
+i2c_mrxraddR: 0x00000000
+i2c_mtxcnt: 0x00000002
+i2c_mrxcnt: 0x00000000
+i2c_ien: 0x00000044
+i2c_ipd: 0x00000000
+i2c_fcnt: 0x00000000
+i2c_txdata0: 0x000002A2
+i2c_txdata1: 0x11000400
+i2c_txdata2: 0x00000026
+i2c_txdata3: 0x00000000
+i2c_txdata4: 0x00000000
+i2c_txdata5: 0x00000000
+i2c_txdata6: 0x00000000
+i2c_txdata7: 0x00000000
+i2c_rxdata0: 0x00000000
+i2c_rxdata1: 0x00000000
+i2c_rxdata2: 0x00000000
+i2c_rxdata3: 0x00000000
+i2c_rxdata4: 0x00000000
+i2c_rxdata5: 0x00000000
+i2c_rxdata6: 0x00000000
+i2c_rxdata7: 0x00000000
+I2C Send Stop Bit Timeout
+i2c_con: 0x00051111
+i2c_clkdiv: 0x007B007B
+i2c_mrxaddr: 0x00000000
+i2c_mrxraddR: 0x00000000
+i2c_mtxcnt: 0x00000002
+i2c_mrxcnt: 0x00000000
+i2c_ien: 0x00000010
+i2c_ipd: 0x00000000
+i2c_fcnt: 0x00000000
+i2c_txdata0: 0x000002A2
+i2c_txdata1: 0x11000400
+i2c_txdata2: 0x00000026
+i2c_txdata3: 0x00000000
+i2c_txdata4: 0x00000000
+i2c_txdata5: 0x00000000
+i2c_txdata6: 0x00000000
+i2c_txdata7: 0x00000000
+i2c_rxdata0: 0x00000000
+i2c_rxdata1: 0x00000000
+i2c_rxdata2: 0x00000000
+i2c_rxdata3: 0x00000000
+i2c_rxdata4: 0x00000000
+i2c_rxdata5: 0x00000000
+i2c_rxdata6: 0x00000000
+i2c_rxdata7: 0x00000000
+ASSERT [RealTimeClock] String.c(1682): (Value & 0xf) < 0xa
+I2C Write Data Timeout
+i2c_con: 0x00051109
+i2c_clkdiv: 0x007B007B
+i2c_mrxaddr: 0x00000000
+i2c_mrxraddR: 0x00000000
+i2c_mtxcnt: 0x00000002
+i2c_mrxcnt: 0x00000000
+i2c_ien: 0x00000044
+i2c_ipd: 0x00000000
+i2c_fcnt: 0x00000000
+i2c_txdata0: 0x000002A2
+i2c_txdata1: 0x11000400
+i2c_txdata2: 0x00000026
+i2c_txdata3: 0x00000000
+i2c_txdata4: 0x00000000
+i2c_txdata5: 0x00000000
+i2c_txdata6: 0x00000000
+i2c_txdata7: 0x00000000
+i2c_rxdata0: 0x00000000
+i2c_rxdata1: 0x00000000
+i2c_rxdata2: 0x00000000
+i2c_rxdata3: 0x00000000
+i2c_rxdata4: 0x00000000
+i2c_rxdata5: 0x00000000
+i2c_rxdata6: 0x00000000
+i2c_rxdata7: 0x00000000
+I2C Send Stop Bit Timeout
+i2c_con: 0x00051111
+i2c_clkdiv: 0x007B007B
+i2c_mrxaddr: 0x00000000
+i2c_mrxraddR: 0x00000000
+i2c_mtxcnt: 0x00000002
+i2c_mrxcnt: 0x00000000
+i2c_ien: 0x00000010
+i2c_ipd: 0x00000000
+i2c_fcnt: 0x00000000
+i2c_txdata0: 0x000002A2
+i2c_txdata1: 0x11000400
+i2c_txdata2: 0x00000026
+i2c_txdata3: 0x00000000
+i2c_txdata4: 0x00000000
+i2c_txdata5: 0x00000000
+i2c_txdata6: 0x00000000
+i2c_txdata7: 0x00000000
+i2c_rxdata0: 0x00000000
+i2c_rxdata1: 0x00000000
+i2c_rxdata2: 0x00000000
+i2c_rxdata3: 0x00000000
+i2c_rxdata4: 0x00000000
+i2c_rxdata5: 0x00000000
+i2c_rxdata6: 0x00000000
+i2c_rxdata7: 0x00000000
+ASSERT [RealTimeClock] String.c(1682): (Value & 0xf) < 0xa
+ASSERT [RealTimeClock] String.c(1682): (Value & 0xf) < 0xa
+I2C Write Data Timeout
+i2c_con: 0x00051109
+i2c_clkdiv: 0x007B007B
+i2c_mrxaddr: 0x00000000
+i2c_mrxraddR: 0x00000000
+i2c_mtxcnt: 0x00000002
+i2c_mrxcnt: 0x00000000
+i2c_ien: 0x00000044
+i2c_ipd: 0x00000000
+i2c_fcnt: 0x00000000
+i2c_txdata0: 0x000002A2
+i2c_txdata1: 0x11000400
+i2c_txdata2: 0x00000026
+i2c_txdata3: 0x00000000
+i2c_txdata4: 0x00000000
+i2c_txdata5: 0x00000000
+i2c_txdata6: 0x00000000
+i2c_txdata7: 0x00000000
+i2c_rxdata0: 0x00000000
+i2c_rxdata1: 0x00000000
+i2c_rxdata2: 0x00000000
+i2c_rxdata3: 0x00000000
+i2c_rxdata4: 0x00000000
+i2c_rxdata5: 0x00000000
+i2c_rxdata6: 0x00000000
+i2c_rxdata7: 0x00000000
+I2C Send Stop Bit Timeout
+i2c_con: 0x00051111
+i2c_clkdiv: 0x007B007B
+i2c_mrxaddr: 0x00000000
+i2c_mrxraddR: 0x00000000
+i2c_mtxcnt: 0x00000002
+i2c_mrxcnt: 0x00000000
+i2c_ien: 0x00000010
+i2c_ipd: 0x00000000
+i2c_fcnt: 0x00000000
+i2c_txdata0: 0x000002A2
+i2c_txdata1: 0x11000400
+i2c_txdata2: 0x00000026
+i2c_txdata3: 0x00000000
+i2c_txdata4: 0x00000000
+i2c_txdata5: 0x00000000
+i2c_txdata6: 0x00000000
+i2c_txdata7: 0x00000000
+i2c_rxdata0: 0x00000000
+i2c_rxdata1: 0x00000000
+i2c_rxdata2: 0x00000000
+i2c_rxdata3: 0x00000000
+i2c_rxdata4: 0x00000000
+i2c_rxdata5: 0x00000000
+i2c_rxdata6: 0x00000000
+i2c_rxdata7: 0x00000000
+GenerateRandomNumberViaNist800Algorithm: GetRNG algorithm TRNG - Status = Success
+GenerateRandomNumberViaNist800Algorithm: GetRNG algorithm TRNG - Status = Success
+GenerateRandomNumberViaNist800Algorithm: GetRNG algorithm TRNG - Status = Success
+GenerateRandomNumberViaNist800Algorithm: GetRNG algorithm TRNG - Status = Success
+I2C Write Data Timeout
+i2c_con: 0x00051109
+i2c_clkdiv: 0x007B007B
+i2c_mrxaddr: 0x00000000
+i2c_mrxraddR: 0x00000000
+i2c_mtxcnt: 0x00000002
+i2c_mrxcnt: 0x00000000
+i2c_ien: 0x00000044
+i2c_ipd: 0x00000000
+i2c_fcnt: 0x00000000
+i2c_txdata0: 0x000002A2
+i2c_txdata1: 0x11000400
+i2c_txdata2: 0x00000026
+i2c_txdata3: 0x00000000
+i2c_txdata4: 0x00000000
+i2c_txdata5: 0x00000000
+i2c_txdata6: 0x00000000
+i2c_txdata7: 0x00000000
+i2c_rxdata0: 0x00000000
+i2c_rxdata1: 0x00000000
+i2c_rxdata2: 0x00000000
+i2c_rxdata3: 0x00000000
+i2c_rxdata4: 0x00000000
+i2c_rxdata5: 0x00000000
+i2c_rxdata6: 0x00000000
+i2c_rxdata7: 0x00000000
+I2C Send Stop Bit Timeout
+i2c_con: 0x00051111
+i2c_clkdiv: 0x007B007B
+i2c_mrxaddr: 0x00000000
+i2c_mrxraddR: 0x00000000
+i2c_mtxcnt: 0x00000002
+i2c_mrxcnt: 0x00000000
+i2c_ien: 0x00000010
+i2c_ipd: 0x00000000
+i2c_fcnt: 0x00000000
+i2c_txdata0: 0x000002A2
+i2c_txdata1: 0x11000400
+i2c_txdata2: 0x00000026
+i2c_txdata3: 0x00000000
+i2c_txdata4: 0x00000000
+i2c_txdata5: 0x00000000
+i2c_txdata6: 0x00000000
+i2c_txdata7: 0x00000000
+i2c_rxdata0: 0x00000000
+i2c_rxdata1: 0x00000000
+i2c_rxdata2: 0x00000000
+i2c_rxdata3: 0x00000000
+i2c_rxdata4: 0x00000000
+i2c_rxdata5: 0x00000000
+i2c_rxdata6: 0x00000000
+i2c_rxdata7: 0x00000000
+LibGetTime: Invalid clock. Resetting to build time.
+I2C Write Data Timeout
+i2c_con: 0x00051109
+i2c_clkdiv: 0x007B007B
+i2c_mrxaddr: 0x00000000
+i2c_mrxraddR: 0x00000000
+i2c_mtxcnt: 0x00000009
+i2c_mrxcnt: 0x00000000
+i2c_ien: 0x00000044
+i2c_ipd: 0x00000000
+i2c_fcnt: 0x00000000
+i2c_txdata0: 0x000002A2
+i2c_txdata1: 0x11000400
+i2c_txdata2: 0x00000026
+i2c_txdata3: 0x00000000
+i2c_txdata4: 0x00000000
+i2c_txdata5: 0x00000000
+i2c_txdata6: 0x00000000
+i2c_txdata7: 0x00000000
+i2c_rxdata0: 0x00000000
+i2c_rxdata1: 0x00000000
+i2c_rxdata2: 0x00000000
+i2c_rxdata3: 0x00000000
+i2c_rxdata4: 0x00000000
+i2c_rxdata5: 0x00000000
+i2c_rxdata6: 0x00000000
+i2c_rxdata7: 0x00000000
+I2C Send Stop Bit Timeout
+i2c_con: 0x00051111
+i2c_clkdiv: 0x007B007B
+i2c_mrxaddr: 0x00000000
+i2c_mrxraddR: 0x00000000
+i2c_mtxcnt: 0x00000009
+i2c_mrxcnt: 0x00000000
+i2c_ien: 0x00000010
+i2c_ipd: 0x00000000
+i2c_fcnt: 0x00000000
+i2c_txdata0: 0x000002A2
+i2c_txdata1: 0x11000400
+i2c_txdata2: 0x00000026
+i2c_txdata3: 0x00000000
+i2c_txdata4: 0x00000000
+i2c_txdata5: 0x00000000
+i2c_txdata6: 0x00000000
+i2c_txdata7: 0x00000000
+i2c_rxdata0: 0x00000000
+i2c_rxdata1: 0x00000000
+i2c_rxdata2: 0x00000000
+i2c_rxdata3: 0x00000000
+i2c_rxdata4: 0x00000000
+i2c_rxdata5: 0x00000000
+i2c_rxdata6: 0x00000000
+i2c_rxdata7: 0x00000000
+I2C Write Data Timeout
+i2c_con: 0x00051109
+i2c_clkdiv: 0x007B007B
+i2c_mrxaddr: 0x00000000
+i2c_mrxraddR: 0x00000000
+i2c_mtxcnt: 0x00000002
+i2c_mrxcnt: 0x00000000
+i2c_ien: 0x00000044
+i2c_ipd: 0x00000000
+i2c_fcnt: 0x00000000
+i2c_txdata0: 0x000002A2
+i2c_txdata1: 0x11000400
+i2c_txdata2: 0x00000026
+i2c_txdata3: 0x00000000
+i2c_txdata4: 0x00000000
+i2c_txdata5: 0x00000000
+i2c_txdata6: 0x00000000
+i2c_txdata7: 0x00000000
+i2c_rxdata0: 0x00000000
+i2c_rxdata1: 0x00000000
+i2c_rxdata2: 0x00000000
+i2c_rxdata3: 0x00000000
+i2c_rxdata4: 0x00000000
+i2c_rxdata5: 0x00000000
+i2c_rxdata6: 0x00000000
+i2c_rxdata7: 0x00000000
+I2C Send Stop Bit Timeout
+i2c_con: 0x00051111
+i2c_clkdiv: 0x007B007B
+i2c_mrxaddr: 0x00000000
+i2c_mrxraddR: 0x00000000
+i2c_mtxcnt: 0x00000002
+i2c_mrxcnt: 0x00000000
+i2c_ien: 0x00000010
+i2c_ipd: 0x00000000
+i2c_fcnt: 0x00000000
+i2c_txdata0: 0x000002A2
+i2c_txdata1: 0x11000400
+i2c_txdata2: 0x00000026
+i2c_txdata3: 0x00000000
+i2c_txdata4: 0x00000000
+i2c_txdata5: 0x00000000
+i2c_txdata6: 0x00000000
+i2c_txdata7: 0x00000000
+i2c_rxdata0: 0x00000000
+i2c_rxdata1: 0x00000000
+i2c_rxdata2: 0x00000000
+i2c_rxdata3: 0x00000000
+i2c_rxdata4: 0x00000000
+i2c_rxdata5: 0x00000000
+i2c_rxdata6: 0x00000000
+i2c_rxdata7: 0x00000000
+ASSERT [RealTimeClock] String.c(1682): (Value & 0xf) < 0xa
+ASSERT [RealTimeClock] String.c(1682): (Value & 0xf) < 0xa
+I2C Write Data Timeout
+i2c_con: 0x00051109
+i2c_clkdiv: 0x007B007B
+i2c_mrxaddr: 0x00000000
+i2c_mrxraddR: 0x00000000
+i2c_mtxcnt: 0x00000002
+i2c_mrxcnt: 0x00000000
+i2c_ien: 0x00000044
+i2c_ipd: 0x00000000
+i2c_fcnt: 0x00000000
+i2c_txdata0: 0x000002A2
+i2c_txdata1: 0x11000400
+i2c_txdata2: 0x00000026
+i2c_txdata3: 0x00000000
+i2c_txdata4: 0x00000000
+i2c_txdata5: 0x00000000
+i2c_txdata6: 0x00000000
+i2c_txdata7: 0x00000000
+i2c_rxdata0: 0x00000000
+i2c_rxdata1: 0x00000000
+i2c_rxdata2: 0x00000000
+i2c_rxdata3: 0x00000000
+i2c_rxdata4: 0x00000000
+i2c_rxdata5: 0x00000000
+i2c_rxdata6: 0x00000000
+i2c_rxdata7: 0x00000000
+I2C Send Stop Bit Timeout
+i2c_con: 0x00051111
+i2c_clkdiv: 0x007B007B
+i2c_mrxaddr: 0x00000000
+i2c_mrxraddR: 0x00000000
+i2c_mtxcnt: 0x00000002
+i2c_mrxcnt: 0x00000000
+i2c_ien: 0x00000010
+i2c_ipd: 0x00000000
+i2c_fcnt: 0x00000000
+i2c_txdata0: 0x000002A2
+i2c_txdata1: 0x11000400
+i2c_txdata2: 0x00000026
+i2c_txdata3: 0x00000000
+i2c_txdata4: 0x00000000
+i2c_txdata5: 0x00000000
+i2c_txdata6: 0x00000000
+i2c_txdata7: 0x00000000
+i2c_rxdata0: 0x00000000
+i2c_rxdata1: 0x00000000
+i2c_rxdata2: 0x00000000
+i2c_rxdata3: 0x00000000
+i2c_rxdata4: 0x00000000
+i2c_rxdata5: 0x00000000
+i2c_rxdata6: 0x00000000
+i2c_rxdata7: 0x00000000
+GenerateRandomNumberViaNist800Algorithm: GetRNG algorithm TRNG - Status = Success
+GenerateRandomNumberViaNist800Algorithm: GetRNG algorithm TRNG - Status = Success
+GenerateRandomNumberViaNist800Algorithm: GetRNG algorithm TRNG - Status = Success
+GenerateRandomNumberViaNist800Algorithm: GetRNG algorithm TRNG - Status = Success
+I2C Write Data Timeout
+i2c_con: 0x00051109
+i2c_clkdiv: 0x007B007B
+i2c_mrxaddr: 0x00000000
+i2c_mrxraddR: 0x00000000
+i2c_mtxcnt: 0x00000002
+i2c_mrxcnt: 0x00000000
+i2c_ien: 0x00000044
+i2c_ipd: 0x00000000
+i2c_fcnt: 0x00000000
+i2c_txdata0: 0x000002A2
+i2c_txdata1: 0x11000400
+i2c_txdata2: 0x00000026
+i2c_txdata3: 0x00000000
+i2c_txdata4: 0x00000000
+i2c_txdata5: 0x00000000
+i2c_txdata6: 0x00000000
+i2c_txdata7: 0x00000000
+i2c_rxdata0: 0x00000000
+i2c_rxdata1: 0x00000000
+i2c_rxdata2: 0x00000000
+i2c_rxdata3: 0x00000000
+i2c_rxdata4: 0x00000000
+i2c_rxdata5: 0x00000000
+i2c_rxdata6: 0x00000000
+i2c_rxdata7: 0x00000000
+I2C Send Stop Bit Timeout
+i2c_con: 0x00051111
+i2c_clkdiv: 0x007B007B
+i2c_mrxaddr: 0x00000000
+i2c_mrxraddR: 0x00000000
+i2c_mtxcnt: 0x00000002
+i2c_mrxcnt: 0x00000000
+i2c_ien: 0x00000010
+i2c_ipd: 0x00000000
+i2c_fcnt: 0x00000000
+i2c_txdata0: 0x000002A2
+i2c_txdata1: 0x11000400
+i2c_txdata2: 0x00000026
+i2c_txdata3: 0x00000000
+i2c_txdata4: 0x00000000
+i2c_txdata5: 0x00000000
+i2c_txdata6: 0x00000000
+i2c_txdata7: 0x00000000
+i2c_rxdata0: 0x00000000
+i2c_rxdata1: 0x00000000
+i2c_rxdata2: 0x00000000
+i2c_rxdata3: 0x00000000
+i2c_rxdata4: 0x00000000
+i2c_rxdata5: 0x00000000
+i2c_rxdata6: 0x00000000
+i2c_rxdata7: 0x00000000
+ASSERT [RealTimeClock] String.c(1682): (Value & 0xf) < 0xa
+ASSERT [RealTimeClock] String.c(1682): (Value & 0xf) < 0xa
+I2C Write Data Timeout
+i2c_con: 0x00051109
+i2c_clkdiv: 0x007B007B
+i2c_mrxaddr: 0x00000000
+i2c_mrxraddR: 0x00000000
+i2c_mtxcnt: 0x00000002
+i2c_mrxcnt: 0x00000000
+i2c_ien: 0x00000044
+i2c_ipd: 0x00000000
+i2c_fcnt: 0x00000000
+i2c_txdata0: 0x000002A2
+i2c_txdata1: 0x11000400
+i2c_txdata2: 0x00000026
+i2c_txdata3: 0x00000000
+i2c_txdata4: 0x00000000
+i2c_txdata5: 0x00000000
+i2c_txdata6: 0x00000000
+i2c_txdata7: 0x00000000
+i2c_rxdata0: 0x00000000
+i2c_rxdata1: 0x00000000
+i2c_rxdata2: 0x00000000
+i2c_rxdata3: 0x00000000
+i2c_rxdata4: 0x00000000
+i2c_rxdata5: 0x00000000
+i2c_rxdata6: 0x00000000
+i2c_rxdata7: 0x00000000
+I2C Send Stop Bit Timeout
+i2c_con: 0x00051111
+i2c_clkdiv: 0x007B007B
+i2c_mrxaddr: 0x00000000
+i2c_mrxraddR: 0x00000000
+i2c_mtxcnt: 0x00000002
+i2c_mrxcnt: 0x00000000
+i2c_ien: 0x00000010
+i2c_ipd: 0x00000000
+i2c_fcnt: 0x00000000
+i2c_txdata0: 0x000002A2
+i2c_txdata1: 0x11000400
+i2c_txdata2: 0x00000026
+i2c_txdata3: 0x00000000
+i2c_txdata4: 0x00000000
+i2c_txdata5: 0x00000000
+i2c_txdata6: 0x00000000
+i2c_txdata7: 0x00000000
+i2c_rxdata0: 0x00000000
+i2c_rxdata1: 0x00000000
+i2c_rxdata2: 0x00000000
+i2c_rxdata3: 0x00000000
+i2c_rxdata4: 0x00000000
+i2c_rxdata5: 0x00000000
+i2c_rxdata6: 0x00000000
+i2c_rxdata7: 0x00000000
+LibGetTime: Invalid clock. Resetting to build time.
+I2C Write Data Timeout
+i2c_con: 0x00051109
+i2c_clkdiv: 0x007B007B
+i2c_mrxaddr: 0x00000000
+i2c_mrxraddR: 0x00000000
+i2c_mtxcnt: 0x00000009
+i2c_mrxcnt: 0x00000000
+i2c_ien: 0x00000044
+i2c_ipd: 0x00000000
+i2c_fcnt: 0x00000000
+i2c_txdata0: 0x000002A2
+i2c_txdata1: 0x11000400
+i2c_txdata2: 0x00000026
+i2c_txdata3: 0x00000000
+i2c_txdata4: 0x00000000
+i2c_txdata5: 0x00000000
+i2c_txdata6: 0x00000000
+i2c_txdata7: 0x00000000
+i2c_rxdata0: 0x00000000
+i2c_rxdata1: 0x00000000
+i2c_rxdata2: 0x00000000
+i2c_rxdata3: 0x00000000
+i2c_rxdata4: 0x00000000
+i2c_rxdata5: 0x00000000
+i2c_rxdata6: 0x00000000
+i2c_rxdata7: 0x00000000
+I2C Send Stop Bit Timeout
+i2c_con: 0x00051111
+i2c_clkdiv: 0x007B007B
+i2c_mrxaddr: 0x00000000
+i2c_mrxraddR: 0x00000000
+i2c_mtxcnt: 0x00000009
+i2c_mrxcnt: 0x00000000
+i2c_ien: 0x00000010
+i2c_ipd: 0x00000000
+i2c_fcnt: 0x00000000
+i2c_txdata0: 0x000002A2
+i2c_txdata1: 0x11000400
+i2c_txdata2: 0x00000026
+i2c_txdata3: 0x00000000
+i2c_txdata4: 0x00000000
+i2c_txdata5: 0x00000000
+i2c_txdata6: 0x00000000
+i2c_txdata7: 0x00000000
+i2c_rxdata0: 0x00000000
+i2c_rxdata1: 0x00000000
+i2c_rxdata2: 0x00000000
+i2c_rxdata3: 0x00000000
+i2c_rxdata4: 0x00000000
+i2c_rxdata5: 0x00000000
+i2c_rxdata6: 0x00000000
+i2c_rxdata7: 0x00000000
+I2C Write Data Timeout
+i2c_con: 0x00051109
+i2c_clkdiv: 0x007B007B
+i2c_mrxaddr: 0x00000000
+i2c_mrxraddR: 0x00000000
+i2c_mtxcnt: 0x00000002
+i2c_mrxcnt: 0x00000000
+i2c_ien: 0x00000044
+i2c_ipd: 0x00000000
+i2c_fcnt: 0x00000000
+i2c_txdata0: 0x000002A2
+i2c_txdata1: 0x11000400
+i2c_txdata2: 0x00000026
+i2c_txdata3: 0x00000000
+i2c_txdata4: 0x00000000
+i2c_txdata5: 0x00000000
+i2c_txdata6: 0x00000000
+i2c_txdata7: 0x00000000
+i2c_rxdata0: 0x00000000
+i2c_rxdata1: 0x00000000
+i2c_rxdata2: 0x00000000
+i2c_rxdata3: 0x00000000
+i2c_rxdata4: 0x00000000
+i2c_rxdata5: 0x00000000
+i2c_rxdata6: 0x00000000
+i2c_rxdata7: 0x00000000
+I2C Send Stop Bit Timeout
+i2c_con: 0x00051111
+i2c_clkdiv: 0x007B007B
+i2c_mrxaddr: 0x00000000
+i2c_mrxraddR: 0x00000000
+i2c_mtxcnt: 0x00000002
+i2c_mrxcnt: 0x00000000
+i2c_ien: 0x00000010
+i2c_ipd: 0x00000000
+i2c_fcnt: 0x00000000
+i2c_txdata0: 0x000002A2
+i2c_txdata1: 0x11000400
+i2c_txdata2: 0x00000026
+i2c_txdata3: 0x00000000
+i2c_txdata4: 0x00000000
+i2c_txdata5: 0x00000000
+i2c_txdata6: 0x00000000
+i2c_txdata7: 0x00000000
+i2c_rxdata0: 0x00000000
+i2c_rxdata1: 0x00000000
+i2c_rxdata2: 0x00000000
+i2c_rxdata3: 0x00000000
+i2c_rxdata4: 0x00000000
+i2c_rxdata5: 0x00000000
+i2c_rxdata6: 0x00000000
+i2c_rxdata7: 0x00000000
+ASSERT [RealTimeClock] String.c(1682): (Value & 0xf) < 0xa
+ASSERT [RealTimeClock] String.c(1682): (Value & 0xf) < 0xa
+I2C Write Data Timeout
+i2c_con: 0x00051109
+i2c_clkdiv: 0x007B007B
+i2c_mrxaddr: 0x00000000
+i2c_mrxraddR: 0x00000000
+i2c_mtxcnt: 0x00000002
+i2c_mrxcnt: 0x00000000
+i2c_ien: 0x00000044
+i2c_ipd: 0x00000000
+i2c_fcnt: 0x00000000
+i2c_txdata0: 0x000002A2
+i2c_txdata1: 0x11000400
+i2c_txdata2: 0x00000026
+i2c_txdata3: 0x00000000
+i2c_txdata4: 0x00000000
+i2c_txdata5: 0x00000000
+i2c_txdata6: 0x00000000
+i2c_txdata7: 0x00000000
+i2c_rxdata0: 0x00000000
+i2c_rxdata1: 0x00000000
+i2c_rxdata2: 0x00000000
+i2c_rxdata3: 0x00000000
+i2c_rxdata4: 0x00000000
+i2c_rxdata5: 0x00000000
+i2c_rxdata6: 0x00000000
+i2c_rxdata7: 0x00000000
+I2C Send Stop Bit Timeout
+i2c_con: 0x00051111
+i2c_clkdiv: 0x007B007B
+i2c_mrxaddr: 0x00000000
+i2c_mrxraddR: 0x00000000
+i2c_mtxcnt: 0x00000002
+i2c_mrxcnt: 0x00000000
+i2c_ien: 0x00000010
+i2c_ipd: 0x00000000
+i2c_fcnt: 0x00000000
+i2c_txdata0: 0x000002A2
+i2c_txdata1: 0x11000400
+i2c_txdata2: 0x00000026
+i2c_txdata3: 0x00000000
+i2c_txdata4: 0x00000000
+i2c_txdata5: 0x00000000
+i2c_txdata6: 0x00000000
+i2c_txdata7: 0x00000000
+i2c_rxdata0: 0x00000000
+i2c_rxdata1: 0x00000000
+i2c_rxdata2: 0x00000000
+i2c_rxdata3: 0x00000000
+i2c_rxdata4: 0x00000000
+i2c_rxdata5: 0x00000000
+i2c_rxdata6: 0x00000000
+i2c_rxdata7: 0x00000000
+GenerateRandomNumberViaNist800Algorithm: GetRNG algorithm TRNG - Status = Success
+GenerateRandomNumberViaNist800Algorithm: GetRNG algorithm TRNG - Status = Success
+GenerateRandomNumberViaNist800Algorithm: GetRNG algorithm TRNG - Status = Success
+GenerateRandomNumberViaNist800Algorithm: GetRNG algorithm TRNG - Status = Success
+I2C Write Data Timeout
+i2c_con: 0x00051109
+i2c_clkdiv: 0x007B007B
+i2c_mrxaddr: 0x00000000
+i2c_mrxraddR: 0x00000000
+i2c_mtxcnt: 0x00000002
+i2c_mrxcnt: 0x00000000
+i2c_ien: 0x00000044
+i2c_ipd: 0x00000000
+i2c_fcnt: 0x00000000
+i2c_txdata0: 0x000002A2
+i2c_txdata1: 0x11000400
+i2c_txdata2: 0x00000026
+i2c_txdata3: 0x00000000
+i2c_txdata4: 0x00000000
+i2c_txdata5: 0x00000000
+i2c_txdata6: 0x00000000
+i2c_txdata7: 0x00000000
+i2c_rxdata0: 0x00000000
+i2c_rxdata1: 0x00000000
+i2c_rxdata2: 0x00000000
+i2c_rxdata3: 0x00000000
+i2c_rxdata4: 0x00000000
+i2c_rxdata5: 0x00000000
+i2c_rxdata6: 0x00000000
+i2c_rxdata7: 0x00000000
+I2C Send Stop Bit Timeout
+i2c_con: 0x00051111
+i2c_clkdiv: 0x007B007B
+i2c_mrxaddr: 0x00000000
+i2c_mrxraddR: 0x00000000
+i2c_mtxcnt: 0x00000002
+i2c_mrxcnt: 0x00000000
+i2c_ien: 0x00000010
+i2c_ipd: 0x00000000
+i2c_fcnt: 0x00000000
+i2c_txdata0: 0x000002A2
+i2c_txdata1: 0x11000400
+i2c_txdata2: 0x00000026
+i2c_txdata3: 0x00000000
+i2c_txdata4: 0x00000000
+i2c_txdata5: 0x00000000
+i2c_txdata6: 0x00000000
+i2c_txdata7: 0x00000000
+i2c_rxdata0: 0x00000000
+i2c_rxdata1: 0x00000000
+i2c_rxdata2: 0x00000000
+i2c_rxdata3: 0x00000000
+i2c_rxdata4: 0x00000000
+i2c_rxdata5: 0x00000000
+i2c_rxdata6: 0x00000000
+i2c_rxdata7: 0x00000000
+LibGetTime: Invalid clock. Resetting to build time.
+I2C Write Data Timeout
+i2c_con: 0x00051109
+i2c_clkdiv: 0x007B007B
+i2c_mrxaddr: 0x00000000
+i2c_mrxraddR: 0x00000000
+i2c_mtxcnt: 0x00000009
+i2c_mrxcnt: 0x00000000
+i2c_ien: 0x00000044
+i2c_ipd: 0x00000000
+i2c_fcnt: 0x00000000
+i2c_txdata0: 0x000002A2
+i2c_txdata1: 0x11000400
+i2c_txdata2: 0x00000026
+i2c_txdata3: 0x00000000
+i2c_txdata4: 0x00000000
+i2c_txdata5: 0x00000000
+i2c_txdata6: 0x00000000
+i2c_txdata7: 0x00000000
+i2c_rxdata0: 0x00000000
+i2c_rxdata1: 0x00000000
+i2c_rxdata2: 0x00000000
+i2c_rxdata3: 0x00000000
+i2c_rxdata4: 0x00000000
+i2c_rxdata5: 0x00000000
+i2c_rxdata6: 0x00000000
+i2c_rxdata7: 0x00000000
+I2C Send Stop Bit Timeout
+i2c_con: 0x00051111
+i2c_clkdiv: 0x007B007B
+i2c_mrxaddr: 0x00000000
+i2c_mrxraddR: 0x00000000
+i2c_mtxcnt: 0x00000009
+i2c_mrxcnt: 0x00000000
+i2c_ien: 0x00000010
+i2c_ipd: 0x00000000
+i2c_fcnt: 0x00000000
+i2c_txdata0: 0x000002A2
+i2c_txdata1: 0x11000400
+i2c_txdata2: 0x00000026
+i2c_txdata3: 0x00000000
+i2c_txdata4: 0x00000000
+i2c_txdata5: 0x00000000
+i2c_txdata6: 0x00000000
+i2c_txdata7: 0x00000000
+i2c_rxdata0: 0x00000000
+i2c_rxdata1: 0x00000000
+i2c_rxdata2: 0x00000000
+i2c_rxdata3: 0x00000000
+i2c_rxdata4: 0x00000000
+i2c_rxdata5: 0x00000000
+i2c_rxdata6: 0x00000000
+i2c_rxdata7: 0x00000000
+I2C Write Data Timeout
+i2c_con: 0x00051109
+i2c_clkdiv: 0x007B007B
+i2c_mrxaddr: 0x00000000
+i2c_mrxraddR: 0x00000000
+i2c_mtxcnt: 0x00000002
+i2c_mrxcnt: 0x00000000
+i2c_ien: 0x00000044
+i2c_ipd: 0x00000000
+i2c_fcnt: 0x00000000
+i2c_txdata0: 0x000002A2
+i2c_txdata1: 0x11000400
+i2c_txdata2: 0x00000026
+i2c_txdata3: 0x00000000
+i2c_txdata4: 0x00000000
+i2c_txdata5: 0x00000000
+i2c_txdata6: 0x00000000
+i2c_txdata7: 0x00000000
+i2c_rxdata0: 0x00000000
+i2c_rxdata1: 0x00000000
+i2c_rxdata2: 0x00000000
+i2c_rxdata3: 0x00000000
+i2c_rxdata4: 0x00000000
+i2c_rxdata5: 0x00000000
+i2c_rxdata6: 0x00000000
+i2c_rxdata7: 0x00000000
+I2C Send Stop Bit Timeout
+i2c_con: 0x00051111
+i2c_clkdiv: 0x007B007B
+i2c_mrxaddr: 0x00000000
+i2c_mrxraddR: 0x00000000
+i2c_mtxcnt: 0x00000002
+i2c_mrxcnt: 0x00000000
+i2c_ien: 0x00000010
+i2c_ipd: 0x00000000
+i2c_fcnt: 0x00000000
+i2c_txdata0: 0x000002A2
+i2c_txdata1: 0x11000400
+i2c_txdata2: 0x00000026
+i2c_txdata3: 0x00000000
+i2c_txdata4: 0x00000000
+i2c_txdata5: 0x00000000
+i2c_txdata6: 0x00000000
+i2c_txdata7: 0x00000000
+i2c_rxdata0: 0x00000000
+i2c_rxdata1: 0x00000000
+i2c_rxdata2: 0x00000000
+i2c_rxdata3: 0x00000000
+i2c_rxdata4: 0x00000000
+i2c_rxdata5: 0x00000000
+i2c_rxdata6: 0x00000000
+i2c_rxdata7: 0x00000000
+ASSERT [RealTimeClock] String.c(1682): (Value & 0xf) < 0xa
+ASSERT [RealTimeClock] String.c(1682): (Value & 0xf) < 0xa
+I2C Write Data Timeout
+i2c_con: 0x00051109
+i2c_clkdiv: 0x007B007B
+i2c_mrxaddr: 0x00000000
+i2c_mrxraddR: 0x00000000
+i2c_mtxcnt: 0x00000002
+i2c_mrxcnt: 0x00000000
+i2c_ien: 0x00000044
+i2c_ipd: 0x00000000
+i2c_fcnt: 0x00000000
+i2c_txdata0: 0x000002A2
+i2c_txdata1: 0x11000400
+i2c_txdata2: 0x00000026
+i2c_txdata3: 0x00000000
+i2c_txdata4: 0x00000000
+i2c_txdata5: 0x00000000
+i2c_txdata6: 0x00000000
+i2c_txdata7: 0x00000000
+i2c_rxdata0: 0x00000000
+i2c_rxdata1: 0x00000000
+i2c_rxdata2: 0x00000000
+i2c_rxdata3: 0x00000000
+i2c_rxdata4: 0x00000000
+i2c_rxdata5: 0x00000000
+i2c_rxdata6: 0x00000000
+i2c_rxdata7: 0x00000000
+I2C Send Stop Bit Timeout
+i2c_con: 0x00051111
+i2c_clkdiv: 0x007B007B
+i2c_mrxaddr: 0x00000000
+i2c_mrxraddR: 0x00000000
+i2c_mtxcnt: 0x00000002
+i2c_mrxcnt: 0x00000000
+i2c_ien: 0x00000010
+i2c_ipd: 0x00000000
+i2c_fcnt: 0x00000000
+i2c_txdata0: 0x000002A2
+i2c_txdata1: 0x11000400
+i2c_txdata2: 0x00000026
+i2c_txdata3: 0x00000000
+i2c_txdata4: 0x00000000
+i2c_txdata5: 0x00000000
+i2c_txdata6: 0x00000000
+i2c_txdata7: 0x00000000
+i2c_rxdata0: 0x00000000
+i2c_rxdata1: 0x00000000
+i2c_rxdata2: 0x00000000
+i2c_rxdata3: 0x00000000
+i2c_rxdata4: 0x00000000
+i2c_rxdata5: 0x00000000
+i2c_rxdata6: 0x00000000
+i2c_rxdata7: 0x00000000
+ASSERT [RealTimeClock] String.c(1682): (Value & 0xf) < 0xa
+ASSERT [RealTimeClock] String.c(1682): (Value & 0xf) < 0xa
+I2C Write Data Timeout
+i2c_con: 0x00051109
+i2c_clkdiv: 0x007B007B
+i2c_mrxaddr: 0x00000000
+i2c_mrxraddR: 0x00000000
+i2c_mtxcnt: 0x00000002
+i2c_mrxcnt: 0x00000000
+i2c_ien: 0x00000044
+i2c_ipd: 0x00000000
+i2c_fcnt: 0x00000000
+i2c_txdata0: 0x000002A2
+i2c_txdata1: 0x11000400
+i2c_txdata2: 0x00000026
+i2c_txdata3: 0x00000000
+i2c_txdata4: 0x00000000
+i2c_txdata5: 0x00000000
+i2c_txdata6: 0x00000000
+i2c_txdata7: 0x00000000
+i2c_rxdata0: 0x00000000
+i2c_rxdata1: 0x00000000
+i2c_rxdata2: 0x00000000
+i2c_rxdata3: 0x00000000
+i2c_rxdata4: 0x00000000
+i2c_rxdata5: 0x00000000
+i2c_rxdata6: 0x00000000
+i2c_rxdata7: 0x00000000
+I2C Send Stop Bit Timeout
+i2c_con: 0x00051111
+i2c_clkdiv: 0x007B007B
+i2c_mrxaddr: 0x00000000
+i2c_mrxraddR: 0x00000000
+i2c_mtxcnt: 0x00000002
+i2c_mrxcnt: 0x00000000
+i2c_ien: 0x00000010
+i2c_ipd: 0x00000000
+i2c_fcnt: 0x00000000
+i2c_txdata0: 0x000002A2
+i2c_txdata1: 0x11000400
+i2c_txdata2: 0x00000026
+i2c_txdata3: 0x00000000
+i2c_txdata4: 0x00000000
+i2c_txdata5: 0x00000000
+i2c_txdata6: 0x00000000
+i2c_txdata7: 0x00000000
+i2c_rxdata0: 0x00000000
+i2c_rxdata1: 0x00000000
+i2c_rxdata2: 0x00000000
+i2c_rxdata3: 0x00000000
+i2c_rxdata4: 0x00000000
+i2c_rxdata5: 0x00000000
+i2c_rxdata6: 0x00000000
+i2c_rxdata7: 0x00000000
+ASSERT [RealTimeClock] String.c(1682): (Value & 0xf) < 0xa
+ASSERT [RealTimeClock] String.c(1682): (Value & 0xf) < 0xa
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/NetworkPkg/DnsDxe/DnsDxe/DEBUG/DnsDxe.dll 0xE820F000
+Loading driver at 0x000E820E000 EntryPoint=0x000E8217828 DnsDxe.efi
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/NetworkPkg/HttpDxe/HttpDxe/DEBUG/HttpDxe.dll 0xE82B7000
+Loading driver at 0x000E82B6000 EntryPoint=0x000E82BA558 HttpDxe.efi
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/NetworkPkg/IScsiDxe/IScsiDxe/DEBUG/IScsiDxe.dll 0xE8298000
+Loading driver at 0x000E8297000 EntryPoint=0x000E829ACD0 IScsiDxe.efi
+Loading driver at 0x00180000000 EntryPoint=0x00180001200
+Loading driver at 0x00180000000 EntryPoint=0x00180001200 
+ConvertPages: Incompatible memory types, the pages to allocate have been allocated
+Loading driver at 0x000E818E000 EntryPoint=0x000E8190008
+Loading driver at 0x000E818E000 EntryPoint=0x000E8190008 
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/MdeModulePkg/Bus/Pci/PciBusDxe/PciBusDxe/DEBUG/PciBusDxe.dll 0xE81A8000
+Loading driver at 0x000E81A7000 EntryPoint=0x000E81AF798 PciBusDxe.efi
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/MdeModulePkg/Bus/Pci/NvmExpressDxe/NvmExpressDxe/DEBUG/NvmExpressDxe.dll 0xE8202000
+Loading driver at 0x000E8201000 EntryPoint=0x000E8209BD8 NvmExpressDxe.efi
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/Silicon/Synopsys/DesignWare/Drivers/DwcEqosSnpDxe/DwcEqosSnpDxe/DEBUG/DwcEqosSnpDxe.dll 0xE81F8000
+Loading driver at 0x000E81F7000 EntryPoint=0x000E81FC8F4 DwcEqosSnpDxe.efi
+add-symbol-file /w/edk2-rk3588-yy3588/workspace/Build/YY3588/DEBUG_GCC/AARCH64/NetworkPkg/TcpDxe/TcpDxe/DEBUG/TcpDxe.dll 0xE81CB000
+Loading driver at 0x000E81CA000 EntryPoint=0x000E81CE884 TcpDxe.efi
+Driver B95E9FDA-26DE-48D2-8807-1F9107AC5E3A was discovered but not loaded!!
+Driver ECEBCB00-D9C8-11E4-AF3D-8CDCD426C973 was discovered but not loaded!!
+[Bds] Entry...
+[BdsDxe] Locate Variable Policy protocol - Success
+Variable Driver Auto Update Lang, Lang:eng, PlatformLang:en-US Status: Success
+GpioPinSetFunction Group:4 Pin:17 Function:5
+GpioPinSetPull Group:4 Pin:17 Pull:0
+GpioPinSetFunction Group:1 Pin:5 Function:5
+GpioPinSetPull Group:1 Pin:5 Pull:0
+GpioPinSetFunction Group:4 Pin:15 Function:5
+GpioPinSetPull Group:4 Pin:15 Pull:0
+GpioPinSetFunction Group:4 Pin:16 Function:5
+GpioPinSetPull Group:4 Pin:16 Pull:0
+DetectDisplays: HDMI0 status: Not Found
+vp0 have layer nr:0[], primary plane: 2
+vp1 have layer nr:4[0 1 2 3 ], primary plane: 2
+vp2 have layer nr:4[6 7 8 9 ], primary plane: 8
+vp3 have layer nr:0[], primary plane: 2
+GetSupportedDisplayModes: Native
+GetSupportedDisplayModes: No usable mode found! Falling back to lowest available.
+[Variable]END_OF_DXE is signaled
+Initialize variable error flag (FF)
+Rk860xRegulatorSupported: attached to RK860X_REGULATOR device
+Rk860xRegulatorSupported: attached to RK860X_REGULATOR device
+FvbCheckBootDiskDeviceHasFirmware: [VenHw(0D51905B-B77E-452A-A2C0-ECA0CC8D514A,00002EFE0000000000)/eMMC(0x0)/Ctrl(0x0)] FIT has an invalid header! Ret=FDT_ERR_BADMAGIC
+FvbProcessBootDiskDeviceHandle: [VenHw(0D51905B-B77E-452A-A2C0-ECA0CC8D514A,00002EFE0000000000)/eMMC(0x0)/Ctrl(0x0)] No compatible firmware found. Skipping.
+FvbCheckBootDiskDeviceHasFirmware: [VenHw(0D51905B-B77E-452A-A2C0-ECA0CC8D514A,00002EFE0000000000)/eMMC(0x0)/Ctrl(0x1)] FIT has an invalid header! Ret=FDT_ERR_BADMAGIC
+FvbProcessBootDiskDeviceHandle: [VenHw(0D51905B-B77E-452A-A2C0-ECA0CC8D514A,00002EFE0000000000)/eMMC(0x0)/Ctrl(0x1)] No compatible firmware found. Skipping.
+FvbCheckBootDiskDeviceHasFirmware: [VenHw(0D51905B-B77E-452A-A2C0-ECA0CC8D514A,00002EFE0000000000)/eMMC(0x0)/Ctrl(0x2)] FIT has an invalid header! Ret=FDT_ERR_BADMAGIC
+FvbProcessBootDiskDeviceHandle: [VenHw(0D51905B-B77E-452A-A2C0-ECA0CC8D514A,00002EFE0000000000)/eMMC(0x0)/Ctrl(0x2)] No compatible firmware found. Skipping.
+FvbFindBootDiskDevice: WARNING: Boot disk device not found!
+FvbFindBootDiskDevice: WARNING: Variable store changes will NOT persist!
+UsbPortPowerEnable: host ports always on, USB-C VBUS left off
+XHCI: Initialize DWC3 at 0xFC000000
+XhcCreateUsb3Hc: Capability length 0x20
+XhcCreateUsb3Hc: HcSParams1 0x1000140
+XhcCreateUsb3Hc: HcSParams2 0xC0000F1
+XhcCreateUsb3Hc: HcCParams 0x220FE64
+XhcCreateUsb3Hc: DBOff 0x480
+XhcCreateUsb3Hc: RTSOff 0x440
+XhcCreateUsb3Hc: UsbLegSupOffset 0x0
+XhcCreateUsb3Hc: DebugCapSupOffset 0xFFFFFFFF
+XhcCreateUsb3Hc: Usb2SupOffset 0x10
+XhcCreateUsb3Hc: Usb3SupOffset 0x20
+XhcSetBiosOwnership: called to set BIOS ownership
+XhcResetHC!
+XhcInitSched:DCBAA=0xE8169000
+XhcInitSched: Created CMD ring [E8169240~E816A240) EVENT ring [E816A240~E816C240)
+XhcDriverBindingStart: XHCI started for controller @ E81F6598
+XhcGetCapability: 1 ports, 64 bit 0
+XHCI: Initialize DWC3 at 0xFC400000
+XhcCreateUsb3Hc: Capability length 0x20
+XhcCreateUsb3Hc: HcSParams1 0x2000140
+XhcCreateUsb3Hc: HcSParams2 0xC0000F1
+XhcCreateUsb3Hc: HcCParams 0x220FE64
+XhcCreateUsb3Hc: DBOff 0x480
+XhcCreateUsb3Hc: RTSOff 0x440
+XhcCreateUsb3Hc: UsbLegSupOffset 0x0
+XhcCreateUsb3Hc: DebugCapSupOffset 0xFFFFFFFF
+XhcCreateUsb3Hc: Usb2SupOffset 0x10
+XhcCreateUsb3Hc: Usb3SupOffset 0x20
+XhcSetBiosOwnership: called to set BIOS ownership
+XhcResetHC!
+XhcInitSched:DCBAA=0xE8144000
+XhcInitSched: Created CMD ring [E8144240~E8145240) EVENT ring [E8145240~E8147240)
+XhcDriverBindingStart: XHCI started for controller @ E81F6418
+XhcGetCapability: 2 ports, 64 bit 0
+XHCI: Initialize DWC3 at 0xFCD00000
+XhcCreateUsb3Hc: Capability length 0x20
+XhcCreateUsb3Hc: HcSParams1 0x2000140
+XhcCreateUsb3Hc: HcSParams2 0xC0000F1
+XhcCreateUsb3Hc: HcCParams 0x220FE64
+XhcCreateUsb3Hc: DBOff 0x480
+XhcCreateUsb3Hc: RTSOff 0x440
+XhcCreateUsb3Hc: UsbLegSupOffset 0x0
+XhcCreateUsb3Hc: DebugCapSupOffset 0xFFFFFFFF
+XhcCreateUsb3Hc: Usb2SupOffset 0x10
+XhcCreateUsb3Hc: Usb3SupOffset 0x20
+XhcSetBiosOwnership: called to set BIOS ownership
+XhcResetHC!
+XhcInitSched:DCBAA=0xE7F40000
+XhcInitSched: Created CMD ring [E7F40240~E7F41240) EVENT ring [E7F41240~E7F43240)
+XhcDriverBindingStart: XHCI started for controller @ E81F6A98
+XhcGetCapability: 2 ports, 64 bit 0
+EhcCreateUsb2Hc: capability length 16
+EhcClearLegacySupport: called to clear legacy support
+EhcDriverBindingStart: EHCI started for controller @ E81F6E18
+EhcGetCapability: 1 ports, 64 bit 0
+EhcSetRootHubPortFeature: exit status Success
+EhcClearRootHubPortFeature: exit status Success
+EhcClearRootHubPortFeature: exit status Success
+EhcCreateUsb2Hc: capability length 16
+EhcClearLegacySupport: called to clear legacy support
+EhcDriverBindingStart: EHCI started for controller @ E81F5098
+EhcGetCapability: 1 ports, 64 bit 0
+OHCI started for controller @ E81F5E18, base address: 0xFC840000
+OHCI started for controller @ E81F5898, base address: 0xFC8C0000
+[Bds]RegisterKeyNotify: 000C/0000 80000000/00 Success
+[Bds]RegisterKeyNotify: 0017/0000 80000000/00 Success
+[Bds]RegisterKeyNotify: 000B/0000 80000000/00 Success
+[Bds]RegisterKeyNotify: 000E/0000 80000000/00 Success
+[Bds]RegisterKeyNotify: 0000/000D 80000000/00 Success
+LcdGraphicsSetMode: detailed mode clock 25175 kHz, flags[A]
+          H: 0640 0656 0752 0800
+          V: 0480 0490 0492 0525
+      bus_format: 100A
+[INIT]VOP update mode to: 640x480p60, type: HDMI0 for VP2
+DclkRate:25175,IfPixclkDiv;2,IfDclkDiv:4
+[VOP2](CalcCru)DclkRate     = 25175(divide: 0)
+               DclkCoreRate = 6293(divide: 2)
+               IfDclkRate   = 6293(divide: 2)
+               IfPixclkRate = 12586(divide: 1)
+VOP VP2 enable Esmart2[640x480->640x480@0x0] fmt[0] addr[0xE7DB0000]
+HdptxRopllCmnConfig HdptxRopllCmnConfig start
+HdptxRopllCmnConfig HdptxRopllCmnConfig 251750
+HdptxRopllCmnConfig HdptxRopllCmnConfig 2
+HdptxRopllCmnConfig HdptxRopllCmnConfig end
+HdptxPostEnablePll hdptx phy pll locked!
+DwHdmiQpSetup: Using DVI mode
+HdptxPostEnableLane hdptx phy lane locked!
+GraphicsConsole video resolution 640 x 480
+Graphics - Mode 0, Column = 80, Row = 25
+Graphics - Mode 1, Column = 0, Row = 0
+Graphics Console Started, Mode: -1
+Terminal - Mode 0, Column = 80, Row = 25
+Terminal - Mode 1, Column = 80, Row = 50
+Terminal - Mode 2, Column = 100, Row = 31
+Terminal - Mode 3, Column = 128, Row = 40
+Terminal - Mode 4, Column = 160, Row = 42
+Terminal - Mode 5, Column = 240, Row = 56
+[=3hTianocore/EDK2 firmware version 673a762
+Setup (ESC/F2)   Shell (F1)   Reset to MaskROM (F4)   Continue (Enter)EqosIdentify: Synopsys DesignWare EQOS ver 0x51 (0x30) @ 0xFE1C0000
+EqosIdentify: HW Features: 0x0A1173F7 0x111E01E8 0x11041041 0x0C370031
+EqosReset: Timeout!
+MnpStart: MnpStartSnp failed, Time out.
+MnpConfigReceiveFilters: Snp->ReceiveFilters failed, Device Error.
+MnpStart: MnpStartSnp failed, Already started.
+SataControllerStart start
+Original PCI Attributes = 0x0
+Supported PCI Attributes = 0x8700
+Enabled PCI Attributes = 0x700
+Ports Implemented(PI) = 0x1
+HBA Capabilities(CAP) = 0x6737FF80
+SataControllerStart end with Success
+==AtaAtapiPassThru Start== Controller = EEFE0418
+[ext4] Needs journal recovery, mounting read-only
+HandleCapsules: processing capsules ...
+[Bds]OsIndication: 0000000000000000
+[Bds]=============Begin Load Options Dumping ...=============
+  Driver Options:
+  SysPrep Options:
+  Boot Options:
+    Boot0000: UiApp 		 0x0109
+    Boot0001: UEFI Shell 		 0x0000
+    Boot0002: Reset to MaskROM 		 0x0000
+    Boot0003: UEFI Generic MMC256 BC76FF6C eMMC User Data 		 0x0001
+    Boot0004: UEFI Generic MMC256 BC76FF6C eMMC Boot 1 		 0x0001
+    Boot0005: UEFI Generic MMC256 BC76FF6C eMMC Boot 2 		 0x0001
+  PlatformRecovery Options:
+    PlatformRecovery0000: Default PlatformRecovery 		 0x0001
+[Bds]=============End Load Options Dumping=============
+[Bds]BdsWait ...Zzzzzzzzzzzz...
+[Bds]BdsWait(5)..Zzzz...
+[Bds]BdsWait(4)..Zzzz...
+[Bds]BdsWait(3)..Zzzz...
+[Bds]BdsWait(2)..Zzzz...
+[Bds]BdsWait(1)..Zzzz...
+[Bds]Exit the waiting!
+[Bds]Stop Hotkey Service!
+[Bds]UnregisterKeyNotify: 000C/0000 Success
+[Bds]UnregisterKeyNotify: 0017/0000 Success
+[Bds]UnregisterKeyNotify: 000B/0000 Success
+[Bds]UnregisterKeyNotify: 000E/0000 Success
+[Bds]UnregisterKeyNotify: 0000/000D Success
+RK3588NotifyReadyToBoot: called. Configure CPU voltages once.
+MtlSendMessage ringing doorbell 0x82000010 with message header 0x00005006 length 0x00000008
+buck_set_voltage: volt=950000, buck=2, reg=0x1B, mask=0xFF, val=0x48
+MtlSendMessage ringing doorbell 0x82000010 with message header 0x00005006 length 0x00000008
+Found 0x42 on I2C bus 0 for tag 2
+Current voltage: 800000 uV
+Setting voltage to: 925000 uV
+Current voltage: 925000 uV
+MtlSendMessage ringing doorbell 0x82000010 with message header 0x00005006 length 0x00000008
+Found 0x43 on I2C bus 0 for tag 3
+Current voltage: 800000 uV
+Setting voltage to: 925000 uV
+Current voltage: 925000 uV
+FvbDiskNvDumpHandler: NV disk device not found (yet?)
+Memory  Previous  Current    Next   
+ Type    Pages     Pages     Pages  
+======  ========  ========  ========
+  09    00000000  00000001  00000004
+  0A    00000000  00000000  00000000
+  00    00000000  00000090  000000B4
+  06    00000032  00000390  00000474
+  05    00000014  000002D0  00000384
+Memory Type Information settings change.
+[Bds]Booting UEFI Generic MMC256 BC76FF6C eMMC User Data
+[Bds] Expand VenHw(0D51905B-B77E-452A-A2C0-ECA0CC8D514A,00002EFE0000000000)/eMMC(0x0)/Ctrl(0x0) -> <null string>
+Memory  Previous  Current    Next   
+ Type    Pages     Pages     Pages  
+======  ========  ========  ========
+  09    00000000  00000001  00000004
+  0A    00000000  00000000  00000000
+  00    00000000  00000090  000000B4
+  06    00000032  00000390  00000474
+  05    00000014  000002D0  00000384
+Memory Type Information settings change.
+[Bds]Booting UEFI Generic MMC256 BC76FF6C eMMC Boot 1
+[Bds] Expand VenHw(0D51905B-B77E-452A-A2C0-ECA0CC8D514A,00002EFE0000000000)/eMMC(0x0)/Ctrl(0x1) -> <null string>
+Memory  Previous  Current    Next   
+ Type    Pages     Pages     Pages  
+======  ========  ========  ========
+  09    00000000  00000001  00000004
+  0A    00000000  00000000  00000000
+  00    00000000  00000090  000000B4
+  06    00000032  00000390  00000474
+  05    00000014  000002D0  00000384
+Memory Type Information settings change.
+[Bds]Booting UEFI Generic MMC256 BC76FF6C eMMC Boot 2
+[Bds] Expand VenHw(0D51905B-B77E-452A-A2C0-ECA0CC8D514A,00002EFE0000000000)/eMMC(0x0)/Ctrl(0x2) -> <null string>
+Process PlatformRecovery0000 (Default PlatformRecovery) ...
+MnpConfigReceiveFilters: Snp->ReceiveFilters failed, Device Error.
+MnpConfigReceiveFilters: Snp->ReceiveFilters failed, Device Error.
+MnpConfigReceiveFilters: Snp->ReceiveFilters failed, Device Error.
+SataControllerStart start
+SataControllerStart error return status = Already started

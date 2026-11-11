@@ -1,0 +1,21 @@
+0-0042
+0-0043
+1-0042
+7-0011
+dummy-power-management@0x00000000fd8d8000
+dummy-qos@0x00000000fdf35000
+dummy-qos@0x00000000fdf35200
+dummy-qos@0x00000000fdf35400
+dummy-qos@0x00000000fdf35600
+dummy-qos@0x00000000fdf36000
+dummy-qos@0x00000000fdf39000
+dummy-qos@0x00000000fdf3a000
+dummy-qos@0x00000000fdf3a200
+dummy-qos@0x00000000fdf3d800
+dummy-qos@0x00000000fdf3e000
+dummy-qos@0x00000000fdf3e200
+dummy-qos@0x00000000fdf3e400
+dummy-qos@0x00000000fdf3e600
+dummy-qos@0x00000000fdf40000
+dummy-qos@0x00000000fdf40200
+0: 0e

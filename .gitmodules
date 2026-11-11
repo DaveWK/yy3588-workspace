@@ -1,0 +1,8 @@
+[submodule "firmware/oreboot"]
+	path = firmware/oreboot
+	url = https://github.com/DaveWK/oreboot.git
+	branch = yy3588
+[submodule "firmware/edk2-rk3588"]
+	path = firmware/edk2-rk3588
+	url = https://github.com/DaveWK/edk2-rk3588.git
+	branch = yy3588
