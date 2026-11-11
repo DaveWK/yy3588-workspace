@@ -5,7 +5,7 @@
 FROM registry.fedoraproject.org/fedora:44
 
 RUN dnf -y install --setopt=install_weak_deps=False \
-        make git gcc gcc-c++ libuuid-devel python3 python3-pyelftools \
+        make git patch gcc gcc-c++ libuuid-devel python3 python3-pyelftools \
         gcc-aarch64-linux-gnu binutils-aarch64-linux-gnu \
         acpica-tools dtc uboot-tools openssl gettext which findutils diffutils xz \
         gdisk dosfstools mtools e2fsprogs android-tools \
